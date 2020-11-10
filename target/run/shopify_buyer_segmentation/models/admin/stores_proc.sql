@@ -1,4 +1,11 @@
-select 
+
+
+  create or replace table `dbt-projects`.`dbt_buyer_segmentation`.`stores_proc`
+  
+  
+  OPTIONS()
+  as (
+    select 
 store,
 store_name,
 account,
@@ -9,16 +16,17 @@ from  (
 
 SELECT  
 store,
-bigquery_name, 
-name as store_name,
+bigquery_name store_name,
 account,
 platform,
 time_of_entry,
 first_value(time_of_entry) OVER (PARTITION BY store ORDER BY time_of_entry DESC) lv
-FROM `{{ target.project }}.dbt_buyer_segmentation.data_feeds` 
+FROM `dbt-projects.agency_data_pipeline.data_feeds` 
 where store_name != ''
 
 ) 
 
 WHERE lv = time_of_entry
 group by store, store_name, account, platform
+  );
+    

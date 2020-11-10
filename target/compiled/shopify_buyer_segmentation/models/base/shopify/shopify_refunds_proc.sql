@@ -1,14 +1,13 @@
-{% set stores = get_column_values(table=ref('stores_proc'), column='store_name', max_records=50, filter_column='platform', filter_value='Service') %}
 
-{% if stores != [] %}
+
+
 
 with refunds as (
 
-	{% for store in stores %}
+	
 	SELECT
-	--'{{store}}' store_name,
-	store_name,
-	order_number,
+	'Data Feeds' store_name,
+	_id order_number,
 	checkout_id,
 	financial_status,
 	line_item_id,
@@ -17,11 +16,11 @@ with refunds as (
 	line_item.variant_id variant_id,
 	line_item.id refund_id,
  	_sdc_sequence
-	FROM `{{ target.project }}.agency_data_pipeline.orders` 
+	FROM `dbt-projects.shopify_Data Feeds.orders` 
 	cross join unnest(refunds), unnest(refund_line_items)
   	where financial_status like '%refund%'
-	{% if not loop.last %} UNION ALL {% endif %}
-	{% endfor %}
+	
+	
 
 )
 
@@ -44,4 +43,3 @@ FROM
    	) 
 WHERE lv = _sdc_sequence
 
-{% endif %}	

@@ -35533,3 +35533,2735 @@ limit 100
 2020-11-10 09:48:32.845697 (Thread-30): handling status request
 2020-11-10 09:48:32.846203 (Thread-30): Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': 'b9cb4131-4839-42d8-9062-69594a2c01e6', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fee5b50df98>]}
 2020-11-10 09:48:32.847266 (Thread-30): sending response (<Response 760 bytes [200 OK]>) to 10.0.25.53
+2020-11-10 09:48:39.034023 (Thread-31): Parsing macros/split_part.sql
+2020-11-10 09:48:39.039897 (Thread-31): Parsing macros/get_url_parameter.sql
+2020-11-10 09:48:39.044617 (Thread-31): Parsing macros/get_column_values.sql
+2020-11-10 09:48:39.051343 (Thread-31): Parsing macros/table_exists.sql
+2020-11-10 09:48:39.054163 (Thread-31): Parsing macros/adapters.sql
+2020-11-10 09:48:39.073708 (Thread-31): Parsing macros/etc.sql
+2020-11-10 09:48:39.075029 (Thread-31): Parsing macros/catalog.sql
+2020-11-10 09:48:39.081027 (Thread-31): Parsing macros/materializations/table.sql
+2020-11-10 09:48:39.091257 (Thread-31): Parsing macros/materializations/view.sql
+2020-11-10 09:48:39.094169 (Thread-31): Parsing macros/materializations/copy.sql
+2020-11-10 09:48:39.098653 (Thread-31): Parsing macros/materializations/seed.sql
+2020-11-10 09:48:39.101654 (Thread-31): Parsing macros/materializations/incremental.sql
+2020-11-10 09:48:39.117386 (Thread-31): Parsing macros/materializations/snapshot.sql
+2020-11-10 09:48:39.120430 (Thread-31): Parsing macros/core.sql
+2020-11-10 09:48:39.124944 (Thread-31): Parsing macros/adapters/common.sql
+2020-11-10 09:48:39.190640 (Thread-31): Parsing macros/materializations/helpers.sql
+2020-11-10 09:48:39.205236 (Thread-31): Parsing macros/materializations/table/table.sql
+2020-11-10 09:48:39.222496 (Thread-31): Parsing macros/materializations/seed/seed.sql
+2020-11-10 09:48:39.255753 (Thread-31): Parsing macros/materializations/view/view.sql
+2020-11-10 09:48:39.265293 (Thread-31): Parsing macros/materializations/view/create_or_replace_view.sql
+2020-11-10 09:48:39.270690 (Thread-31): Parsing macros/materializations/incremental/helpers.sql
+2020-11-10 09:48:39.272653 (Thread-31): Parsing macros/materializations/incremental/incremental.sql
+2020-11-10 09:48:39.286881 (Thread-31): Parsing macros/materializations/common/merge.sql
+2020-11-10 09:48:39.301306 (Thread-31): Parsing macros/materializations/snapshot/strategies.sql
+2020-11-10 09:48:39.332092 (Thread-32): handling status request
+2020-11-10 09:48:39.332313 (Thread-31): Parsing macros/materializations/snapshot/snapshot_merge.sql
+2020-11-10 09:48:39.334507 (Thread-32): Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': 'b9cb4131-4839-42d8-9062-69594a2c01e6', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fee602f6c50>]}
+2020-11-10 09:48:39.335460 (Thread-32): sending response (<Response 184 bytes [200 OK]>) to 10.0.4.172
+2020-11-10 09:48:39.336049 (Thread-31): Parsing macros/materializations/snapshot/snapshot.sql
+2020-11-10 09:48:39.366046 (Thread-31): Parsing macros/schema_tests/relationships.sql
+2020-11-10 09:48:39.368834 (Thread-31): Parsing macros/schema_tests/not_null.sql
+2020-11-10 09:48:39.371598 (Thread-31): Parsing macros/schema_tests/unique.sql
+2020-11-10 09:48:39.373803 (Thread-31): Parsing macros/schema_tests/accepted_values.sql
+2020-11-10 09:48:39.376612 (Thread-31): Parsing macros/etc/get_custom_database.sql
+2020-11-10 09:48:39.378401 (Thread-31): Parsing macros/etc/query.sql
+2020-11-10 09:48:39.379512 (Thread-31): Parsing macros/etc/datetime.sql
+2020-11-10 09:48:39.388722 (Thread-31): Parsing macros/etc/get_custom_alias.sql
+2020-11-10 09:48:39.389722 (Thread-31): Parsing macros/etc/is_incremental.sql
+2020-11-10 09:48:39.391442 (Thread-31): Parsing macros/etc/get_custom_schema.sql
+2020-11-10 09:48:39.563121 (Thread-31): Acquiring new bigquery connection "model.shopify_buyer_segmentation.customers_by_transaction".
+2020-11-10 09:48:39.581763 (Thread-31): Acquiring new bigquery connection "model.shopify_buyer_segmentation.agg_customers".
+2020-11-10 09:48:39.599752 (Thread-31): Acquiring new bigquery connection "model.shopify_buyer_segmentation.transaction_by_order_number".
+2020-11-10 09:48:39.618305 (Thread-31): Acquiring new bigquery connection "model.shopify_buyer_segmentation.agg_transactions".
+2020-11-10 09:48:39.637813 (Thread-31): Acquiring new bigquery connection "model.shopify_buyer_segmentation.segment_stats_buyers_view".
+2020-11-10 09:48:39.663969 (Thread-31): Acquiring new bigquery connection "model.shopify_buyer_segmentation.customers_proc".
+2020-11-10 09:48:39.683488 (Thread-31): Acquiring new bigquery connection "model.shopify_buyer_segmentation.customers_proc_yoy".
+2020-11-10 09:48:39.703164 (Thread-31): Acquiring new bigquery connection "model.shopify_buyer_segmentation.segment_stats_buyers_agg".
+2020-11-10 09:48:39.724496 (Thread-31): Acquiring new bigquery connection "model.shopify_buyer_segmentation.customers_proc_qoq".
+2020-11-10 09:48:39.743813 (Thread-31): Acquiring new bigquery connection "model.shopify_buyer_segmentation.buyer_segment_lists".
+2020-11-10 09:48:39.763477 (Thread-31): Acquiring new bigquery connection "model.shopify_buyer_segmentation.buyer_segment_stats".
+2020-11-10 09:48:39.781775 (Thread-31): Acquiring new bigquery connection "model.shopify_buyer_segmentation.segment_proc_buyers".
+2020-11-10 09:48:39.800411 (Thread-31): Acquiring new bigquery connection "model.shopify_buyer_segmentation.stores_proc".
+2020-11-10 09:48:39.817806 (Thread-31): Acquiring new bigquery connection "model.shopify_buyer_segmentation.monthend_dates".
+2020-11-10 09:48:39.834338 (Thread-31): Acquiring new bigquery connection "model.shopify_buyer_segmentation.mappings_ga_proc".
+2020-11-10 09:48:39.851649 (Thread-31): Acquiring new bigquery connection "model.shopify_buyer_segmentation.ga_transactions".
+2020-11-10 09:48:39.876160 (Thread-31): Acquiring new bigquery connection "model.shopify_buyer_segmentation.shopify_products_proc".
+2020-11-10 09:48:39.898780 (Thread-31): Acquiring new bigquery connection "model.shopify_buyer_segmentation.shopify_discounts_proc".
+2020-11-10 09:48:39.919892 (Thread-31): Acquiring new bigquery connection "model.shopify_buyer_segmentation.shopify_orders_proc".
+2020-11-10 09:48:39.944757 (Thread-31): Acquiring new bigquery connection "model.shopify_buyer_segmentation.shopify_refunds_proc".
+2020-11-10 09:48:39.964645 (Thread-31): Acquiring new bigquery connection "model.shopify_buyer_segmentation.shopify_customers_proc".
+2020-11-10 09:48:40.679283 (Thread-33): handling status request
+2020-11-10 09:48:40.679786 (Thread-33): Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': 'b9cb4131-4839-42d8-9062-69594a2c01e6', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fee5b755b00>]}
+2020-11-10 09:48:40.686171 (Thread-33): sending response (<Response 16728 bytes [200 OK]>) to 10.0.44.58
+2020-11-10 09:49:02.882591 (Thread-34): handling status request
+2020-11-10 09:49:02.883076 (Thread-34): Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': 'b9cb4131-4839-42d8-9062-69594a2c01e6', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fee5b3bf940>]}
+2020-11-10 09:49:02.885578 (Thread-34): Checking header 'user-agent' tracing in whitelist set(), 44 additional messages skipped
+2020-11-10 09:49:02.886674 (Thread-35): handling status request
+2020-11-10 09:49:02.887260 (Thread-35): Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': 'b9cb4131-4839-42d8-9062-69594a2c01e6', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fee5b3d70b8>]}
+2020-11-10 09:49:02.917393 (Thread-34): writing 1 spans (enabled:True), 117 additional messages skipped
+2020-11-10 09:49:02.917564 (Thread-34): 
+      name requests.request
+        id 12663804777981734089
+  trace_id 17676149353331699154
+ parent_id None
+   service requests
+  resource requests.request
+      type http
+     start 1605001742.885279
+       end 1605001742.917283
+  duration 0.032004s
+     error 0
+      tags 
+           http.method:POST
+           http.status_code:200
+           http.url:https://fishtownanalytics.sinter-collect.com/com.snowplowanalytics.snowplow/tp2
+           runtime-id:9af282b3e7a44bed9d3eb4c6d5b15d7b, 117 additional messages skipped
+2020-11-10 09:49:02.930431 (Thread-34): sending response (<Response 16728 bytes [200 OK]>) to 10.0.11.107
+2020-11-10 09:49:02.935134 (Thread-35): sending response (<Response 16728 bytes [200 OK]>) to 10.0.11.107
+2020-11-10 09:49:03.012092 (AgentWriter): reported 1 traces in 0.00283s, 2 additional messages skipped
+2020-11-10 09:49:03.012296 (AgentWriter): initialized RateSampler, sample 100% of traces, 95 additional messages skipped
+2020-11-10 09:49:03.235549 (Thread-36): handling cli_args request
+2020-11-10 09:49:03.236101 (Thread-36): Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': 'b9cb4131-4839-42d8-9062-69594a2c01e6', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fee5b442e48>]}
+2020-11-10 09:49:03.246022 (Thread-36): Connection 'model.shopify_buyer_segmentation.shopify_customers_proc' was properly closed.
+2020-11-10 09:49:04.188375 (Thread-36): sending response (<Response 137 bytes [200 OK]>) to 10.0.26.205
+2020-11-10 09:49:04.280328 (MainThread): Partial parsing not enabled
+2020-11-10 09:49:04.286954 (MainThread): Parsing macros/split_part.sql
+2020-11-10 09:49:04.293657 (MainThread): Parsing macros/get_url_parameter.sql
+2020-11-10 09:49:04.298327 (MainThread): Parsing macros/get_column_values.sql
+2020-11-10 09:49:04.305592 (MainThread): Parsing macros/table_exists.sql
+2020-11-10 09:49:04.308304 (MainThread): Parsing macros/adapters.sql
+2020-11-10 09:49:04.328241 (MainThread): Parsing macros/etc.sql
+2020-11-10 09:49:04.329609 (MainThread): Parsing macros/catalog.sql
+2020-11-10 09:49:04.335897 (MainThread): Parsing macros/materializations/table.sql
+2020-11-10 09:49:04.346203 (MainThread): Parsing macros/materializations/view.sql
+2020-11-10 09:49:04.349088 (MainThread): Parsing macros/materializations/copy.sql
+2020-11-10 09:49:04.354439 (MainThread): Parsing macros/materializations/seed.sql
+2020-11-10 09:49:04.357281 (MainThread): Parsing macros/materializations/incremental.sql
+2020-11-10 09:49:04.371536 (MainThread): Parsing macros/materializations/snapshot.sql
+2020-11-10 09:49:04.374386 (MainThread): Parsing macros/core.sql
+2020-11-10 09:49:04.378274 (MainThread): Parsing macros/adapters/common.sql
+2020-11-10 09:49:04.422547 (MainThread): Parsing macros/materializations/helpers.sql
+2020-11-10 09:49:04.431935 (MainThread): Parsing macros/materializations/table/table.sql
+2020-11-10 09:49:04.439184 (MainThread): Parsing macros/materializations/seed/seed.sql
+2020-11-10 09:49:04.460755 (MainThread): Parsing macros/materializations/view/view.sql
+2020-11-10 09:49:04.467258 (MainThread): Parsing macros/materializations/view/create_or_replace_view.sql
+2020-11-10 09:49:04.472421 (MainThread): Parsing macros/materializations/incremental/helpers.sql
+2020-11-10 09:49:04.477927 (Thread-37): handling poll request
+2020-11-10 09:49:04.478416 (Thread-37): Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': 'b9cb4131-4839-42d8-9062-69594a2c01e6', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fee602517b8>]}
+2020-11-10 09:49:04.482108 (Thread-37): sending response (<Response 6252 bytes [200 OK]>) to 10.0.3.8
+2020-11-10 09:49:04.474443 (MainThread): Parsing macros/materializations/incremental/incremental.sql
+2020-11-10 09:49:04.481081 (MainThread): Parsing macros/materializations/common/merge.sql
+2020-11-10 09:49:04.495937 (MainThread): Parsing macros/materializations/snapshot/strategies.sql
+2020-11-10 09:49:04.513279 (MainThread): Parsing macros/materializations/snapshot/snapshot_merge.sql
+2020-11-10 09:49:04.515250 (MainThread): Parsing macros/materializations/snapshot/snapshot.sql
+2020-11-10 09:49:04.544491 (MainThread): Parsing macros/schema_tests/relationships.sql
+2020-11-10 09:49:04.546651 (MainThread): Parsing macros/schema_tests/not_null.sql
+2020-11-10 09:49:04.548330 (MainThread): Parsing macros/schema_tests/unique.sql
+2020-11-10 09:49:04.550218 (MainThread): Parsing macros/schema_tests/accepted_values.sql
+2020-11-10 09:49:04.553060 (MainThread): Parsing macros/etc/get_custom_database.sql
+2020-11-10 09:49:04.554890 (MainThread): Parsing macros/etc/query.sql
+2020-11-10 09:49:04.556047 (MainThread): Parsing macros/etc/datetime.sql
+2020-11-10 09:49:04.565263 (MainThread): Parsing macros/etc/get_custom_alias.sql
+2020-11-10 09:49:04.566370 (MainThread): Parsing macros/etc/is_incremental.sql
+2020-11-10 09:49:04.568110 (MainThread): Parsing macros/etc/get_custom_schema.sql
+2020-11-10 09:49:04.580823 (MainThread): Partial parsing not enabled
+2020-11-10 09:49:04.644302 (MainThread): Acquiring new bigquery connection "model.shopify_buyer_segmentation.customers_by_transaction".
+2020-11-10 09:49:04.672824 (MainThread): Acquiring new bigquery connection "model.shopify_buyer_segmentation.agg_customers".
+2020-11-10 09:49:04.691581 (MainThread): Acquiring new bigquery connection "model.shopify_buyer_segmentation.transaction_by_order_number".
+2020-11-10 09:49:04.712824 (MainThread): Acquiring new bigquery connection "model.shopify_buyer_segmentation.agg_transactions".
+2020-11-10 09:49:04.733022 (MainThread): Acquiring new bigquery connection "model.shopify_buyer_segmentation.segment_stats_buyers_view".
+2020-11-10 09:49:04.760147 (MainThread): Acquiring new bigquery connection "model.shopify_buyer_segmentation.customers_proc".
+2020-11-10 09:49:04.778724 (MainThread): Acquiring new bigquery connection "model.shopify_buyer_segmentation.customers_proc_yoy".
+2020-11-10 09:49:04.797695 (MainThread): Acquiring new bigquery connection "model.shopify_buyer_segmentation.segment_stats_buyers_agg".
+2020-11-10 09:49:04.818935 (MainThread): Acquiring new bigquery connection "model.shopify_buyer_segmentation.customers_proc_qoq".
+2020-11-10 09:49:04.839005 (MainThread): Acquiring new bigquery connection "model.shopify_buyer_segmentation.buyer_segment_lists".
+2020-11-10 09:49:04.858732 (MainThread): Acquiring new bigquery connection "model.shopify_buyer_segmentation.buyer_segment_stats".
+2020-11-10 09:49:04.877165 (MainThread): Acquiring new bigquery connection "model.shopify_buyer_segmentation.segment_proc_buyers".
+2020-11-10 09:49:04.895159 (MainThread): Acquiring new bigquery connection "model.shopify_buyer_segmentation.stores_proc".
+2020-11-10 09:49:04.922973 (MainThread): Acquiring new bigquery connection "model.shopify_buyer_segmentation.monthend_dates".
+2020-11-10 09:49:04.947046 (MainThread): Acquiring new bigquery connection "model.shopify_buyer_segmentation.mappings_ga_proc".
+2020-11-10 09:49:04.965455 (MainThread): Acquiring new bigquery connection "model.shopify_buyer_segmentation.ga_transactions".
+2020-11-10 09:49:05.000885 (MainThread): Acquiring new bigquery connection "model.shopify_buyer_segmentation.shopify_products_proc".
+2020-11-10 09:49:05.024028 (MainThread): Acquiring new bigquery connection "model.shopify_buyer_segmentation.shopify_discounts_proc".
+2020-11-10 09:49:05.044045 (MainThread): Acquiring new bigquery connection "model.shopify_buyer_segmentation.shopify_orders_proc".
+2020-11-10 09:49:05.068279 (MainThread): Acquiring new bigquery connection "model.shopify_buyer_segmentation.shopify_refunds_proc".
+2020-11-10 09:49:05.088574 (MainThread): Acquiring new bigquery connection "model.shopify_buyer_segmentation.shopify_customers_proc".
+2020-11-10 09:49:05.388723 (MainThread): Found 21 models, 0 tests, 0 snapshots, 0 analyses, 161 macros, 0 operations, 0 seed files, 0 sources
+2020-11-10 09:49:05.391126 (MainThread): 
+2020-11-10 09:49:05.391450 (MainThread): Acquiring new bigquery connection "master".
+2020-11-10 09:49:05.421072 (ThreadPoolExecutor-0_0): Acquiring new bigquery connection "list_dbt-projects".
+2020-11-10 09:49:05.421231 (ThreadPoolExecutor-0_0): Opening a new connection, currently in state init
+2020-11-10 09:49:05.691671 (ThreadPoolExecutor-1_0): Acquiring new bigquery connection "list_dbt-projects_dbt_buyer_segmentation".
+2020-11-10 09:49:05.691813 (ThreadPoolExecutor-1_0): Opening a new connection, currently in state closed
+2020-11-10 09:49:05.692360 (ThreadPoolExecutor-1_0): Client.dataset is deprecated and will be removed in a future version. Use a string like 'my_project.my_dataset' or a cloud.google.bigquery.DatasetReference object, instead.
+2020-11-10 09:49:05.820657 (Thread-38): handling poll request
+2020-11-10 09:49:05.821192 (Thread-38): Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': 'b9cb4131-4839-42d8-9062-69594a2c01e6', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fee6026e6d8>]}
+2020-11-10 09:49:05.826778 (Thread-38): sending response (<Response 13584 bytes [200 OK]>) to 10.0.6.63
+2020-11-10 09:49:05.900303 (MainThread): 09:49:05 | Concurrency: 1 threads (target='default')
+2020-11-10 09:49:05.900442 (MainThread): 09:49:05 | 
+2020-11-10 09:49:05.902589 (Thread-1): Began running node model.shopify_buyer_segmentation.stores_proc
+2020-11-10 09:49:05.903746 (Thread-1): 09:49:05 | 1 of 21 START table model dbt_buyer_segmentation.stores_proc......... [RUN]
+2020-11-10 09:49:05.904044 (Thread-1): Acquiring new bigquery connection "model.shopify_buyer_segmentation.stores_proc".
+2020-11-10 09:49:05.904145 (Thread-1): Compiling model.shopify_buyer_segmentation.stores_proc
+2020-11-10 09:49:05.922271 (Thread-1): Writing injected SQL for node "model.shopify_buyer_segmentation.stores_proc"
+2020-11-10 09:49:05.941768 (Thread-1): finished collecting timing info
+2020-11-10 09:49:05.976881 (Thread-1): Writing runtime SQL for node "model.shopify_buyer_segmentation.stores_proc"
+2020-11-10 09:49:05.995731 (Thread-1): Opening a new connection, currently in state closed
+2020-11-10 09:49:05.996167 (Thread-1): On model.shopify_buyer_segmentation.stores_proc: /* {"app": "dbt", "dbt_version": "0.18.1", "profile_name": "user", "target_name": "default", "node_id": "model.shopify_buyer_segmentation.stores_proc"} */
+
+
+  create or replace table `dbt-projects`.`dbt_buyer_segmentation`.`stores_proc`
+  
+  
+  OPTIONS()
+  as (
+    select 
+store,
+store_name,
+account,
+platform,
+max(time_of_entry) time_of_entry
+
+from  ( 
+
+SELECT  
+store,
+bigquery_name, 
+name as store_name,
+account,
+platform,
+time_of_entry,
+first_value(time_of_entry) OVER (PARTITION BY store ORDER BY time_of_entry DESC) lv
+FROM `dbt-projects.agency_data_pipeline.data_feeds` 
+where name != ''
+
+) 
+
+WHERE lv = time_of_entry
+group by store, store_name, account, platform
+  );
+    
+2020-11-10 09:49:07.180361 (Thread-39): handling poll request
+2020-11-10 09:49:07.180876 (Thread-39): Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': 'b9cb4131-4839-42d8-9062-69594a2c01e6', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fee60ba2eb8>]}
+2020-11-10 09:49:07.183064 (Thread-39): sending response (<Response 5247 bytes [200 OK]>) to 10.0.42.233
+2020-11-10 09:49:08.312403 (Thread-1): unclosed <socket.socket fd=10, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=6, laddr=('10.0.23.8', 58592), raddr=('172.217.15.106', 443)>
+2020-11-10 09:49:08.312781 (Thread-1): unclosed <socket.socket fd=9, family=AddressFamily.AF_INET, type=2049, proto=6, laddr=('10.0.23.8', 35564), raddr=('142.250.73.202', 443)>
+2020-11-10 09:49:08.318719 (Thread-1): finished collecting timing info
+2020-11-10 09:49:08.319460 (Thread-1): Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'eec29913-32f0-4158-82a0-44135447fd1d', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f559ad92cf8>]}
+2020-11-10 09:49:08.320581 (Thread-1): 09:49:08 | 1 of 21 OK created table model dbt_buyer_segmentation.stores_proc.... [CREATE TABLE (3.0 rows, 214.0 Bytes processed) in 2.42s]
+2020-11-10 09:49:08.320681 (Thread-1): Finished running node model.shopify_buyer_segmentation.stores_proc
+2020-11-10 09:49:08.320807 (Thread-1): Began running node model.shopify_buyer_segmentation.mappings_ga_proc
+2020-11-10 09:49:08.321746 (Thread-1): 09:49:08 | 2 of 21 START table model dbt_buyer_segmentation.mappings_ga_proc.... [RUN]
+2020-11-10 09:49:08.321993 (Thread-1): Acquiring new bigquery connection "model.shopify_buyer_segmentation.mappings_ga_proc".
+2020-11-10 09:49:08.322078 (Thread-1): Compiling model.shopify_buyer_segmentation.mappings_ga_proc
+2020-11-10 09:49:08.329093 (Thread-1): Writing injected SQL for node "model.shopify_buyer_segmentation.mappings_ga_proc"
+2020-11-10 09:49:08.348206 (Thread-1): finished collecting timing info
+2020-11-10 09:49:08.352519 (Thread-1): Opening a new connection, currently in state closed
+2020-11-10 09:49:08.352959 (Thread-1): Client.dataset is deprecated and will be removed in a future version. Use a string like 'my_project.my_dataset' or a cloud.google.bigquery.DatasetReference object, instead.
+2020-11-10 09:49:08.525890 (Thread-40): handling poll request
+2020-11-10 09:49:08.526360 (Thread-40): Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': 'b9cb4131-4839-42d8-9062-69594a2c01e6', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fee600a1940>]}
+2020-11-10 09:49:08.528473 (Thread-40): sending response (<Response 5154 bytes [200 OK]>) to 10.0.26.169
+2020-11-10 09:49:08.540752 (Thread-1): Writing runtime SQL for node "model.shopify_buyer_segmentation.mappings_ga_proc"
+2020-11-10 09:49:08.559198 (Thread-1): On model.shopify_buyer_segmentation.mappings_ga_proc: /* {"app": "dbt", "dbt_version": "0.18.1", "profile_name": "user", "target_name": "default", "node_id": "model.shopify_buyer_segmentation.mappings_ga_proc"} */
+
+
+  create or replace table `dbt-projects`.`dbt_buyer_segmentation`.`mappings_ga_proc`
+  
+  
+  OPTIONS()
+  as (
+    select 
+store,
+account,
+store_name,
+source,
+medium,
+max(platform_n) platform,
+max(channel_n) channel,
+time_of_entry
+from  ( 
+
+SELECT  
+store,
+account,
+bigquery_name store_name,
+source,
+medium,
+platform as platform_n,
+channel as channel_n,
+time_of_entry,
+first_value(time_of_entry) OVER (PARTITION BY store ORDER BY time_of_entry DESC) lv
+FROM `dbt-projects.agency_data_pipeline.mappings_ga` 
+
+) 
+
+WHERE lv = time_of_entry
+group by store, account, store_name, source, medium, platform_n, channel_n, time_of_entry
+  );
+    
+2020-11-10 09:49:09.860971 (Thread-41): handling poll request
+2020-11-10 09:49:09.861463 (Thread-41): Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': 'b9cb4131-4839-42d8-9062-69594a2c01e6', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fee600cf1d0>]}
+2020-11-10 09:49:09.862719 (Thread-41): sending response (<Response 1868 bytes [200 OK]>) to 10.0.42.233
+2020-11-10 09:49:10.565594 (Thread-1): finished collecting timing info
+2020-11-10 09:49:10.566399 (Thread-1): Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'eec29913-32f0-4158-82a0-44135447fd1d', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f559af64278>]}
+2020-11-10 09:49:10.567511 (Thread-1): 09:49:10 | 2 of 21 OK created table model dbt_buyer_segmentation.mappings_ga_proc [CREATE TABLE (10.0 rows, 910.0 Bytes processed) in 2.24s]
+2020-11-10 09:49:10.567615 (Thread-1): Finished running node model.shopify_buyer_segmentation.mappings_ga_proc
+2020-11-10 09:49:10.567740 (Thread-1): Began running node model.shopify_buyer_segmentation.monthend_dates
+2020-11-10 09:49:10.568937 (Thread-1): 09:49:10 | 3 of 21 START table model dbt_buyer_segmentation.monthend_dates...... [RUN]
+2020-11-10 09:49:10.569174 (Thread-1): Acquiring new bigquery connection "model.shopify_buyer_segmentation.monthend_dates".
+2020-11-10 09:49:10.569262 (Thread-1): Compiling model.shopify_buyer_segmentation.monthend_dates
+2020-11-10 09:49:10.575660 (Thread-1): Writing injected SQL for node "model.shopify_buyer_segmentation.monthend_dates"
+2020-11-10 09:49:10.596504 (Thread-1): finished collecting timing info
+2020-11-10 09:49:10.600716 (Thread-1): Opening a new connection, currently in state closed
+2020-11-10 09:49:10.601140 (Thread-1): Client.dataset is deprecated and will be removed in a future version. Use a string like 'my_project.my_dataset' or a cloud.google.bigquery.DatasetReference object, instead.
+2020-11-10 09:49:10.803683 (Thread-1): Writing runtime SQL for node "model.shopify_buyer_segmentation.monthend_dates"
+2020-11-10 09:49:10.823508 (Thread-1): On model.shopify_buyer_segmentation.monthend_dates: /* {"app": "dbt", "dbt_version": "0.18.1", "profile_name": "user", "target_name": "default", "node_id": "model.shopify_buyer_segmentation.monthend_dates"} */
+
+
+  create or replace table `dbt-projects`.`dbt_buyer_segmentation`.`monthend_dates`
+  
+  
+  OPTIONS()
+  as (
+    SELECT
+date_in_range,
+date_in_range_bom,
+date_in_range_bom_mom,
+unix_date_in_range,
+unix_date_in_range_bom,
+unix_date(date_in_range_bom_mom) unix_date_in_range_bom_mom,
+yyyymm,
+date_in_range_yoy,
+unix_date(date_in_range_yoy) unix_date_in_range_yoy
+
+FROM
+(
+	SELECT 
+	date_in_range,
+	date_in_range_bom,
+	date_sub(date_in_range_bom, INTERVAL 1 MONTH) date_in_range_bom_mom,
+	date_sub(date_in_range, INTERVAL 1 YEAR) date_in_range_yoy,
+	unix_date_in_range,
+	unix_date(date_in_range_bom) unix_date_in_range_bom,
+	yyyymm,
+	first_value(date_in_range) over (partition by yyyymm order by date_in_range desc) monthend_date_in_range
+	FROM
+	( 
+		SELECT 
+		date_in_range,
+		date_trunc( date_in_range, MONTH) date_in_range_bom,
+		unix_date(date_in_range) unix_date_in_range,
+		format_date("%Y-%m", date_in_range) AS yyyymm
+		FROM UNNEST(
+		    GENERATE_DATE_ARRAY(DATE('2016-01-31'), CURRENT_DATE(), INTERVAL 1 DAY)
+		) AS date_in_range
+	)
+)
+where date_in_range = monthend_date_in_range
+  );
+    
+2020-11-10 09:49:11.145502 (Thread-42): handling poll request
+2020-11-10 09:49:11.146034 (Thread-42): Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': 'b9cb4131-4839-42d8-9062-69594a2c01e6', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fee600b55f8>]}
+2020-11-10 09:49:11.148525 (Thread-42): sending response (<Response 7223 bytes [200 OK]>) to 10.0.26.205
+2020-11-10 09:49:12.445017 (Thread-43): handling poll request
+2020-11-10 09:49:12.445498 (Thread-43): Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': 'b9cb4131-4839-42d8-9062-69594a2c01e6', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fee60186e48>]}
+2020-11-10 09:49:12.446518 (Thread-43): sending response (<Response 286 bytes [200 OK]>) to 10.0.4.172
+2020-11-10 09:49:12.538865 (Thread-1): finished collecting timing info
+2020-11-10 09:49:12.540083 (Thread-1): Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'eec29913-32f0-4158-82a0-44135447fd1d', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f559af81208>]}
+2020-11-10 09:49:12.542421 (Thread-1): 09:49:12 | 3 of 21 OK created table model dbt_buyer_segmentation.monthend_dates. [CREATE TABLE (59.0 rows, 0.0 Bytes processed) in 1.97s]
+2020-11-10 09:49:12.542566 (Thread-1): Finished running node model.shopify_buyer_segmentation.monthend_dates
+2020-11-10 09:49:12.542763 (Thread-1): Began running node model.shopify_buyer_segmentation.shopify_refunds_proc
+2020-11-10 09:49:12.544288 (Thread-1): 09:49:12 | 4 of 21 START table model dbt_buyer_segmentation.shopify_refunds_proc [RUN]
+2020-11-10 09:49:12.544628 (Thread-1): Acquiring new bigquery connection "model.shopify_buyer_segmentation.shopify_refunds_proc".
+2020-11-10 09:49:12.544753 (Thread-1): Compiling model.shopify_buyer_segmentation.shopify_refunds_proc
+2020-11-10 09:49:12.560100 (Thread-1): Opening a new connection, currently in state closed
+2020-11-10 09:49:12.560575 (Thread-1): On model.shopify_buyer_segmentation.shopify_refunds_proc: /* {"app": "dbt", "dbt_version": "0.18.1", "profile_name": "user", "target_name": "default", "node_id": "model.shopify_buyer_segmentation.shopify_refunds_proc"} */
+
+
+        select
+            store_name as value
+
+        from `dbt-projects`.`dbt_buyer_segmentation`.`stores_proc`
+
+        
+        ##where 1 = 1
+        where platform = 'Shopify'
+        
+        
+        
+
+        group by 1
+        order by count(*) desc
+
+        
+        limit 50
+        
+2020-11-10 09:49:13.793561 (Thread-44): handling poll request
+2020-11-10 09:49:13.794296 (Thread-44): Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': 'b9cb4131-4839-42d8-9062-69594a2c01e6', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fee60251128>]}
+2020-11-10 09:49:13.796286 (Thread-44): sending response (<Response 5271 bytes [200 OK]>) to 10.0.42.233
+2020-11-10 09:49:13.855059 (Thread-1): Writing injected SQL for node "model.shopify_buyer_segmentation.shopify_refunds_proc"
+2020-11-10 09:49:13.881327 (Thread-1): finished collecting timing info
+2020-11-10 09:49:13.886397 (Thread-1): Writing runtime SQL for node "model.shopify_buyer_segmentation.shopify_refunds_proc"
+2020-11-10 09:49:13.913921 (Thread-1): On model.shopify_buyer_segmentation.shopify_refunds_proc: /* {"app": "dbt", "dbt_version": "0.18.1", "profile_name": "user", "target_name": "default", "node_id": "model.shopify_buyer_segmentation.shopify_refunds_proc"} */
+
+
+  create or replace table `dbt-projects`.`dbt_buyer_segmentation`.`shopify_refunds_proc`
+  
+  
+  OPTIONS()
+  as (
+    
+
+
+
+with refunds as (
+
+	
+	SELECT
+	'Data Feeds' store_name,
+	_id order_number,
+	checkout_id,
+	financial_status,
+	line_item_id,
+	quantity,
+	subtotal,
+	line_item.variant_id variant_id,
+	line_item.id refund_id,
+ 	_sdc_sequence
+	FROM `dbt-projects.shopify_Data Feeds.orders` 
+	cross join unnest(refunds), unnest(refund_line_items)
+  	where financial_status like '%refund%'
+	
+	
+
+)
+
+SELECT * 
+FROM 
+	(
+    SELECT
+    store_name,
+	order_number,
+	checkout_id,
+	financial_status,
+	line_item_id,
+	quantity,
+	subtotal refund_amount,
+	variant_id,
+	refund_id,
+ 	_sdc_sequence,
+    first_value(_sdc_sequence) OVER (PARTITION BY order_number, line_item_id ORDER BY _sdc_sequence DESC) lv
+    FROM refunds
+   	) 
+WHERE lv = _sdc_sequence
+
+
+  );
+    
+2020-11-10 09:49:14.057855 (Thread-1): Retry attempt 1 of 1 after error: BadRequest('Invalid dataset ID "shopify_Data Feeds". Dataset IDs must be alphanumeric (plus underscores and dashes) and must be at most 1024 characters long.',)
+2020-11-10 09:49:14.896425 (Thread-1): finished collecting timing info
+2020-11-10 09:49:14.897074 (Thread-1): Database Error in model shopify_refunds_proc (models/base/shopify/shopify_refunds_proc.sql)
+  Invalid dataset ID "shopify_Data Feeds". Dataset IDs must be alphanumeric (plus underscores and dashes) and must be at most 1024 characters long.
+  compiled SQL at target/run/shopify_buyer_segmentation/models/base/shopify/shopify_refunds_proc.sql
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/dist-packages/dbt/adapters/bigquery/connections.py", line 103, in exception_handler
+    yield
+  File "/usr/local/lib/python3.6/dist-packages/dbt/adapters/bigquery/connections.py", line 447, in _retry_and_handle
+    on_error=reopen_conn_on_error)
+  File "/usr/local/lib/python3.6/dist-packages/google/api_core/retry.py", line 184, in retry_target
+    return target()
+  File "/usr/local/lib/python3.6/dist-packages/dbt/adapters/bigquery/connections.py", line 266, in fn
+    return self._query_and_results(client, sql, conn, job_params)
+  File "/usr/local/lib/python3.6/dist-packages/dbt/adapters/bigquery/connections.py", line 428, in _query_and_results
+    iterator = query_job.result(timeout=timeout)
+  File "/usr/local/lib/python3.6/dist-packages/google/cloud/bigquery/job.py", line 3196, in result
+    super(QueryJob, self).result(retry=retry, timeout=timeout)
+  File "/usr/local/lib/python3.6/dist-packages/google/cloud/bigquery/job.py", line 818, in result
+    return super(_AsyncJob, self).result(timeout=timeout)
+  File "/usr/local/lib/python3.6/dist-packages/google/api_core/future/polling.py", line 130, in result
+    raise self._exception
+google.api_core.exceptions.BadRequest: 400 Invalid dataset ID "shopify_Data Feeds". Dataset IDs must be alphanumeric (plus underscores and dashes) and must be at most 1024 characters long.
+
+(job ID: efcc9102-0ef2-4e61-92d4-b9f728b276d6)
+
+                                                                    -----Query Job SQL Follows-----                                                                     
+
+    |    .    |    .    |    .    |    .    |    .    |    .    |    .    |    .    |    .    |    .    |    .    |    .    |    .    |    .    |    .    |    .    |
+   1:/* {"app": "dbt", "dbt_version": "0.18.1", "profile_name": "user", "target_name": "default", "node_id": "model.shopify_buyer_segmentation.shopify_refunds_proc"} */
+   2:
+   3:
+   4:  create or replace table `dbt-projects`.`dbt_buyer_segmentation`.`shopify_refunds_proc`
+   5:  
+   6:  
+   7:  OPTIONS()
+   8:  as (
+   9:    
+  10:
+  11:
+  12:
+  13:with refunds as (
+  14:
+  15:	
+  16:	SELECT
+  17:	'Data Feeds' store_name,
+  18:	_id order_number,
+  19:	checkout_id,
+  20:	financial_status,
+  21:	line_item_id,
+  22:	quantity,
+  23:	subtotal,
+  24:	line_item.variant_id variant_id,
+  25:	line_item.id refund_id,
+  26: 	_sdc_sequence
+  27:	FROM `dbt-projects.shopify_Data Feeds.orders` 
+  28:	cross join unnest(refunds), unnest(refund_line_items)
+  29:  	where financial_status like '%refund%'
+  30:	
+  31:	
+  32:
+  33:)
+  34:
+  35:SELECT * 
+  36:FROM 
+  37:	(
+  38:    SELECT
+  39:    store_name,
+  40:	order_number,
+  41:	checkout_id,
+  42:	financial_status,
+  43:	line_item_id,
+  44:	quantity,
+  45:	subtotal refund_amount,
+  46:	variant_id,
+  47:	refund_id,
+  48: 	_sdc_sequence,
+  49:    first_value(_sdc_sequence) OVER (PARTITION BY order_number, line_item_id ORDER BY _sdc_sequence DESC) lv
+  50:    FROM refunds
+  51:   	) 
+  52:WHERE lv = _sdc_sequence
+  53:
+  54:
+  55:  );
+  56:    
+    |    .    |    .    |    .    |    .    |    .    |    .    |    .    |    .    |    .    |    .    |    .    |    .    |    .    |    .    |    .    |    .    |
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/dist-packages/dbt/task/base.py", line 333, in safe_run
+    result = self.compile_and_execute(manifest, ctx)
+  File "/usr/local/lib/python3.6/dist-packages/dbt/task/base.py", line 276, in compile_and_execute
+    result = self.run(ctx.node, manifest)
+  File "/usr/local/lib/python3.6/dist-packages/dbt/task/base.py", line 378, in run
+    return self.execute(compiled_node, manifest)
+  File "/usr/local/lib/python3.6/dist-packages/dbt/task/run.py", line 233, in execute
+    result = MacroGenerator(materialization_macro, context)()
+  File "/usr/local/lib/python3.6/dist-packages/dbt/clients/jinja.py", line 327, in __call__
+    return self.call_macro(*args, **kwargs)
+  File "/usr/local/lib/python3.6/dist-packages/dbt/clients/jinja.py", line 257, in call_macro
+    return macro(*args, **kwargs)
+  File "/usr/local/lib/python3.6/dist-packages/jinja2/runtime.py", line 675, in __call__
+    return self._invoke(arguments, autoescape)
+  File "/usr/local/lib/python3.6/dist-packages/jinja2/runtime.py", line 679, in _invoke
+    rv = self._func(*arguments)
+  File "<template>", line 128, in macro
+  File "/usr/local/lib/python3.6/dist-packages/jinja2/sandbox.py", line 462, in call
+    return __context.call(__obj, *args, **kwargs)
+  File "/usr/local/lib/python3.6/dist-packages/jinja2/runtime.py", line 290, in call
+    return __obj(*args, **kwargs)
+  File "/usr/local/lib/python3.6/dist-packages/dbt/clients/jinja.py", line 327, in __call__
+    return self.call_macro(*args, **kwargs)
+  File "/usr/local/lib/python3.6/dist-packages/dbt/clients/jinja.py", line 257, in call_macro
+    return macro(*args, **kwargs)
+  File "/usr/local/lib/python3.6/dist-packages/jinja2/runtime.py", line 675, in __call__
+    return self._invoke(arguments, autoescape)
+  File "/usr/local/lib/python3.6/dist-packages/jinja2/runtime.py", line 679, in _invoke
+    rv = self._func(*arguments)
+  File "<template>", line 41, in macro
+  File "/usr/local/lib/python3.6/dist-packages/jinja2/sandbox.py", line 462, in call
+    return __context.call(__obj, *args, **kwargs)
+  File "/usr/local/lib/python3.6/dist-packages/jinja2/runtime.py", line 290, in call
+    return __obj(*args, **kwargs)
+  File "/usr/local/lib/python3.6/dist-packages/dbt/adapters/base/impl.py", line 227, in execute
+    fetch=fetch
+  File "/usr/local/lib/python3.6/dist-packages/dbt/adapters/bigquery/connections.py", line 275, in execute
+    query_job, iterator = self.raw_execute(sql, fetch=fetch)
+  File "/usr/local/lib/python3.6/dist-packages/dbt/adapters/bigquery/connections.py", line 268, in raw_execute
+    query_job, iterator = self._retry_and_handle(msg=sql, conn=conn, fn=fn)
+  File "/usr/local/lib/python3.6/dist-packages/dbt/adapters/bigquery/connections.py", line 447, in _retry_and_handle
+    on_error=reopen_conn_on_error)
+  File "/usr/lib/python3.6/contextlib.py", line 99, in __exit__
+    self.gen.throw(type, value, traceback)
+  File "/usr/local/lib/python3.6/dist-packages/dbt/adapters/bigquery/connections.py", line 107, in exception_handler
+    self.handle_error(e, message)
+  File "/usr/local/lib/python3.6/dist-packages/dbt/adapters/bigquery/connections.py", line 95, in handle_error
+    raise DatabaseException(error_msg)
+dbt.exceptions.DatabaseException: Database Error in model shopify_refunds_proc (models/base/shopify/shopify_refunds_proc.sql)
+  Invalid dataset ID "shopify_Data Feeds". Dataset IDs must be alphanumeric (plus underscores and dashes) and must be at most 1024 characters long.
+  compiled SQL at target/run/shopify_buyer_segmentation/models/base/shopify/shopify_refunds_proc.sql
+2020-11-10 09:49:14.899331 (Thread-1): Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'eec29913-32f0-4158-82a0-44135447fd1d', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f559ad63588>]}
+2020-11-10 09:49:14.900543 (Thread-1): 09:49:14 | 4 of 21 ERROR creating table model dbt_buyer_segmentation.shopify_refunds_proc [ERROR in 2.35s]
+2020-11-10 09:49:14.900656 (Thread-1): Finished running node model.shopify_buyer_segmentation.shopify_refunds_proc
+2020-11-10 09:49:14.900792 (Thread-1): Began running node model.shopify_buyer_segmentation.shopify_discounts_proc
+2020-11-10 09:49:14.901781 (Thread-1): 09:49:14 | 5 of 21 START table model dbt_buyer_segmentation.shopify_discounts_proc [RUN]
+2020-11-10 09:49:14.902061 (Thread-1): Acquiring new bigquery connection "model.shopify_buyer_segmentation.shopify_discounts_proc".
+2020-11-10 09:49:14.902154 (Thread-1): Compiling model.shopify_buyer_segmentation.shopify_discounts_proc
+2020-11-10 09:49:14.909491 (Thread-1): unclosed <socket.socket fd=10, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=6, laddr=('10.0.23.8', 58728), raddr=('172.217.15.106', 443)>
+2020-11-10 09:49:14.909925 (Thread-1): unclosed <socket.socket fd=9, family=AddressFamily.AF_INET, type=2049, proto=6, laddr=('10.0.23.8', 39860), raddr=('172.217.2.106', 443)>
+2020-11-10 09:49:14.910101 (Thread-1): unclosed <socket.socket fd=14, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=6, laddr=('10.0.23.8', 58828), raddr=('172.217.15.106', 443)>
+2020-11-10 09:49:14.910347 (Thread-1): unclosed <socket.socket fd=13, family=AddressFamily.AF_INET, type=2049, proto=6, laddr=('10.0.23.8', 35802), raddr=('142.250.73.202', 443)>
+2020-11-10 09:49:14.910524 (Thread-1): unclosed <socket.socket fd=16, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=6, laddr=('10.0.23.8', 58926), raddr=('172.217.15.106', 443)>
+2020-11-10 09:49:14.910707 (Thread-1): unclosed <socket.socket fd=15, family=AddressFamily.AF_INET, type=2049, proto=6, laddr=('10.0.23.8', 40058), raddr=('172.217.2.106', 443)>
+2020-11-10 09:49:14.914928 (Thread-1): Opening a new connection, currently in state closed
+2020-11-10 09:49:14.915367 (Thread-1): On model.shopify_buyer_segmentation.shopify_discounts_proc: /* {"app": "dbt", "dbt_version": "0.18.1", "profile_name": "user", "target_name": "default", "node_id": "model.shopify_buyer_segmentation.shopify_discounts_proc"} */
+
+
+        select
+            store_name as value
+
+        from `dbt-projects`.`dbt_buyer_segmentation`.`stores_proc`
+
+        
+        ##where 1 = 1
+        where platform = 'Shopify'
+        
+        
+        
+
+        group by 1
+        order by count(*) desc
+
+        
+        limit 50
+        
+2020-11-10 09:49:15.081910 (Thread-45): handling poll request
+2020-11-10 09:49:15.082396 (Thread-45): Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': 'b9cb4131-4839-42d8-9062-69594a2c01e6', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fee600a15c0>]}
+2020-11-10 09:49:15.085204 (Thread-45): sending response (<Response 16735 bytes [200 OK]>) to 10.0.29.97
+2020-11-10 09:49:15.934639 (Thread-1): Writing injected SQL for node "model.shopify_buyer_segmentation.shopify_discounts_proc"
+2020-11-10 09:49:15.947131 (Thread-1): finished collecting timing info
+2020-11-10 09:49:15.952245 (Thread-1): Writing runtime SQL for node "model.shopify_buyer_segmentation.shopify_discounts_proc"
+2020-11-10 09:49:15.964336 (Thread-1): On model.shopify_buyer_segmentation.shopify_discounts_proc: /* {"app": "dbt", "dbt_version": "0.18.1", "profile_name": "user", "target_name": "default", "node_id": "model.shopify_buyer_segmentation.shopify_discounts_proc"} */
+
+
+  create or replace table `dbt-projects`.`dbt_buyer_segmentation`.`shopify_discounts_proc`
+  
+  
+  OPTIONS()
+  as (
+    
+
+
+
+with orders as (
+
+	
+		SELECT
+		'Data Feeds' store_name,
+		created_at,
+		_id order_number,
+		code discount_code,
+		type discount_type,
+		_sdc_sequence,
+		first_value(_sdc_sequence) OVER (PARTITION BY order_number, _id ORDER BY _sdc_sequence DESC) lv
+		FROM `dbt-projects.shopify_Data Feeds.orders` 
+		cross join unnest(discount_codes)
+	
+	
+	
+
+)
+
+SELECT
+store_name,
+order_number,
+discount_code,
+discount_type
+FROM orders
+where lv = _sdc_sequence
+
+
+  );
+    
+2020-11-10 09:49:16.133031 (Thread-1): Retry attempt 1 of 1 after error: BadRequest('Invalid dataset ID "shopify_Data Feeds". Dataset IDs must be alphanumeric (plus underscores and dashes) and must be at most 1024 characters long.',)
+2020-11-10 09:49:16.370022 (Thread-46): handling poll request
+2020-11-10 09:49:16.370508 (Thread-46): Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': 'b9cb4131-4839-42d8-9062-69594a2c01e6', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fee600b86d8>]}
+2020-11-10 09:49:16.372019 (Thread-46): sending response (<Response 3242 bytes [200 OK]>) to 10.0.29.97
+2020-11-10 09:49:17.303522 (Thread-1): finished collecting timing info
+2020-11-10 09:49:17.304136 (Thread-1): Database Error in model shopify_discounts_proc (models/base/shopify/shopify_discounts_proc.sql)
+  Invalid dataset ID "shopify_Data Feeds". Dataset IDs must be alphanumeric (plus underscores and dashes) and must be at most 1024 characters long.
+  compiled SQL at target/run/shopify_buyer_segmentation/models/base/shopify/shopify_discounts_proc.sql
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/dist-packages/dbt/adapters/bigquery/connections.py", line 103, in exception_handler
+    yield
+  File "/usr/local/lib/python3.6/dist-packages/dbt/adapters/bigquery/connections.py", line 447, in _retry_and_handle
+    on_error=reopen_conn_on_error)
+  File "/usr/local/lib/python3.6/dist-packages/google/api_core/retry.py", line 184, in retry_target
+    return target()
+  File "/usr/local/lib/python3.6/dist-packages/dbt/adapters/bigquery/connections.py", line 266, in fn
+    return self._query_and_results(client, sql, conn, job_params)
+  File "/usr/local/lib/python3.6/dist-packages/dbt/adapters/bigquery/connections.py", line 428, in _query_and_results
+    iterator = query_job.result(timeout=timeout)
+  File "/usr/local/lib/python3.6/dist-packages/google/cloud/bigquery/job.py", line 3196, in result
+    super(QueryJob, self).result(retry=retry, timeout=timeout)
+  File "/usr/local/lib/python3.6/dist-packages/google/cloud/bigquery/job.py", line 818, in result
+    return super(_AsyncJob, self).result(timeout=timeout)
+  File "/usr/local/lib/python3.6/dist-packages/google/api_core/future/polling.py", line 130, in result
+    raise self._exception
+google.api_core.exceptions.BadRequest: 400 Invalid dataset ID "shopify_Data Feeds". Dataset IDs must be alphanumeric (plus underscores and dashes) and must be at most 1024 characters long.
+
+(job ID: 3ec08323-7bc4-449c-95be-ba073ac2a50b)
+
+                                                                     -----Query Job SQL Follows-----                                                                      
+
+    |    .    |    .    |    .    |    .    |    .    |    .    |    .    |    .    |    .    |    .    |    .    |    .    |    .    |    .    |    .    |    .    |
+   1:/* {"app": "dbt", "dbt_version": "0.18.1", "profile_name": "user", "target_name": "default", "node_id": "model.shopify_buyer_segmentation.shopify_discounts_proc"} */
+   2:
+   3:
+   4:  create or replace table `dbt-projects`.`dbt_buyer_segmentation`.`shopify_discounts_proc`
+   5:  
+   6:  
+   7:  OPTIONS()
+   8:  as (
+   9:    
+  10:
+  11:
+  12:
+  13:with orders as (
+  14:
+  15:	
+  16:		SELECT
+  17:		'Data Feeds' store_name,
+  18:		created_at,
+  19:		_id order_number,
+  20:		code discount_code,
+  21:		type discount_type,
+  22:		_sdc_sequence,
+  23:		first_value(_sdc_sequence) OVER (PARTITION BY order_number, _id ORDER BY _sdc_sequence DESC) lv
+  24:		FROM `dbt-projects.shopify_Data Feeds.orders` 
+  25:		cross join unnest(discount_codes)
+  26:	
+  27:	
+  28:	
+  29:
+  30:)
+  31:
+  32:SELECT
+  33:store_name,
+  34:order_number,
+  35:discount_code,
+  36:discount_type
+  37:FROM orders
+  38:where lv = _sdc_sequence
+  39:
+  40:
+  41:  );
+  42:    
+    |    .    |    .    |    .    |    .    |    .    |    .    |    .    |    .    |    .    |    .    |    .    |    .    |    .    |    .    |    .    |    .    |
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/dist-packages/dbt/task/base.py", line 333, in safe_run
+    result = self.compile_and_execute(manifest, ctx)
+  File "/usr/local/lib/python3.6/dist-packages/dbt/task/base.py", line 276, in compile_and_execute
+    result = self.run(ctx.node, manifest)
+  File "/usr/local/lib/python3.6/dist-packages/dbt/task/base.py", line 378, in run
+    return self.execute(compiled_node, manifest)
+  File "/usr/local/lib/python3.6/dist-packages/dbt/task/run.py", line 233, in execute
+    result = MacroGenerator(materialization_macro, context)()
+  File "/usr/local/lib/python3.6/dist-packages/dbt/clients/jinja.py", line 327, in __call__
+    return self.call_macro(*args, **kwargs)
+  File "/usr/local/lib/python3.6/dist-packages/dbt/clients/jinja.py", line 257, in call_macro
+    return macro(*args, **kwargs)
+  File "/usr/local/lib/python3.6/dist-packages/jinja2/runtime.py", line 675, in __call__
+    return self._invoke(arguments, autoescape)
+  File "/usr/local/lib/python3.6/dist-packages/jinja2/runtime.py", line 679, in _invoke
+    rv = self._func(*arguments)
+  File "<template>", line 128, in macro
+  File "/usr/local/lib/python3.6/dist-packages/jinja2/sandbox.py", line 462, in call
+    return __context.call(__obj, *args, **kwargs)
+  File "/usr/local/lib/python3.6/dist-packages/jinja2/runtime.py", line 290, in call
+    return __obj(*args, **kwargs)
+  File "/usr/local/lib/python3.6/dist-packages/dbt/clients/jinja.py", line 327, in __call__
+    return self.call_macro(*args, **kwargs)
+  File "/usr/local/lib/python3.6/dist-packages/dbt/clients/jinja.py", line 257, in call_macro
+    return macro(*args, **kwargs)
+  File "/usr/local/lib/python3.6/dist-packages/jinja2/runtime.py", line 675, in __call__
+    return self._invoke(arguments, autoescape)
+  File "/usr/local/lib/python3.6/dist-packages/jinja2/runtime.py", line 679, in _invoke
+    rv = self._func(*arguments)
+  File "<template>", line 41, in macro
+  File "/usr/local/lib/python3.6/dist-packages/jinja2/sandbox.py", line 462, in call
+    return __context.call(__obj, *args, **kwargs)
+  File "/usr/local/lib/python3.6/dist-packages/jinja2/runtime.py", line 290, in call
+    return __obj(*args, **kwargs)
+  File "/usr/local/lib/python3.6/dist-packages/dbt/adapters/base/impl.py", line 227, in execute
+    fetch=fetch
+  File "/usr/local/lib/python3.6/dist-packages/dbt/adapters/bigquery/connections.py", line 275, in execute
+    query_job, iterator = self.raw_execute(sql, fetch=fetch)
+  File "/usr/local/lib/python3.6/dist-packages/dbt/adapters/bigquery/connections.py", line 268, in raw_execute
+    query_job, iterator = self._retry_and_handle(msg=sql, conn=conn, fn=fn)
+  File "/usr/local/lib/python3.6/dist-packages/dbt/adapters/bigquery/connections.py", line 447, in _retry_and_handle
+    on_error=reopen_conn_on_error)
+  File "/usr/lib/python3.6/contextlib.py", line 99, in __exit__
+    self.gen.throw(type, value, traceback)
+  File "/usr/local/lib/python3.6/dist-packages/dbt/adapters/bigquery/connections.py", line 107, in exception_handler
+    self.handle_error(e, message)
+  File "/usr/local/lib/python3.6/dist-packages/dbt/adapters/bigquery/connections.py", line 95, in handle_error
+    raise DatabaseException(error_msg)
+dbt.exceptions.DatabaseException: Database Error in model shopify_discounts_proc (models/base/shopify/shopify_discounts_proc.sql)
+  Invalid dataset ID "shopify_Data Feeds". Dataset IDs must be alphanumeric (plus underscores and dashes) and must be at most 1024 characters long.
+  compiled SQL at target/run/shopify_buyer_segmentation/models/base/shopify/shopify_discounts_proc.sql
+2020-11-10 09:49:17.304887 (Thread-1): Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'eec29913-32f0-4158-82a0-44135447fd1d', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f559ad83f60>]}
+2020-11-10 09:49:17.306110 (Thread-1): 09:49:17 | 5 of 21 ERROR creating table model dbt_buyer_segmentation.shopify_discounts_proc [ERROR in 2.40s]
+2020-11-10 09:49:17.306211 (Thread-1): Finished running node model.shopify_buyer_segmentation.shopify_discounts_proc
+2020-11-10 09:49:17.306342 (Thread-1): Began running node model.shopify_buyer_segmentation.shopify_customers_proc
+2020-11-10 09:49:17.307280 (Thread-1): 09:49:17 | 6 of 21 START table model dbt_buyer_segmentation.shopify_customers_proc [RUN]
+2020-11-10 09:49:17.307556 (Thread-1): Acquiring new bigquery connection "model.shopify_buyer_segmentation.shopify_customers_proc".
+2020-11-10 09:49:17.307643 (Thread-1): Compiling model.shopify_buyer_segmentation.shopify_customers_proc
+2020-11-10 09:49:17.318233 (Thread-1): Opening a new connection, currently in state closed
+2020-11-10 09:49:17.319202 (Thread-1): On model.shopify_buyer_segmentation.shopify_customers_proc: /* {"app": "dbt", "dbt_version": "0.18.1", "profile_name": "user", "target_name": "default", "node_id": "model.shopify_buyer_segmentation.shopify_customers_proc"} */
+
+
+        select
+            store_name as value
+
+        from `dbt-projects`.`dbt_buyer_segmentation`.`stores_proc`
+
+        
+        ##where 1 = 1
+        where platform = 'Shopify'
+        
+        
+        
+
+        group by 1
+        order by count(*) desc
+
+        
+        limit 50
+        
+2020-11-10 09:49:17.679491 (Thread-47): handling poll request
+2020-11-10 09:49:17.679963 (Thread-47): Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': 'b9cb4131-4839-42d8-9062-69594a2c01e6', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fee6002f908>]}
+2020-11-10 09:49:17.682160 (Thread-47): sending response (<Response 13230 bytes [200 OK]>) to 10.0.35.171
+2020-11-10 09:49:18.575277 (Thread-1): Writing injected SQL for node "model.shopify_buyer_segmentation.shopify_customers_proc"
+2020-11-10 09:49:18.588270 (Thread-1): finished collecting timing info
+2020-11-10 09:49:18.593344 (Thread-1): Writing runtime SQL for node "model.shopify_buyer_segmentation.shopify_customers_proc"
+2020-11-10 09:49:18.606666 (Thread-1): On model.shopify_buyer_segmentation.shopify_customers_proc: /* {"app": "dbt", "dbt_version": "0.18.1", "profile_name": "user", "target_name": "default", "node_id": "model.shopify_buyer_segmentation.shopify_customers_proc"} */
+
+
+  create or replace table `dbt-projects`.`dbt_buyer_segmentation`.`shopify_customers_proc`
+  
+  
+  OPTIONS()
+  as (
+    -- depends_on: `dbt-projects`.`dbt_buyer_segmentation`.`stores_proc`
+
+
+
+
+
+with customers as (
+
+	
+	SELECT
+	'Data Feeds' store_name,
+	'Shopify' as lookup_platform,
+	created_at,
+	id,
+	first_name,
+	last_name,
+	email,
+	_sdc_sequence,
+	first_value(_sdc_sequence) over (partition by id order by _sdc_sequence desc) lv
+	FROM `dbt-projects.shopify_Data Feeds.customers` 
+	
+	
+
+)
+
+SELECT
+b.account,
+b.store,
+b.platform,
+created_at,
+id,
+first_name,
+last_name,
+email
+FROM customers a
+LEFT JOIN `dbt-projects`.`dbt_buyer_segmentation`.`stores_proc` b 
+ON ( a.store_name = b.store_name
+  AND a.lookup_platform = b.platform )
+where a.lv = a._sdc_sequence
+
+
+  );
+    
+2020-11-10 09:49:18.760243 (Thread-1): Retry attempt 1 of 1 after error: BadRequest('Invalid dataset ID "shopify_Data Feeds". Dataset IDs must be alphanumeric (plus underscores and dashes) and must be at most 1024 characters long.',)
+2020-11-10 09:49:19.016999 (Thread-48): handling poll request
+2020-11-10 09:49:19.017475 (Thread-48): Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': 'b9cb4131-4839-42d8-9062-69594a2c01e6', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fee5b7c77f0>]}
+2020-11-10 09:49:19.019096 (Thread-48): sending response (<Response 3434 bytes [200 OK]>) to 10.0.36.232
+2020-11-10 09:49:19.926577 (Thread-1): finished collecting timing info
+2020-11-10 09:49:19.927181 (Thread-1): Database Error in model shopify_customers_proc (models/base/shopify/shopify_customers_proc.sql)
+  Invalid dataset ID "shopify_Data Feeds". Dataset IDs must be alphanumeric (plus underscores and dashes) and must be at most 1024 characters long.
+  compiled SQL at target/run/shopify_buyer_segmentation/models/base/shopify/shopify_customers_proc.sql
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/dist-packages/dbt/adapters/bigquery/connections.py", line 103, in exception_handler
+    yield
+  File "/usr/local/lib/python3.6/dist-packages/dbt/adapters/bigquery/connections.py", line 447, in _retry_and_handle
+    on_error=reopen_conn_on_error)
+  File "/usr/local/lib/python3.6/dist-packages/google/api_core/retry.py", line 184, in retry_target
+    return target()
+  File "/usr/local/lib/python3.6/dist-packages/dbt/adapters/bigquery/connections.py", line 266, in fn
+    return self._query_and_results(client, sql, conn, job_params)
+  File "/usr/local/lib/python3.6/dist-packages/dbt/adapters/bigquery/connections.py", line 428, in _query_and_results
+    iterator = query_job.result(timeout=timeout)
+  File "/usr/local/lib/python3.6/dist-packages/google/cloud/bigquery/job.py", line 3196, in result
+    super(QueryJob, self).result(retry=retry, timeout=timeout)
+  File "/usr/local/lib/python3.6/dist-packages/google/cloud/bigquery/job.py", line 818, in result
+    return super(_AsyncJob, self).result(timeout=timeout)
+  File "/usr/local/lib/python3.6/dist-packages/google/api_core/future/polling.py", line 130, in result
+    raise self._exception
+google.api_core.exceptions.BadRequest: 400 Invalid dataset ID "shopify_Data Feeds". Dataset IDs must be alphanumeric (plus underscores and dashes) and must be at most 1024 characters long.
+
+(job ID: ad80ea5d-ff1f-47d7-bb20-21dde822bf59)
+
+                                                                     -----Query Job SQL Follows-----                                                                      
+
+    |    .    |    .    |    .    |    .    |    .    |    .    |    .    |    .    |    .    |    .    |    .    |    .    |    .    |    .    |    .    |    .    |
+   1:/* {"app": "dbt", "dbt_version": "0.18.1", "profile_name": "user", "target_name": "default", "node_id": "model.shopify_buyer_segmentation.shopify_customers_proc"} */
+   2:
+   3:
+   4:  create or replace table `dbt-projects`.`dbt_buyer_segmentation`.`shopify_customers_proc`
+   5:  
+   6:  
+   7:  OPTIONS()
+   8:  as (
+   9:    -- depends_on: `dbt-projects`.`dbt_buyer_segmentation`.`stores_proc`
+  10:
+  11:
+  12:
+  13:
+  14:
+  15:with customers as (
+  16:
+  17:	
+  18:	SELECT
+  19:	'Data Feeds' store_name,
+  20:	'Shopify' as lookup_platform,
+  21:	created_at,
+  22:	id,
+  23:	first_name,
+  24:	last_name,
+  25:	email,
+  26:	_sdc_sequence,
+  27:	first_value(_sdc_sequence) over (partition by id order by _sdc_sequence desc) lv
+  28:	FROM `dbt-projects.shopify_Data Feeds.customers` 
+  29:	
+  30:	
+  31:
+  32:)
+  33:
+  34:SELECT
+  35:b.account,
+  36:b.store,
+  37:b.platform,
+  38:created_at,
+  39:id,
+  40:first_name,
+  41:last_name,
+  42:email
+  43:FROM customers a
+  44:LEFT JOIN `dbt-projects`.`dbt_buyer_segmentation`.`stores_proc` b 
+  45:ON ( a.store_name = b.store_name
+  46:  AND a.lookup_platform = b.platform )
+  47:where a.lv = a._sdc_sequence
+  48:
+  49:
+  50:  );
+  51:    
+    |    .    |    .    |    .    |    .    |    .    |    .    |    .    |    .    |    .    |    .    |    .    |    .    |    .    |    .    |    .    |    .    |
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/dist-packages/dbt/task/base.py", line 333, in safe_run
+    result = self.compile_and_execute(manifest, ctx)
+  File "/usr/local/lib/python3.6/dist-packages/dbt/task/base.py", line 276, in compile_and_execute
+    result = self.run(ctx.node, manifest)
+  File "/usr/local/lib/python3.6/dist-packages/dbt/task/base.py", line 378, in run
+    return self.execute(compiled_node, manifest)
+  File "/usr/local/lib/python3.6/dist-packages/dbt/task/run.py", line 233, in execute
+    result = MacroGenerator(materialization_macro, context)()
+  File "/usr/local/lib/python3.6/dist-packages/dbt/clients/jinja.py", line 327, in __call__
+    return self.call_macro(*args, **kwargs)
+  File "/usr/local/lib/python3.6/dist-packages/dbt/clients/jinja.py", line 257, in call_macro
+    return macro(*args, **kwargs)
+  File "/usr/local/lib/python3.6/dist-packages/jinja2/runtime.py", line 675, in __call__
+    return self._invoke(arguments, autoescape)
+  File "/usr/local/lib/python3.6/dist-packages/jinja2/runtime.py", line 679, in _invoke
+    rv = self._func(*arguments)
+  File "<template>", line 128, in macro
+  File "/usr/local/lib/python3.6/dist-packages/jinja2/sandbox.py", line 462, in call
+    return __context.call(__obj, *args, **kwargs)
+  File "/usr/local/lib/python3.6/dist-packages/jinja2/runtime.py", line 290, in call
+    return __obj(*args, **kwargs)
+  File "/usr/local/lib/python3.6/dist-packages/dbt/clients/jinja.py", line 327, in __call__
+    return self.call_macro(*args, **kwargs)
+  File "/usr/local/lib/python3.6/dist-packages/dbt/clients/jinja.py", line 257, in call_macro
+    return macro(*args, **kwargs)
+  File "/usr/local/lib/python3.6/dist-packages/jinja2/runtime.py", line 675, in __call__
+    return self._invoke(arguments, autoescape)
+  File "/usr/local/lib/python3.6/dist-packages/jinja2/runtime.py", line 679, in _invoke
+    rv = self._func(*arguments)
+  File "<template>", line 41, in macro
+  File "/usr/local/lib/python3.6/dist-packages/jinja2/sandbox.py", line 462, in call
+    return __context.call(__obj, *args, **kwargs)
+  File "/usr/local/lib/python3.6/dist-packages/jinja2/runtime.py", line 290, in call
+    return __obj(*args, **kwargs)
+  File "/usr/local/lib/python3.6/dist-packages/dbt/adapters/base/impl.py", line 227, in execute
+    fetch=fetch
+  File "/usr/local/lib/python3.6/dist-packages/dbt/adapters/bigquery/connections.py", line 275, in execute
+    query_job, iterator = self.raw_execute(sql, fetch=fetch)
+  File "/usr/local/lib/python3.6/dist-packages/dbt/adapters/bigquery/connections.py", line 268, in raw_execute
+    query_job, iterator = self._retry_and_handle(msg=sql, conn=conn, fn=fn)
+  File "/usr/local/lib/python3.6/dist-packages/dbt/adapters/bigquery/connections.py", line 447, in _retry_and_handle
+    on_error=reopen_conn_on_error)
+  File "/usr/lib/python3.6/contextlib.py", line 99, in __exit__
+    self.gen.throw(type, value, traceback)
+  File "/usr/local/lib/python3.6/dist-packages/dbt/adapters/bigquery/connections.py", line 107, in exception_handler
+    self.handle_error(e, message)
+  File "/usr/local/lib/python3.6/dist-packages/dbt/adapters/bigquery/connections.py", line 95, in handle_error
+    raise DatabaseException(error_msg)
+dbt.exceptions.DatabaseException: Database Error in model shopify_customers_proc (models/base/shopify/shopify_customers_proc.sql)
+  Invalid dataset ID "shopify_Data Feeds". Dataset IDs must be alphanumeric (plus underscores and dashes) and must be at most 1024 characters long.
+  compiled SQL at target/run/shopify_buyer_segmentation/models/base/shopify/shopify_customers_proc.sql
+2020-11-10 09:49:19.927941 (Thread-1): Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'eec29913-32f0-4158-82a0-44135447fd1d', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f559afee4e0>]}
+2020-11-10 09:49:19.929122 (Thread-1): 09:49:19 | 6 of 21 ERROR creating table model dbt_buyer_segmentation.shopify_customers_proc [ERROR in 2.62s]
+2020-11-10 09:49:19.929224 (Thread-1): Finished running node model.shopify_buyer_segmentation.shopify_customers_proc
+2020-11-10 09:49:19.929354 (Thread-1): Began running node model.shopify_buyer_segmentation.ga_transactions
+2020-11-10 09:49:19.930321 (Thread-1): 09:49:19 | 7 of 21 START table model dbt_buyer_segmentation.ga_transactions..... [RUN]
+2020-11-10 09:49:19.930589 (Thread-1): Acquiring new bigquery connection "model.shopify_buyer_segmentation.ga_transactions".
+2020-11-10 09:49:19.930677 (Thread-1): Compiling model.shopify_buyer_segmentation.ga_transactions
+2020-11-10 09:49:19.942683 (Thread-1): Opening a new connection, currently in state closed
+2020-11-10 09:49:19.943829 (Thread-1): On model.shopify_buyer_segmentation.ga_transactions: /* {"app": "dbt", "dbt_version": "0.18.1", "profile_name": "user", "target_name": "default", "node_id": "model.shopify_buyer_segmentation.ga_transactions"} */
+
+
+        select
+            store_name as value
+
+        from `dbt-projects`.`dbt_buyer_segmentation`.`stores_proc`
+
+        
+        ##where 1 = 1
+        where platform = 'Google Analytics'
+        
+        
+        
+
+        group by 1
+        order by count(*) desc
+
+        
+        limit 50
+        
+2020-11-10 09:49:20.315327 (Thread-49): handling poll request
+2020-11-10 09:49:20.315812 (Thread-49): Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': 'b9cb4131-4839-42d8-9062-69594a2c01e6', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fee5b7c7d68>]}
+2020-11-10 09:49:20.318056 (Thread-49): sending response (<Response 13524 bytes [200 OK]>) to 10.0.10.5
+2020-11-10 09:49:20.966359 (Thread-1): Writing injected SQL for node "model.shopify_buyer_segmentation.ga_transactions"
+2020-11-10 09:49:20.986626 (Thread-1): finished collecting timing info
+2020-11-10 09:49:20.993819 (Thread-1): Writing runtime SQL for node "model.shopify_buyer_segmentation.ga_transactions"
+2020-11-10 09:49:21.018522 (Thread-1): On model.shopify_buyer_segmentation.ga_transactions: /* {"app": "dbt", "dbt_version": "0.18.1", "profile_name": "user", "target_name": "default", "node_id": "model.shopify_buyer_segmentation.ga_transactions"} */
+
+
+  create or replace table `dbt-projects`.`dbt_buyer_segmentation`.`ga_transactions`
+  
+  
+  OPTIONS()
+  as (
+    -- depends_on: `dbt-projects`.`dbt_buyer_segmentation`.`stores_proc`,`dbt-projects`.`dbt_buyer_segmentation`.`mappings_ga_proc`
+
+
+
+
+with ga_report as (
+
+	    
+	    	
+		   	SELECT
+		   	'Data Feeds' as store_name,
+		   	'Google Analytics' as lookup_platform,
+			lower(trim(regexp_replace(replace(replace(replace(replace(CONCAT(hostname,landingpagepath),'www.',''),'http://',''),'https://',''),'.html',''),r'\?.*$',''),'/')) as url,
+			cast(date as date) date,
+			lower(source) source,
+			lower(medium) medium,
+			lower(replace(replace(replace(campaign,' ', ''),'-',''),'_','')) campaign,
+			cast(regexp_replace(transactionid, r'#|B', '') as int64) transactionid,
+			_sdc_sequence,
+			first_value(_sdc_sequence) OVER (PARTITION BY hostname, landingpagepath, date, source, medium, transactionid ORDER BY _sdc_sequence DESC) lv
+			FROM `dbt-projects.ga_Data Feeds.report` 
+
+		    
+	   
+
+)
+
+
+SELECT  
+date,
+b.store store,
+c.source source,
+c.medium medium,
+a.campaign campaign,
+concat(a.source, ' / ', a.medium) source_medium,  
+case when c.platform is null then "Unmapped" else c.platform end as platform,
+case when c.channel is null then "Unmapped" else c.channel end as channel,
+url,
+transactionid
+FROM (
+
+	SELECT 
+	store_name,
+	lookup_platform,
+	date,
+	transactionid,
+	max(url) url,
+	max(source) source,
+	max(medium) medium,
+	max(campaign) campaign
+	FROM ga_report
+	where lv = _sdc_sequence
+	group by store_name, lookup_platform, date, transactionid
+
+) a
+LEFT JOIN `dbt-projects`.`dbt_buyer_segmentation`.`stores_proc` b 
+ON ( a.store_name = b.store_name 
+	AND a.lookup_platform = b.platform )
+LEFT JOIN `dbt-projects`.`dbt_buyer_segmentation`.`mappings_ga_proc` c
+ON ( a.source = c.source
+  AND a.medium = c.medium 
+  AND a.store_name = c.store_name )
+
+
+  );
+    
+2020-11-10 09:49:21.184445 (Thread-1): Retry attempt 1 of 1 after error: BadRequest('Invalid dataset ID "ga_Data Feeds". Dataset IDs must be alphanumeric (plus underscores and dashes) and must be at most 1024 characters long.',)
+2020-11-10 09:49:21.651714 (Thread-50): handling poll request
+2020-11-10 09:49:21.652203 (Thread-50): Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': 'b9cb4131-4839-42d8-9062-69594a2c01e6', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fee5b500da0>]}
+2020-11-10 09:49:21.653765 (Thread-50): sending response (<Response 4540 bytes [200 OK]>) to 10.0.35.171
+2020-11-10 09:49:22.388390 (Thread-1): finished collecting timing info
+2020-11-10 09:49:22.388977 (Thread-1): Database Error in model ga_transactions (models/base/ga/ga_transactions.sql)
+  Invalid dataset ID "ga_Data Feeds". Dataset IDs must be alphanumeric (plus underscores and dashes) and must be at most 1024 characters long.
+  compiled SQL at target/run/shopify_buyer_segmentation/models/base/ga/ga_transactions.sql
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/dist-packages/dbt/adapters/bigquery/connections.py", line 103, in exception_handler
+    yield
+  File "/usr/local/lib/python3.6/dist-packages/dbt/adapters/bigquery/connections.py", line 447, in _retry_and_handle
+    on_error=reopen_conn_on_error)
+  File "/usr/local/lib/python3.6/dist-packages/google/api_core/retry.py", line 184, in retry_target
+    return target()
+  File "/usr/local/lib/python3.6/dist-packages/dbt/adapters/bigquery/connections.py", line 266, in fn
+    return self._query_and_results(client, sql, conn, job_params)
+  File "/usr/local/lib/python3.6/dist-packages/dbt/adapters/bigquery/connections.py", line 428, in _query_and_results
+    iterator = query_job.result(timeout=timeout)
+  File "/usr/local/lib/python3.6/dist-packages/google/cloud/bigquery/job.py", line 3196, in result
+    super(QueryJob, self).result(retry=retry, timeout=timeout)
+  File "/usr/local/lib/python3.6/dist-packages/google/cloud/bigquery/job.py", line 818, in result
+    return super(_AsyncJob, self).result(timeout=timeout)
+  File "/usr/local/lib/python3.6/dist-packages/google/api_core/future/polling.py", line 130, in result
+    raise self._exception
+google.api_core.exceptions.BadRequest: 400 Invalid dataset ID "ga_Data Feeds". Dataset IDs must be alphanumeric (plus underscores and dashes) and must be at most 1024 characters long.
+
+(job ID: cf0aaa5b-5a0e-482f-be4e-b32c2f59d88c)
+
+                                                                         -----Query Job SQL Follows-----                                                                         
+
+    |    .    |    .    |    .    |    .    |    .    |    .    |    .    |    .    |    .    |    .    |    .    |    .    |    .    |    .    |    .    |    .    |    .    |
+   1:/* {"app": "dbt", "dbt_version": "0.18.1", "profile_name": "user", "target_name": "default", "node_id": "model.shopify_buyer_segmentation.ga_transactions"} */
+   2:
+   3:
+   4:  create or replace table `dbt-projects`.`dbt_buyer_segmentation`.`ga_transactions`
+   5:  
+   6:  
+   7:  OPTIONS()
+   8:  as (
+   9:    -- depends_on: `dbt-projects`.`dbt_buyer_segmentation`.`stores_proc`,`dbt-projects`.`dbt_buyer_segmentation`.`mappings_ga_proc`
+  10:
+  11:
+  12:
+  13:
+  14:with ga_report as (
+  15:
+  16:	    
+  17:	    	
+  18:		   	SELECT
+  19:		   	'Data Feeds' as store_name,
+  20:		   	'Google Analytics' as lookup_platform,
+  21:			lower(trim(regexp_replace(replace(replace(replace(replace(CONCAT(hostname,landingpagepath),'www.',''),'http://',''),'https://',''),'.html',''),r'\?.*$',''),'/')) as url,
+  22:			cast(date as date) date,
+  23:			lower(source) source,
+  24:			lower(medium) medium,
+  25:			lower(replace(replace(replace(campaign,' ', ''),'-',''),'_','')) campaign,
+  26:			cast(regexp_replace(transactionid, r'#|B', '') as int64) transactionid,
+  27:			_sdc_sequence,
+  28:			first_value(_sdc_sequence) OVER (PARTITION BY hostname, landingpagepath, date, source, medium, transactionid ORDER BY _sdc_sequence DESC) lv
+  29:			FROM `dbt-projects.ga_Data Feeds.report` 
+  30:
+  31:		    
+  32:	   
+  33:
+  34:)
+  35:
+  36:
+  37:SELECT  
+  38:date,
+  39:b.store store,
+  40:c.source source,
+  41:c.medium medium,
+  42:a.campaign campaign,
+  43:concat(a.source, ' / ', a.medium) source_medium,  
+  44:case when c.platform is null then "Unmapped" else c.platform end as platform,
+  45:case when c.channel is null then "Unmapped" else c.channel end as channel,
+  46:url,
+  47:transactionid
+  48:FROM (
+  49:
+  50:	SELECT 
+  51:	store_name,
+  52:	lookup_platform,
+  53:	date,
+  54:	transactionid,
+  55:	max(url) url,
+  56:	max(source) source,
+  57:	max(medium) medium,
+  58:	max(campaign) campaign
+  59:	FROM ga_report
+  60:	where lv = _sdc_sequence
+  61:	group by store_name, lookup_platform, date, transactionid
+  62:
+  63:) a
+  64:LEFT JOIN `dbt-projects`.`dbt_buyer_segmentation`.`stores_proc` b 
+  65:ON ( a.store_name = b.store_name 
+  66:	AND a.lookup_platform = b.platform )
+  67:LEFT JOIN `dbt-projects`.`dbt_buyer_segmentation`.`mappings_ga_proc` c
+  68:ON ( a.source = c.source
+  69:  AND a.medium = c.medium 
+  70:  AND a.store_name = c.store_name )
+  71:
+  72:
+  73:  );
+  74:    
+    |    .    |    .    |    .    |    .    |    .    |    .    |    .    |    .    |    .    |    .    |    .    |    .    |    .    |    .    |    .    |    .    |    .    |
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/dist-packages/dbt/task/base.py", line 333, in safe_run
+    result = self.compile_and_execute(manifest, ctx)
+  File "/usr/local/lib/python3.6/dist-packages/dbt/task/base.py", line 276, in compile_and_execute
+    result = self.run(ctx.node, manifest)
+  File "/usr/local/lib/python3.6/dist-packages/dbt/task/base.py", line 378, in run
+    return self.execute(compiled_node, manifest)
+  File "/usr/local/lib/python3.6/dist-packages/dbt/task/run.py", line 233, in execute
+    result = MacroGenerator(materialization_macro, context)()
+  File "/usr/local/lib/python3.6/dist-packages/dbt/clients/jinja.py", line 327, in __call__
+    return self.call_macro(*args, **kwargs)
+  File "/usr/local/lib/python3.6/dist-packages/dbt/clients/jinja.py", line 257, in call_macro
+    return macro(*args, **kwargs)
+  File "/usr/local/lib/python3.6/dist-packages/jinja2/runtime.py", line 675, in __call__
+    return self._invoke(arguments, autoescape)
+  File "/usr/local/lib/python3.6/dist-packages/jinja2/runtime.py", line 679, in _invoke
+    rv = self._func(*arguments)
+  File "<template>", line 128, in macro
+  File "/usr/local/lib/python3.6/dist-packages/jinja2/sandbox.py", line 462, in call
+    return __context.call(__obj, *args, **kwargs)
+  File "/usr/local/lib/python3.6/dist-packages/jinja2/runtime.py", line 290, in call
+    return __obj(*args, **kwargs)
+  File "/usr/local/lib/python3.6/dist-packages/dbt/clients/jinja.py", line 327, in __call__
+    return self.call_macro(*args, **kwargs)
+  File "/usr/local/lib/python3.6/dist-packages/dbt/clients/jinja.py", line 257, in call_macro
+    return macro(*args, **kwargs)
+  File "/usr/local/lib/python3.6/dist-packages/jinja2/runtime.py", line 675, in __call__
+    return self._invoke(arguments, autoescape)
+  File "/usr/local/lib/python3.6/dist-packages/jinja2/runtime.py", line 679, in _invoke
+    rv = self._func(*arguments)
+  File "<template>", line 41, in macro
+  File "/usr/local/lib/python3.6/dist-packages/jinja2/sandbox.py", line 462, in call
+    return __context.call(__obj, *args, **kwargs)
+  File "/usr/local/lib/python3.6/dist-packages/jinja2/runtime.py", line 290, in call
+    return __obj(*args, **kwargs)
+  File "/usr/local/lib/python3.6/dist-packages/dbt/adapters/base/impl.py", line 227, in execute
+    fetch=fetch
+  File "/usr/local/lib/python3.6/dist-packages/dbt/adapters/bigquery/connections.py", line 275, in execute
+    query_job, iterator = self.raw_execute(sql, fetch=fetch)
+  File "/usr/local/lib/python3.6/dist-packages/dbt/adapters/bigquery/connections.py", line 268, in raw_execute
+    query_job, iterator = self._retry_and_handle(msg=sql, conn=conn, fn=fn)
+  File "/usr/local/lib/python3.6/dist-packages/dbt/adapters/bigquery/connections.py", line 447, in _retry_and_handle
+    on_error=reopen_conn_on_error)
+  File "/usr/lib/python3.6/contextlib.py", line 99, in __exit__
+    self.gen.throw(type, value, traceback)
+  File "/usr/local/lib/python3.6/dist-packages/dbt/adapters/bigquery/connections.py", line 107, in exception_handler
+    self.handle_error(e, message)
+  File "/usr/local/lib/python3.6/dist-packages/dbt/adapters/bigquery/connections.py", line 95, in handle_error
+    raise DatabaseException(error_msg)
+dbt.exceptions.DatabaseException: Database Error in model ga_transactions (models/base/ga/ga_transactions.sql)
+  Invalid dataset ID "ga_Data Feeds". Dataset IDs must be alphanumeric (plus underscores and dashes) and must be at most 1024 characters long.
+  compiled SQL at target/run/shopify_buyer_segmentation/models/base/ga/ga_transactions.sql
+2020-11-10 09:49:22.389695 (Thread-1): Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'eec29913-32f0-4158-82a0-44135447fd1d', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f559b04df28>]}
+2020-11-10 09:49:22.390907 (Thread-1): 09:49:22 | 7 of 21 ERROR creating table model dbt_buyer_segmentation.ga_transactions [ERROR in 2.46s]
+2020-11-10 09:49:22.391007 (Thread-1): Finished running node model.shopify_buyer_segmentation.ga_transactions
+2020-11-10 09:49:22.391134 (Thread-1): Began running node model.shopify_buyer_segmentation.shopify_products_proc
+2020-11-10 09:49:22.391233 (Thread-1): 09:49:22 | 8 of 21 SKIP relation dbt_buyer_segmentation.shopify_products_proc... [SKIP]
+2020-11-10 09:49:22.391298 (Thread-1): Finished running node model.shopify_buyer_segmentation.shopify_products_proc
+2020-11-10 09:49:22.391381 (Thread-1): Began running node model.shopify_buyer_segmentation.shopify_orders_proc
+2020-11-10 09:49:22.391458 (Thread-1): 09:49:22 | 9 of 21 SKIP relation dbt_buyer_segmentation.shopify_orders_proc..... [SKIP]
+2020-11-10 09:49:22.391517 (Thread-1): Finished running node model.shopify_buyer_segmentation.shopify_orders_proc
+2020-11-10 09:49:22.391594 (Thread-1): Began running node model.shopify_buyer_segmentation.agg_customers
+2020-11-10 09:49:22.391668 (Thread-1): 09:49:22 | 10 of 21 SKIP relation dbt_buyer_segmentation.agg_customers.......... [SKIP]
+2020-11-10 09:49:22.391724 (Thread-1): Finished running node model.shopify_buyer_segmentation.agg_customers
+2020-11-10 09:49:22.392405 (Thread-1): Began running node model.shopify_buyer_segmentation.transaction_by_order_number
+2020-11-10 09:49:22.392491 (Thread-1): 09:49:22 | 11 of 21 SKIP relation dbt_buyer_segmentation.transaction_by_order_number [SKIP]
+2020-11-10 09:49:22.392550 (Thread-1): Finished running node model.shopify_buyer_segmentation.transaction_by_order_number
+2020-11-10 09:49:22.393070 (Thread-1): Began running node model.shopify_buyer_segmentation.customers_by_transaction
+2020-11-10 09:49:22.393158 (Thread-1): 09:49:22 | 12 of 21 SKIP relation dbt_buyer_segmentation.customers_by_transaction [SKIP]
+2020-11-10 09:49:22.393216 (Thread-1): Finished running node model.shopify_buyer_segmentation.customers_by_transaction
+2020-11-10 09:49:22.393941 (Thread-1): Began running node model.shopify_buyer_segmentation.agg_transactions
+2020-11-10 09:49:22.394033 (Thread-1): 09:49:22 | 13 of 21 SKIP relation dbt_buyer_segmentation.agg_transactions....... [SKIP]
+2020-11-10 09:49:22.394093 (Thread-1): Finished running node model.shopify_buyer_segmentation.agg_transactions
+2020-11-10 09:49:22.394774 (Thread-1): Began running node model.shopify_buyer_segmentation.customers_proc_qoq
+2020-11-10 09:49:22.394860 (Thread-1): 09:49:22 | 14 of 21 SKIP relation dbt_buyer_segmentation.customers_proc_qoq..... [SKIP]
+2020-11-10 09:49:22.394919 (Thread-1): Finished running node model.shopify_buyer_segmentation.customers_proc_qoq
+2020-11-10 09:49:22.395003 (Thread-1): Began running node model.shopify_buyer_segmentation.customers_proc_yoy
+2020-11-10 09:49:22.395076 (Thread-1): 09:49:22 | 15 of 21 SKIP relation dbt_buyer_segmentation.customers_proc_yoy..... [SKIP]
+2020-11-10 09:49:22.395133 (Thread-1): Finished running node model.shopify_buyer_segmentation.customers_proc_yoy
+2020-11-10 09:49:22.395683 (Thread-1): Began running node model.shopify_buyer_segmentation.customers_proc
+2020-11-10 09:49:22.395768 (Thread-1): 09:49:22 | 16 of 21 SKIP relation dbt_buyer_segmentation.customers_proc......... [SKIP]
+2020-11-10 09:49:22.395825 (Thread-1): Finished running node model.shopify_buyer_segmentation.customers_proc
+2020-11-10 09:49:22.396224 (Thread-1): Began running node model.shopify_buyer_segmentation.segment_proc_buyers
+2020-11-10 09:49:22.396307 (Thread-1): 09:49:22 | 17 of 21 SKIP relation dbt_buyer_segmentation.segment_proc_buyers.... [SKIP]
+2020-11-10 09:49:22.396363 (Thread-1): Finished running node model.shopify_buyer_segmentation.segment_proc_buyers
+2020-11-10 09:49:22.396766 (Thread-1): Began running node model.shopify_buyer_segmentation.segment_stats_buyers_agg
+2020-11-10 09:49:22.396850 (Thread-1): 09:49:22 | 18 of 21 SKIP relation dbt_buyer_segmentation.segment_stats_buyers_agg [SKIP]
+2020-11-10 09:49:22.396907 (Thread-1): Finished running node model.shopify_buyer_segmentation.segment_stats_buyers_agg
+2020-11-10 09:49:22.397443 (Thread-1): Began running node model.shopify_buyer_segmentation.segment_stats_buyers_view
+2020-11-10 09:49:22.397526 (Thread-1): 09:49:22 | 19 of 21 SKIP relation dbt_buyer_segmentation.segment_stats_buyers_view [SKIP]
+2020-11-10 09:49:22.397583 (Thread-1): Finished running node model.shopify_buyer_segmentation.segment_stats_buyers_view
+2020-11-10 09:49:22.397664 (Thread-1): Began running node model.shopify_buyer_segmentation.buyer_segment_lists
+2020-11-10 09:49:22.397757 (Thread-1): 09:49:22 | 20 of 21 SKIP relation dbt_buyer_segmentation.buyer_segment_lists.... [SKIP]
+2020-11-10 09:49:22.397829 (Thread-1): Finished running node model.shopify_buyer_segmentation.buyer_segment_lists
+2020-11-10 09:49:22.398361 (Thread-1): Began running node model.shopify_buyer_segmentation.buyer_segment_stats
+2020-11-10 09:49:22.398450 (Thread-1): 09:49:22 | 21 of 21 SKIP relation dbt_buyer_segmentation.buyer_segment_stats.... [SKIP]
+2020-11-10 09:49:22.398508 (Thread-1): Finished running node model.shopify_buyer_segmentation.buyer_segment_stats
+2020-11-10 09:49:22.426155 (MainThread): Acquiring new bigquery connection "master".
+2020-11-10 09:49:22.426655 (MainThread): 09:49:22 | 
+2020-11-10 09:49:22.426784 (MainThread): 09:49:22 | Finished running 21 table models in 17.04s.
+2020-11-10 09:49:22.426885 (MainThread): Connection 'master' was properly closed.
+2020-11-10 09:49:22.426969 (MainThread): Connection 'model.shopify_buyer_segmentation.ga_transactions' was properly closed.
+2020-11-10 09:49:22.488026 (MainThread): unclosed <socket.socket fd=9, family=AddressFamily.AF_INET, type=2049, proto=6, laddr=('10.0.23.8', 40144), raddr=('172.217.2.106', 443)>
+2020-11-10 09:49:22.488258 (MainThread): unclosed <socket.socket fd=10, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=6, laddr=('10.0.23.8', 59008), raddr=('172.217.15.106', 443)>
+2020-11-10 09:49:22.488451 (MainThread): unclosed <socket.socket fd=13, family=AddressFamily.AF_INET, type=2049, proto=6, laddr=('10.0.23.8', 36126), raddr=('142.250.73.202', 443)>
+2020-11-10 09:49:22.488576 (MainThread): unclosed <socket.socket fd=14, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=6, laddr=('10.0.23.8', 59150), raddr=('172.217.15.106', 443)>
+2020-11-10 09:49:22.562979 (MainThread): 
+2020-11-10 09:49:22.563091 (MainThread): Completed with 4 errors and 0 warnings:
+2020-11-10 09:49:22.563157 (MainThread): 
+2020-11-10 09:49:22.563219 (MainThread): Database Error in model shopify_refunds_proc (models/base/shopify/shopify_refunds_proc.sql)
+2020-11-10 09:49:22.563271 (MainThread):   Invalid dataset ID "shopify_Data Feeds". Dataset IDs must be alphanumeric (plus underscores and dashes) and must be at most 1024 characters long.
+2020-11-10 09:49:22.563316 (MainThread):   compiled SQL at target/run/shopify_buyer_segmentation/models/base/shopify/shopify_refunds_proc.sql
+2020-11-10 09:49:22.563363 (MainThread): 
+2020-11-10 09:49:22.563416 (MainThread): Database Error in model shopify_discounts_proc (models/base/shopify/shopify_discounts_proc.sql)
+2020-11-10 09:49:22.563463 (MainThread):   Invalid dataset ID "shopify_Data Feeds". Dataset IDs must be alphanumeric (plus underscores and dashes) and must be at most 1024 characters long.
+2020-11-10 09:49:22.563504 (MainThread):   compiled SQL at target/run/shopify_buyer_segmentation/models/base/shopify/shopify_discounts_proc.sql
+2020-11-10 09:49:22.563550 (MainThread): 
+2020-11-10 09:49:22.563601 (MainThread): Database Error in model shopify_customers_proc (models/base/shopify/shopify_customers_proc.sql)
+2020-11-10 09:49:22.563646 (MainThread):   Invalid dataset ID "shopify_Data Feeds". Dataset IDs must be alphanumeric (plus underscores and dashes) and must be at most 1024 characters long.
+2020-11-10 09:49:22.563688 (MainThread):   compiled SQL at target/run/shopify_buyer_segmentation/models/base/shopify/shopify_customers_proc.sql
+2020-11-10 09:49:22.563733 (MainThread): 
+2020-11-10 09:49:22.563785 (MainThread): Database Error in model ga_transactions (models/base/ga/ga_transactions.sql)
+2020-11-10 09:49:22.563831 (MainThread):   Invalid dataset ID "ga_Data Feeds". Dataset IDs must be alphanumeric (plus underscores and dashes) and must be at most 1024 characters long.
+2020-11-10 09:49:22.563873 (MainThread):   compiled SQL at target/run/shopify_buyer_segmentation/models/base/ga/ga_transactions.sql
+2020-11-10 09:49:22.563931 (MainThread): 
+Done. PASS=3 WARN=0 ERROR=4 SKIP=14 TOTAL=21
+2020-11-10 09:49:22.980504 (Thread-51): handling poll request
+2020-11-10 09:49:22.980999 (Thread-51): Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': 'b9cb4131-4839-42d8-9062-69594a2c01e6', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fee5b378eb8>]}
+2020-11-10 09:49:23.045590 (Thread-51): sending response (<Response 126423 bytes [200 OK]>) to 10.0.11.107
+2020-11-10 09:49:23.476333 (Thread-52): handling status request
+2020-11-10 09:49:23.476843 (Thread-52): Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': 'b9cb4131-4839-42d8-9062-69594a2c01e6', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fee5b7c7198>]}
+2020-11-10 09:49:23.483325 (Thread-52): sending response (<Response 16728 bytes [200 OK]>) to 10.0.25.53
+2020-11-10 10:06:25.294062 (Thread-53): handling status request
+2020-11-10 10:06:25.296618 (Thread-53): Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': 'b9cb4131-4839-42d8-9062-69594a2c01e6', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fee5b4423c8>]}
+2020-11-10 10:06:25.302888 (Thread-53): sending response (<Response 16728 bytes [200 OK]>) to 10.0.44.58
+2020-11-10 10:06:25.591636 (Thread-54): handling compile_sql request
+2020-11-10 10:06:25.592113 (Thread-54): Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': 'b9cb4131-4839-42d8-9062-69594a2c01e6', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fee5b7c76d8>]}
+2020-11-10 10:06:26.596236 (Thread-54): sending response (<Response 137 bytes [200 OK]>) to 10.0.29.97
+2020-11-10 10:06:26.624155 (MainThread): Acquiring new bigquery connection "rpc.shopify_buyer_segmentation.request".
+2020-11-10 10:06:26.661671 (MainThread): Found 21 models, 0 tests, 0 snapshots, 0 analyses, 161 macros, 0 operations, 0 seed files, 0 sources
+2020-11-10 10:06:26.662177 (Thread-1): Acquiring new bigquery connection "rpc.shopify_buyer_segmentation.request".
+2020-11-10 10:06:26.662314 (Thread-1): Compiling rpc.shopify_buyer_segmentation.request
+2020-11-10 10:06:26.679584 (Thread-1): Opening a new connection, currently in state init
+2020-11-10 10:06:26.680207 (Thread-1): On rpc.shopify_buyer_segmentation.request: 
+
+        select
+            store_name as value
+
+        from `dbt-projects`.`dbt_buyer_segmentation`.`stores_proc`
+
+        
+        ##where 1 = 1
+        where platform = 'Shopify'
+        
+        
+        
+
+        group by 1
+        order by count(*) desc
+
+        
+        limit 50
+        
+2020-11-10 10:06:26.998268 (Thread-55): handling poll request
+2020-11-10 10:06:26.998833 (Thread-55): Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': 'b9cb4131-4839-42d8-9062-69594a2c01e6', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fee5b7c76d8>]}
+2020-11-10 10:06:27.001087 (Thread-55): sending response (<Response 2514 bytes [200 OK]>) to 10.0.26.205
+2020-11-10 10:06:28.351782 (Thread-56): handling poll request
+2020-11-10 10:06:28.352270 (Thread-56): Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': 'b9cb4131-4839-42d8-9062-69594a2c01e6', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fee5b7b3f60>]}
+2020-11-10 10:06:28.353238 (Thread-56): sending response (<Response 411 bytes [200 OK]>) to 10.0.29.97
+2020-11-10 10:06:28.672575 (Thread-1): finished collecting timing info
+2020-11-10 10:06:28.672963 (Thread-1): finished collecting timing info
+2020-11-10 10:06:29.682873 (Thread-57): handling poll request
+2020-11-10 10:06:29.683363 (Thread-57): Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': 'b9cb4131-4839-42d8-9062-69594a2c01e6', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fee5b7b3908>]}
+2020-11-10 10:06:29.688292 (Thread-57): sending response (<Response 7370 bytes [200 OK]>) to 10.0.11.107
+2020-11-10 10:15:14.786935 (Thread-58): handling status request
+2020-11-10 10:15:14.789503 (Thread-58): Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': 'b9cb4131-4839-42d8-9062-69594a2c01e6', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fee5b7c7ba8>]}
+2020-11-10 10:15:14.797150 (Thread-58): sending response (<Response 16728 bytes [200 OK]>) to 10.0.44.58
+2020-11-10 10:15:15.142141 (Thread-59): handling compile_sql request
+2020-11-10 10:15:15.142706 (Thread-59): Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': 'b9cb4131-4839-42d8-9062-69594a2c01e6', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fee5b7c7dd8>]}
+2020-11-10 10:15:16.094459 (Thread-59): sending response (<Response 137 bytes [200 OK]>) to 10.0.26.205
+2020-11-10 10:15:16.121680 (MainThread): Acquiring new bigquery connection "rpc.shopify_buyer_segmentation.request".
+2020-11-10 10:15:16.161596 (MainThread): Found 21 models, 0 tests, 0 snapshots, 0 analyses, 161 macros, 0 operations, 0 seed files, 0 sources
+2020-11-10 10:15:16.162142 (Thread-1): Acquiring new bigquery connection "rpc.shopify_buyer_segmentation.request".
+2020-11-10 10:15:16.162271 (Thread-1): Compiling rpc.shopify_buyer_segmentation.request
+2020-11-10 10:15:16.182558 (Thread-1): Opening a new connection, currently in state init
+2020-11-10 10:15:16.183270 (Thread-1): On rpc.shopify_buyer_segmentation.request: 
+
+        select
+            store_name as value
+
+        from `dbt-projects`.`dbt_buyer_segmentation`.`stores_proc`
+
+        
+        ##where 1 = 1
+        where platform = 'Shopify'
+        
+        
+        
+
+        group by 1
+        order by count(*) desc
+
+        
+        limit 50
+        
+2020-11-10 10:15:16.477839 (Thread-60): handling poll request
+2020-11-10 10:15:16.478362 (Thread-60): Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': 'b9cb4131-4839-42d8-9062-69594a2c01e6', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fee5b5000f0>]}
+2020-11-10 10:15:16.480577 (Thread-60): sending response (<Response 2515 bytes [200 OK]>) to 10.0.4.172
+2020-11-10 10:15:17.669919 (Thread-1): finished collecting timing info
+2020-11-10 10:15:17.670401 (Thread-1): finished collecting timing info
+2020-11-10 10:15:17.802236 (Thread-61): handling poll request
+2020-11-10 10:15:17.802737 (Thread-61): Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': 'b9cb4131-4839-42d8-9062-69594a2c01e6', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fee5b7b39e8>]}
+2020-11-10 10:15:17.803990 (Thread-61): sending response (<Response 1230 bytes [200 OK]>) to 10.0.26.169
+2020-11-10 10:15:19.179186 (Thread-62): handling poll request
+2020-11-10 10:15:19.179678 (Thread-62): Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': 'b9cb4131-4839-42d8-9062-69594a2c01e6', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fee5b79c0f0>]}
+2020-11-10 10:15:19.184823 (Thread-62): sending response (<Response 8094 bytes [200 OK]>) to 10.0.21.85
+2020-11-10 10:25:11.412063 (Thread-63): handling status request
+2020-11-10 10:25:11.414211 (Thread-63): Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': 'b9cb4131-4839-42d8-9062-69594a2c01e6', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fee5b79c710>]}
+2020-11-10 10:25:11.422176 (Thread-63): sending response (<Response 16728 bytes [200 OK]>) to 10.0.35.171
+2020-11-10 10:25:11.821249 (Thread-64): handling compile_sql request
+2020-11-10 10:25:11.821917 (Thread-64): Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': 'b9cb4131-4839-42d8-9062-69594a2c01e6', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fee5b79c710>]}
+2020-11-10 10:25:11.823879 (Thread-64): Checking header 'user-agent' tracing in whitelist set(), 24 additional messages skipped
+2020-11-10 10:25:11.857935 (Thread-64): writing 1 spans (enabled:True)
+2020-11-10 10:25:11.858096 (Thread-64): 
+      name requests.request
+        id 12789534164050898062
+  trace_id 13796285679889444057
+ parent_id None
+   service requests
+  resource requests.request
+      type http
+     start 1605003911.8233879
+       end 1605003911.8578517
+  duration 0.034464s
+     error 0
+      tags 
+           http.method:POST
+           http.status_code:200
+           http.url:https://fishtownanalytics.sinter-collect.com/com.snowplowanalytics.snowplow/tp2
+           runtime-id:9af282b3e7a44bed9d3eb4c6d5b15d7b
+2020-11-10 10:25:12.297404 (AgentWriter): reported 1 traces in 0.00508s
+2020-11-10 10:25:12.298021 (AgentWriter): initialized RateSampler, sample 100% of traces, 31 additional messages skipped
+2020-11-10 10:25:12.820179 (Thread-64): sending response (<Response 137 bytes [200 OK]>) to 10.0.35.171
+2020-11-10 10:25:12.847307 (MainThread): Acquiring new bigquery connection "rpc.shopify_buyer_segmentation.request".
+2020-11-10 10:25:12.884373 (MainThread): Found 21 models, 0 tests, 0 snapshots, 0 analyses, 161 macros, 0 operations, 0 seed files, 0 sources
+2020-11-10 10:25:12.884964 (Thread-1): Acquiring new bigquery connection "rpc.shopify_buyer_segmentation.request".
+2020-11-10 10:25:12.885152 (Thread-1): Compiling rpc.shopify_buyer_segmentation.request
+2020-11-10 10:25:12.913238 (Thread-1): Opening a new connection, currently in state init
+2020-11-10 10:25:12.913938 (Thread-1): On rpc.shopify_buyer_segmentation.request: 
+
+        select
+            store_name as value
+
+        from `dbt-projects`.`dbt_buyer_segmentation`.`stores_proc`
+
+        
+        ##where 1 = 1
+        where platform = 'Google Analytics'
+        
+        
+        
+
+        group by 1
+        order by count(*) desc
+
+        
+        limit 50
+        
+2020-11-10 10:25:13.173142 (Thread-65): handling poll request
+2020-11-10 10:25:13.173650 (Thread-65): Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': 'b9cb4131-4839-42d8-9062-69594a2c01e6', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fee5b50a5f8>]}
+2020-11-10 10:25:13.175813 (Thread-65): sending response (<Response 2523 bytes [200 OK]>) to 10.0.36.232
+2020-11-10 10:25:14.223570 (Thread-1): finished collecting timing info
+2020-11-10 10:25:14.224075 (Thread-1): finished collecting timing info
+2020-11-10 10:25:14.504440 (Thread-66): handling poll request
+2020-11-10 10:25:14.504919 (Thread-66): Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': 'b9cb4131-4839-42d8-9062-69594a2c01e6', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fee5b7b65f8>]}
+2020-11-10 10:25:14.509548 (Thread-66): sending response (<Response 7453 bytes [200 OK]>) to 10.0.25.53
+2020-11-10 10:25:19.576581 (Thread-67): handling status request
+2020-11-10 10:25:19.577137 (Thread-67): Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': 'b9cb4131-4839-42d8-9062-69594a2c01e6', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fee5b7ac828>]}
+2020-11-10 10:25:19.583579 (Thread-67): sending response (<Response 16728 bytes [200 OK]>) to 10.0.11.107
+2020-11-10 10:25:19.901040 (Thread-68): handling run_sql request
+2020-11-10 10:25:19.901476 (Thread-68): Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': 'b9cb4131-4839-42d8-9062-69594a2c01e6', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fee5b7ac828>]}
+2020-11-10 10:25:20.817860 (Thread-68): sending response (<Response 137 bytes [200 OK]>) to 10.0.3.8
+2020-11-10 10:25:20.844595 (MainThread): Acquiring new bigquery connection "rpc.shopify_buyer_segmentation.request".
+2020-11-10 10:25:20.878447 (MainThread): Found 21 models, 0 tests, 0 snapshots, 0 analyses, 161 macros, 0 operations, 0 seed files, 0 sources
+2020-11-10 10:25:20.878943 (Thread-1): Acquiring new bigquery connection "rpc.shopify_buyer_segmentation.request".
+2020-11-10 10:25:20.879079 (Thread-1): Compiling rpc.shopify_buyer_segmentation.request
+2020-11-10 10:25:20.896042 (Thread-1): Opening a new connection, currently in state init
+2020-11-10 10:25:20.896652 (Thread-1): On rpc.shopify_buyer_segmentation.request: 
+
+        select
+            store_name as value
+
+        from `dbt-projects`.`dbt_buyer_segmentation`.`stores_proc`
+
+        
+        ##where 1 = 1
+        where platform = 'Google Analytics'
+        
+        
+        
+
+        group by 1
+        order by count(*) desc
+
+        
+        limit 50
+        
+2020-11-10 10:25:21.164249 (Thread-69): handling poll request
+2020-11-10 10:25:21.164781 (Thread-69): Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': 'b9cb4131-4839-42d8-9062-69594a2c01e6', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fee5b7ac828>]}
+2020-11-10 10:25:21.166981 (Thread-69): sending response (<Response 2519 bytes [200 OK]>) to 10.0.10.5
+2020-11-10 10:25:21.967476 (Thread-1): finished collecting timing info
+2020-11-10 10:25:21.967846 (Thread-1): On rpc.shopify_buyer_segmentation.request: 
+
+
+
+with refunds as (
+
+	
+	SELECT
+	--'Data Feeds' store_name,
+	store_name,
+	order_number,
+	checkout_id,
+	financial_status,
+	line_item_id,
+	quantity,
+	subtotal,
+	line_item.variant_id variant_id,
+	line_item.id refund_id,
+ 	_sdc_sequence
+	FROM `dbt-projects.shopify_Data Feeds.orders` 
+	cross join unnest(refunds), unnest(refund_line_items)
+  	where financial_status like '%refund%'
+	
+	
+
+)
+
+SELECT * 
+FROM 
+	(
+    SELECT
+    store_name,
+	order_number,
+	checkout_id,
+	financial_status,
+	line_item_id,
+	quantity,
+	subtotal refund_amount,
+	variant_id,
+	refund_id,
+ 	_sdc_sequence,
+    first_value(_sdc_sequence) OVER (PARTITION BY order_number, line_item_id ORDER BY _sdc_sequence DESC) lv
+    FROM refunds
+   	) 
+WHERE lv = _sdc_sequence
+
+	
+limit 100
+2020-11-10 10:25:22.142234 (Thread-1): Retry attempt 1 of 1 after error: BadRequest('Invalid dataset ID "shopify_Data Feeds". Dataset IDs must be alphanumeric (plus underscores and dashes) and must be at most 1024 characters long.',)
+2020-11-10 10:25:22.521145 (Thread-70): handling poll request
+2020-11-10 10:25:22.521629 (Thread-70): Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': 'b9cb4131-4839-42d8-9062-69594a2c01e6', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fee5b7a6fd0>]}
+2020-11-10 10:25:22.523007 (Thread-70): sending response (<Response 2339 bytes [200 OK]>) to 10.0.26.205
+2020-11-10 10:25:23.306854 (Thread-1): finished collecting timing info
+2020-11-10 10:25:23.307441 (Thread-1): Got an exception: Database Error
+  Invalid dataset ID "shopify_Data Feeds". Dataset IDs must be alphanumeric (plus underscores and dashes) and must be at most 1024 characters long.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/dist-packages/dbt/adapters/bigquery/connections.py", line 103, in exception_handler
+    yield
+  File "/usr/local/lib/python3.6/dist-packages/dbt/adapters/bigquery/connections.py", line 447, in _retry_and_handle
+    on_error=reopen_conn_on_error)
+  File "/usr/local/lib/python3.6/dist-packages/google/api_core/retry.py", line 184, in retry_target
+    return target()
+  File "/usr/local/lib/python3.6/dist-packages/dbt/adapters/bigquery/connections.py", line 266, in fn
+    return self._query_and_results(client, sql, conn, job_params)
+  File "/usr/local/lib/python3.6/dist-packages/dbt/adapters/bigquery/connections.py", line 428, in _query_and_results
+    iterator = query_job.result(timeout=timeout)
+  File "/usr/local/lib/python3.6/dist-packages/google/cloud/bigquery/job.py", line 3196, in result
+    super(QueryJob, self).result(retry=retry, timeout=timeout)
+  File "/usr/local/lib/python3.6/dist-packages/google/cloud/bigquery/job.py", line 818, in result
+    return super(_AsyncJob, self).result(timeout=timeout)
+  File "/usr/local/lib/python3.6/dist-packages/google/api_core/future/polling.py", line 130, in result
+    raise self._exception
+google.api_core.exceptions.BadRequest: 400 Invalid dataset ID "shopify_Data Feeds". Dataset IDs must be alphanumeric (plus underscores and dashes) and must be at most 1024 characters long.
+
+(job ID: adba156f-29b4-4cdd-b580-50211be0a3b4)
+
+                                         -----Query Job SQL Follows-----                                         
+
+    |    .    |    .    |    .    |    .    |    .    |    .    |    .    |    .    |    .    |    .    |
+   1:
+   2:
+   3:
+   4:
+   5:with refunds as (
+   6:
+   7:	
+   8:	SELECT
+   9:	--'Data Feeds' store_name,
+  10:	store_name,
+  11:	order_number,
+  12:	checkout_id,
+  13:	financial_status,
+  14:	line_item_id,
+  15:	quantity,
+  16:	subtotal,
+  17:	line_item.variant_id variant_id,
+  18:	line_item.id refund_id,
+  19: 	_sdc_sequence
+  20:	FROM `dbt-projects.shopify_Data Feeds.orders` 
+  21:	cross join unnest(refunds), unnest(refund_line_items)
+  22:  	where financial_status like '%refund%'
+  23:	
+  24:	
+  25:
+  26:)
+  27:
+  28:SELECT * 
+  29:FROM 
+  30:	(
+  31:    SELECT
+  32:    store_name,
+  33:	order_number,
+  34:	checkout_id,
+  35:	financial_status,
+  36:	line_item_id,
+  37:	quantity,
+  38:	subtotal refund_amount,
+  39:	variant_id,
+  40:	refund_id,
+  41: 	_sdc_sequence,
+  42:    first_value(_sdc_sequence) OVER (PARTITION BY order_number, line_item_id ORDER BY _sdc_sequence DESC) lv
+  43:    FROM refunds
+  44:   	) 
+  45:WHERE lv = _sdc_sequence
+  46:
+  47:	
+  48:limit 100
+    |    .    |    .    |    .    |    .    |    .    |    .    |    .    |    .    |    .    |    .    |
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/dist-packages/dbt/task/base.py", line 333, in safe_run
+    result = self.compile_and_execute(manifest, ctx)
+  File "/usr/local/lib/python3.6/dist-packages/dbt/task/base.py", line 276, in compile_and_execute
+    result = self.run(ctx.node, manifest)
+  File "/usr/local/lib/python3.6/dist-packages/dbt/task/base.py", line 378, in run
+    return self.execute(compiled_node, manifest)
+  File "/usr/local/lib/python3.6/dist-packages/dbt/rpc/node_runners.py", line 85, in execute
+    compiled_node.injected_sql, fetch=True
+  File "/usr/local/lib/python3.6/dist-packages/dbt/adapters/base/impl.py", line 227, in execute
+    fetch=fetch
+  File "/usr/local/lib/python3.6/dist-packages/dbt/adapters/bigquery/connections.py", line 275, in execute
+    query_job, iterator = self.raw_execute(sql, fetch=fetch)
+  File "/usr/local/lib/python3.6/dist-packages/dbt/adapters/bigquery/connections.py", line 268, in raw_execute
+    query_job, iterator = self._retry_and_handle(msg=sql, conn=conn, fn=fn)
+  File "/usr/local/lib/python3.6/dist-packages/dbt/adapters/bigquery/connections.py", line 447, in _retry_and_handle
+    on_error=reopen_conn_on_error)
+  File "/usr/lib/python3.6/contextlib.py", line 99, in __exit__
+    self.gen.throw(type, value, traceback)
+  File "/usr/local/lib/python3.6/dist-packages/dbt/adapters/bigquery/connections.py", line 107, in exception_handler
+    self.handle_error(e, message)
+  File "/usr/local/lib/python3.6/dist-packages/dbt/adapters/bigquery/connections.py", line 95, in handle_error
+    raise DatabaseException(error_msg)
+dbt.exceptions.DatabaseException: Database Error
+  Invalid dataset ID "shopify_Data Feeds". Dataset IDs must be alphanumeric (plus underscores and dashes) and must be at most 1024 characters long.
+2020-11-10 10:25:23.310292 (Thread-1): Got exception RPCException(10003, Database Error, {'type': 'DatabaseException', 'message': 'Database Error in rpc request (from remote system)\n  Invalid dataset ID "shopify_Data Feeds". Dataset IDs must be alphanumeric (plus underscores and dashes) and must be at most 1024 characters long.', 'raw_sql': "{% set stores = get_column_values(table=ref('stores_proc'), column='store_name', max_records=50, filter_column='platform', filter_value='Google Analytics') %}\n\n{% if stores != [] %}\n\nwith refunds as (\n\n\t{% for store in stores %}\n\tSELECT\n\t--'{{store}}' store_name,\n\tstore_name,\n\torder_number,\n\tcheckout_id,\n\tfinancial_status,\n\tline_item_id,\n\tquantity,\n\tsubtotal,\n\tline_item.variant_id variant_id,\n\tline_item.id refund_id,\n \t_sdc_sequence\n\tFROM `{{ target.project }}.shopify_{{store}}.orders` \n\tcross join unnest(refunds), unnest(refund_line_items)\n  \twhere financial_status like '%refund%'\n\t{% if not loop.last %} UNION ALL {% endif %}\n\t{% endfor %}\n\n)\n\nSELECT * \nFROM \n\t(\n    SELECT\n    store_name,\n\torder_number,\n\tcheckout_id,\n\tfinancial_status,\n\tline_item_id,\n\tquantity,\n\tsubtotal refund_amount,\n\tvariant_id,\n\trefund_id,\n \t_sdc_sequence,\n    first_value(_sdc_sequence) OVER (PARTITION BY order_number, line_item_id ORDER BY _sdc_sequence DESC) lv\n    FROM refunds\n   \t) \nWHERE lv = _sdc_sequence\n\n{% endif %}\t\nlimit 100", 'compiled_sql': "\n\n\n\nwith refunds as (\n\n\t\n\tSELECT\n\t--'Data Feeds' store_name,\n\tstore_name,\n\torder_number,\n\tcheckout_id,\n\tfinancial_status,\n\tline_item_id,\n\tquantity,\n\tsubtotal,\n\tline_item.variant_id variant_id,\n\tline_item.id refund_id,\n \t_sdc_sequence\n\tFROM `dbt-projects.shopify_Data Feeds.orders` \n\tcross join unnest(refunds), unnest(refund_line_items)\n  \twhere financial_status like '%refund%'\n\t\n\t\n\n)\n\nSELECT * \nFROM \n\t(\n    SELECT\n    store_name,\n\torder_number,\n\tcheckout_id,\n\tfinancial_status,\n\tline_item_id,\n\tquantity,\n\tsubtotal refund_amount,\n\tvariant_id,\n\trefund_id,\n \t_sdc_sequence,\n    first_value(_sdc_sequence) OVER (PARTITION BY order_number, line_item_id ORDER BY _sdc_sequence DESC) lv\n    FROM refunds\n   \t) \nWHERE lv = _sdc_sequence\n\n\t\nlimit 100", 'tags': None}, None)
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/dist-packages/dbt/task/rpc/sql_commands.py", line 145, in _in_thread
+    self.node_results.append(runner.safe_run(self.manifest))
+  File "/usr/local/lib/python3.6/dist-packages/dbt/task/base.py", line 349, in safe_run
+    result = self.error_result(ctx.node, error, started, [])
+  File "/usr/local/lib/python3.6/dist-packages/dbt/rpc/node_runners.py", line 52, in error_result
+    raise error
+dbt.rpc.error.RPCException: RPCException(10003, Database Error, {'type': 'DatabaseException', 'message': 'Database Error in rpc request (from remote system)\n  Invalid dataset ID "shopify_Data Feeds". Dataset IDs must be alphanumeric (plus underscores and dashes) and must be at most 1024 characters long.', 'raw_sql': "{% set stores = get_column_values(table=ref('stores_proc'), column='store_name', max_records=50, filter_column='platform', filter_value='Google Analytics') %}\n\n{% if stores != [] %}\n\nwith refunds as (\n\n\t{% for store in stores %}\n\tSELECT\n\t--'{{store}}' store_name,\n\tstore_name,\n\torder_number,\n\tcheckout_id,\n\tfinancial_status,\n\tline_item_id,\n\tquantity,\n\tsubtotal,\n\tline_item.variant_id variant_id,\n\tline_item.id refund_id,\n \t_sdc_sequence\n\tFROM `{{ target.project }}.shopify_{{store}}.orders` \n\tcross join unnest(refunds), unnest(refund_line_items)\n  \twhere financial_status like '%refund%'\n\t{% if not loop.last %} UNION ALL {% endif %}\n\t{% endfor %}\n\n)\n\nSELECT * \nFROM \n\t(\n    SELECT\n    store_name,\n\torder_number,\n\tcheckout_id,\n\tfinancial_status,\n\tline_item_id,\n\tquantity,\n\tsubtotal refund_amount,\n\tvariant_id,\n\trefund_id,\n \t_sdc_sequence,\n    first_value(_sdc_sequence) OVER (PARTITION BY order_number, line_item_id ORDER BY _sdc_sequence DESC) lv\n    FROM refunds\n   \t) \nWHERE lv = _sdc_sequence\n\n{% endif %}\t\nlimit 100", 'compiled_sql': "\n\n\n\nwith refunds as (\n\n\t\n\tSELECT\n\t--'Data Feeds' store_name,\n\tstore_name,\n\torder_number,\n\tcheckout_id,\n\tfinancial_status,\n\tline_item_id,\n\tquantity,\n\tsubtotal,\n\tline_item.variant_id variant_id,\n\tline_item.id refund_id,\n \t_sdc_sequence\n\tFROM `dbt-projects.shopify_Data Feeds.orders` \n\tcross join unnest(refunds), unnest(refund_line_items)\n  \twhere financial_status like '%refund%'\n\t\n\t\n\n)\n\nSELECT * \nFROM \n\t(\n    SELECT\n    store_name,\n\torder_number,\n\tcheckout_id,\n\tfinancial_status,\n\tline_item_id,\n\tquantity,\n\tsubtotal refund_amount,\n\tvariant_id,\n\trefund_id,\n \t_sdc_sequence,\n    first_value(_sdc_sequence) OVER (PARTITION BY order_number, line_item_id ORDER BY _sdc_sequence DESC) lv\n    FROM refunds\n   \t) \nWHERE lv = _sdc_sequence\n\n\t\nlimit 100", 'tags': None}, None)
+2020-11-10 10:25:23.842400 (Thread-71): handling poll request
+2020-11-10 10:25:23.842879 (Thread-71): Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': 'b9cb4131-4839-42d8-9062-69594a2c01e6', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fee5b7a6b70>]}
+2020-11-10 10:25:23.844183 (Thread-71): sending response (<Response 17646 bytes [200 OK]>) to 10.0.35.67
+2020-11-10 10:27:45.170792 (Thread-72): handling status request
+2020-11-10 10:27:45.172841 (Thread-72): Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': 'b9cb4131-4839-42d8-9062-69594a2c01e6', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fee5b7ac438>]}
+2020-11-10 10:27:45.179380 (Thread-72): sending response (<Response 16728 bytes [200 OK]>) to 10.0.26.205
+2020-11-10 10:27:45.518470 (Thread-73): handling run_sql request
+2020-11-10 10:27:45.519053 (Thread-73): Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': 'b9cb4131-4839-42d8-9062-69594a2c01e6', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fee5b4427b8>]}
+2020-11-10 10:27:46.460961 (Thread-73): sending response (<Response 137 bytes [200 OK]>) to 10.0.44.58
+2020-11-10 10:27:46.488176 (MainThread): Acquiring new bigquery connection "rpc.shopify_buyer_segmentation.request".
+2020-11-10 10:27:46.525470 (MainThread): Found 21 models, 0 tests, 0 snapshots, 0 analyses, 161 macros, 0 operations, 0 seed files, 0 sources
+2020-11-10 10:27:46.526099 (Thread-1): Acquiring new bigquery connection "rpc.shopify_buyer_segmentation.request".
+2020-11-10 10:27:46.526294 (Thread-1): Compiling rpc.shopify_buyer_segmentation.request
+2020-11-10 10:27:46.543865 (Thread-1): Opening a new connection, currently in state init
+2020-11-10 10:27:46.544587 (Thread-1): On rpc.shopify_buyer_segmentation.request: 
+
+        select
+            store_name as value
+
+        from `dbt-projects`.`dbt_buyer_segmentation`.`stores_proc`
+
+        
+        ##where 1 = 1
+        where platform = 'Google Analytics'
+        
+        
+        
+
+        group by 1
+        order by count(*) desc
+
+        
+        limit 50
+        
+2020-11-10 10:27:46.925501 (Thread-74): handling poll request
+2020-11-10 10:27:46.926063 (Thread-74): Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': 'b9cb4131-4839-42d8-9062-69594a2c01e6', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fee5b4427b8>]}
+2020-11-10 10:27:46.928280 (Thread-74): sending response (<Response 2519 bytes [200 OK]>) to 10.0.6.63
+2020-11-10 10:27:47.589240 (Thread-1): finished collecting timing info
+2020-11-10 10:27:47.589760 (Thread-1): On rpc.shopify_buyer_segmentation.request: 
+
+
+
+with refunds as (
+
+	
+	SELECT
+	--'Data Feeds' store_name,
+	store_name,
+	order_number,
+	checkout_id,
+	financial_status,
+	line_item_id,
+	quantity,
+	subtotal,
+	line_item.variant_id variant_id,
+	line_item.id refund_id,
+ 	_sdc_sequence
+	FROM `dbt-projects.shopify_data_feeds.orders` 
+	cross join unnest(refunds), unnest(refund_line_items)
+  	where financial_status like '%refund%'
+	
+	
+
+)
+
+SELECT * 
+FROM 
+	(
+    SELECT
+    store_name,
+	order_number,
+	checkout_id,
+	financial_status,
+	line_item_id,
+	quantity,
+	subtotal refund_amount,
+	variant_id,
+	refund_id,
+ 	_sdc_sequence,
+    first_value(_sdc_sequence) OVER (PARTITION BY order_number, line_item_id ORDER BY _sdc_sequence DESC) lv
+    FROM refunds
+   	) 
+WHERE lv = _sdc_sequence
+
+	
+limit 100
+2020-11-10 10:27:47.759834 (Thread-1): Unhandled error while running:
+
+
+
+
+with refunds as (
+
+	
+	SELECT
+	--'Data Feeds' store_name,
+	store_name,
+	order_number,
+	checkout_id,
+	financial_status,
+	line_item_id,
+	quantity,
+	subtotal,
+	line_item.variant_id variant_id,
+	line_item.id refund_id,
+ 	_sdc_sequence
+	FROM `dbt-projects.shopify_data_feeds.orders` 
+	cross join unnest(refunds), unnest(refund_line_items)
+  	where financial_status like '%refund%'
+	
+	
+
+)
+
+SELECT * 
+FROM 
+	(
+    SELECT
+    store_name,
+	order_number,
+	checkout_id,
+	financial_status,
+	line_item_id,
+	quantity,
+	subtotal refund_amount,
+	variant_id,
+	refund_id,
+ 	_sdc_sequence,
+    first_value(_sdc_sequence) OVER (PARTITION BY order_number, line_item_id ORDER BY _sdc_sequence DESC) lv
+    FROM refunds
+   	) 
+WHERE lv = _sdc_sequence
+
+	
+limit 100
+2020-11-10 10:27:47.760068 (Thread-1): finished collecting timing info
+2020-11-10 10:27:47.760414 (Thread-1): Got an exception: Runtime Error
+  404 Not found: Dataset dbt-projects:shopify_data_feeds was not found in location US
+  
+  (job ID: d3e0777b-7b11-4340-8650-5eb2d04d398b)
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/dist-packages/dbt/adapters/bigquery/connections.py", line 103, in exception_handler
+    yield
+  File "/usr/local/lib/python3.6/dist-packages/dbt/adapters/bigquery/connections.py", line 447, in _retry_and_handle
+    on_error=reopen_conn_on_error)
+  File "/usr/local/lib/python3.6/dist-packages/google/api_core/retry.py", line 184, in retry_target
+    return target()
+  File "/usr/local/lib/python3.6/dist-packages/dbt/adapters/bigquery/connections.py", line 266, in fn
+    return self._query_and_results(client, sql, conn, job_params)
+  File "/usr/local/lib/python3.6/dist-packages/dbt/adapters/bigquery/connections.py", line 428, in _query_and_results
+    iterator = query_job.result(timeout=timeout)
+  File "/usr/local/lib/python3.6/dist-packages/google/cloud/bigquery/job.py", line 3196, in result
+    super(QueryJob, self).result(retry=retry, timeout=timeout)
+  File "/usr/local/lib/python3.6/dist-packages/google/cloud/bigquery/job.py", line 818, in result
+    return super(_AsyncJob, self).result(timeout=timeout)
+  File "/usr/local/lib/python3.6/dist-packages/google/api_core/future/polling.py", line 130, in result
+    raise self._exception
+google.api_core.exceptions.NotFound: 404 Not found: Dataset dbt-projects:shopify_data_feeds was not found in location US
+
+(job ID: d3e0777b-7b11-4340-8650-5eb2d04d398b)
+
+                                         -----Query Job SQL Follows-----                                         
+
+    |    .    |    .    |    .    |    .    |    .    |    .    |    .    |    .    |    .    |    .    |
+   1:
+   2:
+   3:
+   4:
+   5:with refunds as (
+   6:
+   7:	
+   8:	SELECT
+   9:	--'Data Feeds' store_name,
+  10:	store_name,
+  11:	order_number,
+  12:	checkout_id,
+  13:	financial_status,
+  14:	line_item_id,
+  15:	quantity,
+  16:	subtotal,
+  17:	line_item.variant_id variant_id,
+  18:	line_item.id refund_id,
+  19: 	_sdc_sequence
+  20:	FROM `dbt-projects.shopify_data_feeds.orders` 
+  21:	cross join unnest(refunds), unnest(refund_line_items)
+  22:  	where financial_status like '%refund%'
+  23:	
+  24:	
+  25:
+  26:)
+  27:
+  28:SELECT * 
+  29:FROM 
+  30:	(
+  31:    SELECT
+  32:    store_name,
+  33:	order_number,
+  34:	checkout_id,
+  35:	financial_status,
+  36:	line_item_id,
+  37:	quantity,
+  38:	subtotal refund_amount,
+  39:	variant_id,
+  40:	refund_id,
+  41: 	_sdc_sequence,
+  42:    first_value(_sdc_sequence) OVER (PARTITION BY order_number, line_item_id ORDER BY _sdc_sequence DESC) lv
+  43:    FROM refunds
+  44:   	) 
+  45:WHERE lv = _sdc_sequence
+  46:
+  47:	
+  48:limit 100
+    |    .    |    .    |    .    |    .    |    .    |    .    |    .    |    .    |    .    |    .    |
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/dist-packages/dbt/task/base.py", line 333, in safe_run
+    result = self.compile_and_execute(manifest, ctx)
+  File "/usr/local/lib/python3.6/dist-packages/dbt/task/base.py", line 276, in compile_and_execute
+    result = self.run(ctx.node, manifest)
+  File "/usr/local/lib/python3.6/dist-packages/dbt/task/base.py", line 378, in run
+    return self.execute(compiled_node, manifest)
+  File "/usr/local/lib/python3.6/dist-packages/dbt/rpc/node_runners.py", line 85, in execute
+    compiled_node.injected_sql, fetch=True
+  File "/usr/local/lib/python3.6/dist-packages/dbt/adapters/base/impl.py", line 227, in execute
+    fetch=fetch
+  File "/usr/local/lib/python3.6/dist-packages/dbt/adapters/bigquery/connections.py", line 275, in execute
+    query_job, iterator = self.raw_execute(sql, fetch=fetch)
+  File "/usr/local/lib/python3.6/dist-packages/dbt/adapters/bigquery/connections.py", line 268, in raw_execute
+    query_job, iterator = self._retry_and_handle(msg=sql, conn=conn, fn=fn)
+  File "/usr/local/lib/python3.6/dist-packages/dbt/adapters/bigquery/connections.py", line 447, in _retry_and_handle
+    on_error=reopen_conn_on_error)
+  File "/usr/lib/python3.6/contextlib.py", line 99, in __exit__
+    self.gen.throw(type, value, traceback)
+  File "/usr/local/lib/python3.6/dist-packages/dbt/adapters/bigquery/connections.py", line 134, in exception_handler
+    raise RuntimeException(exc_message)
+dbt.exceptions.RuntimeException: Runtime Error
+  404 Not found: Dataset dbt-projects:shopify_data_feeds was not found in location US
+  
+  (job ID: d3e0777b-7b11-4340-8650-5eb2d04d398b)
+2020-11-10 10:27:47.763499 (Thread-1): Got exception RPCException(10001, Runtime error, {'type': 'RuntimeException', 'message': 'Runtime Error in rpc request (from remote system)\n  404 Not found: Dataset dbt-projects:shopify_data_feeds was not found in location US\n  \n  (job ID: d3e0777b-7b11-4340-8650-5eb2d04d398b)', 'raw_sql': "{% set stores = get_column_values(table=ref('stores_proc'), column='store_name', max_records=50, filter_column='platform', filter_value='Google Analytics') %}\n\n{% if stores != [] %}\n\nwith refunds as (\n\n\t{% for store in stores %}\n\tSELECT\n\t--'{{store}}' store_name,\n\tstore_name,\n\torder_number,\n\tcheckout_id,\n\tfinancial_status,\n\tline_item_id,\n\tquantity,\n\tsubtotal,\n\tline_item.variant_id variant_id,\n\tline_item.id refund_id,\n \t_sdc_sequence\n\tFROM `{{ target.project }}.shopify_data_feeds.orders` \n\tcross join unnest(refunds), unnest(refund_line_items)\n  \twhere financial_status like '%refund%'\n\t{% if not loop.last %} UNION ALL {% endif %}\n\t{% endfor %}\n\n)\n\nSELECT * \nFROM \n\t(\n    SELECT\n    store_name,\n\torder_number,\n\tcheckout_id,\n\tfinancial_status,\n\tline_item_id,\n\tquantity,\n\tsubtotal refund_amount,\n\tvariant_id,\n\trefund_id,\n \t_sdc_sequence,\n    first_value(_sdc_sequence) OVER (PARTITION BY order_number, line_item_id ORDER BY _sdc_sequence DESC) lv\n    FROM refunds\n   \t) \nWHERE lv = _sdc_sequence\n\n{% endif %}\t\nlimit 100", 'compiled_sql': "\n\n\n\nwith refunds as (\n\n\t\n\tSELECT\n\t--'Data Feeds' store_name,\n\tstore_name,\n\torder_number,\n\tcheckout_id,\n\tfinancial_status,\n\tline_item_id,\n\tquantity,\n\tsubtotal,\n\tline_item.variant_id variant_id,\n\tline_item.id refund_id,\n \t_sdc_sequence\n\tFROM `dbt-projects.shopify_data_feeds.orders` \n\tcross join unnest(refunds), unnest(refund_line_items)\n  \twhere financial_status like '%refund%'\n\t\n\t\n\n)\n\nSELECT * \nFROM \n\t(\n    SELECT\n    store_name,\n\torder_number,\n\tcheckout_id,\n\tfinancial_status,\n\tline_item_id,\n\tquantity,\n\tsubtotal refund_amount,\n\tvariant_id,\n\trefund_id,\n \t_sdc_sequence,\n    first_value(_sdc_sequence) OVER (PARTITION BY order_number, line_item_id ORDER BY _sdc_sequence DESC) lv\n    FROM refunds\n   \t) \nWHERE lv = _sdc_sequence\n\n\t\nlimit 100", 'tags': None}, None)
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/dist-packages/dbt/task/rpc/sql_commands.py", line 145, in _in_thread
+    self.node_results.append(runner.safe_run(self.manifest))
+  File "/usr/local/lib/python3.6/dist-packages/dbt/task/base.py", line 349, in safe_run
+    result = self.error_result(ctx.node, error, started, [])
+  File "/usr/local/lib/python3.6/dist-packages/dbt/rpc/node_runners.py", line 52, in error_result
+    raise error
+dbt.rpc.error.RPCException: RPCException(10001, Runtime error, {'type': 'RuntimeException', 'message': 'Runtime Error in rpc request (from remote system)\n  404 Not found: Dataset dbt-projects:shopify_data_feeds was not found in location US\n  \n  (job ID: d3e0777b-7b11-4340-8650-5eb2d04d398b)', 'raw_sql': "{% set stores = get_column_values(table=ref('stores_proc'), column='store_name', max_records=50, filter_column='platform', filter_value='Google Analytics') %}\n\n{% if stores != [] %}\n\nwith refunds as (\n\n\t{% for store in stores %}\n\tSELECT\n\t--'{{store}}' store_name,\n\tstore_name,\n\torder_number,\n\tcheckout_id,\n\tfinancial_status,\n\tline_item_id,\n\tquantity,\n\tsubtotal,\n\tline_item.variant_id variant_id,\n\tline_item.id refund_id,\n \t_sdc_sequence\n\tFROM `{{ target.project }}.shopify_data_feeds.orders` \n\tcross join unnest(refunds), unnest(refund_line_items)\n  \twhere financial_status like '%refund%'\n\t{% if not loop.last %} UNION ALL {% endif %}\n\t{% endfor %}\n\n)\n\nSELECT * \nFROM \n\t(\n    SELECT\n    store_name,\n\torder_number,\n\tcheckout_id,\n\tfinancial_status,\n\tline_item_id,\n\tquantity,\n\tsubtotal refund_amount,\n\tvariant_id,\n\trefund_id,\n \t_sdc_sequence,\n    first_value(_sdc_sequence) OVER (PARTITION BY order_number, line_item_id ORDER BY _sdc_sequence DESC) lv\n    FROM refunds\n   \t) \nWHERE lv = _sdc_sequence\n\n{% endif %}\t\nlimit 100", 'compiled_sql': "\n\n\n\nwith refunds as (\n\n\t\n\tSELECT\n\t--'Data Feeds' store_name,\n\tstore_name,\n\torder_number,\n\tcheckout_id,\n\tfinancial_status,\n\tline_item_id,\n\tquantity,\n\tsubtotal,\n\tline_item.variant_id variant_id,\n\tline_item.id refund_id,\n \t_sdc_sequence\n\tFROM `dbt-projects.shopify_data_feeds.orders` \n\tcross join unnest(refunds), unnest(refund_line_items)\n  \twhere financial_status like '%refund%'\n\t\n\t\n\n)\n\nSELECT * \nFROM \n\t(\n    SELECT\n    store_name,\n\torder_number,\n\tcheckout_id,\n\tfinancial_status,\n\tline_item_id,\n\tquantity,\n\tsubtotal refund_amount,\n\tvariant_id,\n\trefund_id,\n \t_sdc_sequence,\n    first_value(_sdc_sequence) OVER (PARTITION BY order_number, line_item_id ORDER BY _sdc_sequence DESC) lv\n    FROM refunds\n   \t) \nWHERE lv = _sdc_sequence\n\n\t\nlimit 100", 'tags': None}, None)
+2020-11-10 10:27:48.217855 (Thread-75): handling poll request
+2020-11-10 10:27:48.218334 (Thread-75): Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': 'b9cb4131-4839-42d8-9062-69594a2c01e6', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fee60138c50>]}
+2020-11-10 10:27:48.219275 (Thread-75): sending response (<Response 18030 bytes [200 OK]>) to 10.0.25.53
+2020-11-10 10:28:26.393021 (Thread-76): handling status request
+2020-11-10 10:28:26.393516 (Thread-76): Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': 'b9cb4131-4839-42d8-9062-69594a2c01e6', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fee6012ea20>]}
+2020-11-10 10:28:26.400314 (Thread-76): sending response (<Response 16728 bytes [200 OK]>) to 10.0.36.232
+2020-11-10 10:28:26.678160 (Thread-77): handling run_sql request
+2020-11-10 10:28:26.678657 (Thread-77): Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': 'b9cb4131-4839-42d8-9062-69594a2c01e6', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fee5b7b3f98>]}
+2020-11-10 10:28:27.656597 (Thread-77): sending response (<Response 137 bytes [200 OK]>) to 10.0.25.53
+2020-11-10 10:28:27.684297 (MainThread): Acquiring new bigquery connection "rpc.shopify_buyer_segmentation.request".
+2020-11-10 10:28:27.726352 (MainThread): Found 21 models, 0 tests, 0 snapshots, 0 analyses, 161 macros, 0 operations, 0 seed files, 0 sources
+2020-11-10 10:28:27.726962 (Thread-1): Acquiring new bigquery connection "rpc.shopify_buyer_segmentation.request".
+2020-11-10 10:28:27.727160 (Thread-1): Compiling rpc.shopify_buyer_segmentation.request
+2020-11-10 10:28:27.744511 (Thread-1): Opening a new connection, currently in state init
+2020-11-10 10:28:27.745156 (Thread-1): On rpc.shopify_buyer_segmentation.request: 
+
+        select
+            store_name as value
+
+        from `dbt-projects`.`dbt_buyer_segmentation`.`stores_proc`
+
+        
+        ##where 1 = 1
+        where platform = 'Google Analytics'
+        
+        
+        
+
+        group by 1
+        order by count(*) desc
+
+        
+        limit 50
+        
+2020-11-10 10:28:27.956649 (Thread-78): handling poll request
+2020-11-10 10:28:27.957187 (Thread-78): Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': 'b9cb4131-4839-42d8-9062-69594a2c01e6', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fee5b7b3f98>]}
+2020-11-10 10:28:27.959413 (Thread-78): sending response (<Response 2519 bytes [200 OK]>) to 10.0.29.97
+2020-11-10 10:28:28.641357 (Thread-1): finished collecting timing info
+2020-11-10 10:28:28.641763 (Thread-1): On rpc.shopify_buyer_segmentation.request: 
+
+
+
+with refunds as (
+
+	
+	SELECT
+	--'Data Feeds' store_name,
+	store_name,
+	order_number,
+	checkout_id,
+	financial_status,
+	line_item_id,
+	quantity,
+	subtotal,
+	line_item.variant_id variant_id,
+	line_item.id refund_id,
+ 	_sdc_sequence
+	FROM `dbt-projects.agency_data_pipeline.orders` 
+	cross join unnest(refunds), unnest(refund_line_items)
+  	where financial_status like '%refund%'
+	
+	
+
+)
+
+SELECT * 
+FROM 
+	(
+    SELECT
+    store_name,
+	order_number,
+	checkout_id,
+	financial_status,
+	line_item_id,
+	quantity,
+	subtotal refund_amount,
+	variant_id,
+	refund_id,
+ 	_sdc_sequence,
+    first_value(_sdc_sequence) OVER (PARTITION BY order_number, line_item_id ORDER BY _sdc_sequence DESC) lv
+    FROM refunds
+   	) 
+WHERE lv = _sdc_sequence
+
+	
+limit 100
+2020-11-10 10:28:28.828196 (Thread-1): Unhandled error while running:
+
+
+
+
+with refunds as (
+
+	
+	SELECT
+	--'Data Feeds' store_name,
+	store_name,
+	order_number,
+	checkout_id,
+	financial_status,
+	line_item_id,
+	quantity,
+	subtotal,
+	line_item.variant_id variant_id,
+	line_item.id refund_id,
+ 	_sdc_sequence
+	FROM `dbt-projects.agency_data_pipeline.orders` 
+	cross join unnest(refunds), unnest(refund_line_items)
+  	where financial_status like '%refund%'
+	
+	
+
+)
+
+SELECT * 
+FROM 
+	(
+    SELECT
+    store_name,
+	order_number,
+	checkout_id,
+	financial_status,
+	line_item_id,
+	quantity,
+	subtotal refund_amount,
+	variant_id,
+	refund_id,
+ 	_sdc_sequence,
+    first_value(_sdc_sequence) OVER (PARTITION BY order_number, line_item_id ORDER BY _sdc_sequence DESC) lv
+    FROM refunds
+   	) 
+WHERE lv = _sdc_sequence
+
+	
+limit 100
+2020-11-10 10:28:28.828424 (Thread-1): finished collecting timing info
+2020-11-10 10:28:28.828758 (Thread-1): Got an exception: Runtime Error
+  404 Not found: Table dbt-projects:agency_data_pipeline.orders was not found in location US
+  
+  (job ID: 3b5c20eb-5b4e-47e8-8e2e-4f065c921ecc)
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/dist-packages/dbt/adapters/bigquery/connections.py", line 103, in exception_handler
+    yield
+  File "/usr/local/lib/python3.6/dist-packages/dbt/adapters/bigquery/connections.py", line 447, in _retry_and_handle
+    on_error=reopen_conn_on_error)
+  File "/usr/local/lib/python3.6/dist-packages/google/api_core/retry.py", line 184, in retry_target
+    return target()
+  File "/usr/local/lib/python3.6/dist-packages/dbt/adapters/bigquery/connections.py", line 266, in fn
+    return self._query_and_results(client, sql, conn, job_params)
+  File "/usr/local/lib/python3.6/dist-packages/dbt/adapters/bigquery/connections.py", line 428, in _query_and_results
+    iterator = query_job.result(timeout=timeout)
+  File "/usr/local/lib/python3.6/dist-packages/google/cloud/bigquery/job.py", line 3196, in result
+    super(QueryJob, self).result(retry=retry, timeout=timeout)
+  File "/usr/local/lib/python3.6/dist-packages/google/cloud/bigquery/job.py", line 818, in result
+    return super(_AsyncJob, self).result(timeout=timeout)
+  File "/usr/local/lib/python3.6/dist-packages/google/api_core/future/polling.py", line 130, in result
+    raise self._exception
+google.api_core.exceptions.NotFound: 404 Not found: Table dbt-projects:agency_data_pipeline.orders was not found in location US
+
+(job ID: 3b5c20eb-5b4e-47e8-8e2e-4f065c921ecc)
+
+                                         -----Query Job SQL Follows-----                                         
+
+    |    .    |    .    |    .    |    .    |    .    |    .    |    .    |    .    |    .    |    .    |
+   1:
+   2:
+   3:
+   4:
+   5:with refunds as (
+   6:
+   7:	
+   8:	SELECT
+   9:	--'Data Feeds' store_name,
+  10:	store_name,
+  11:	order_number,
+  12:	checkout_id,
+  13:	financial_status,
+  14:	line_item_id,
+  15:	quantity,
+  16:	subtotal,
+  17:	line_item.variant_id variant_id,
+  18:	line_item.id refund_id,
+  19: 	_sdc_sequence
+  20:	FROM `dbt-projects.agency_data_pipeline.orders` 
+  21:	cross join unnest(refunds), unnest(refund_line_items)
+  22:  	where financial_status like '%refund%'
+  23:	
+  24:	
+  25:
+  26:)
+  27:
+  28:SELECT * 
+  29:FROM 
+  30:	(
+  31:    SELECT
+  32:    store_name,
+  33:	order_number,
+  34:	checkout_id,
+  35:	financial_status,
+  36:	line_item_id,
+  37:	quantity,
+  38:	subtotal refund_amount,
+  39:	variant_id,
+  40:	refund_id,
+  41: 	_sdc_sequence,
+  42:    first_value(_sdc_sequence) OVER (PARTITION BY order_number, line_item_id ORDER BY _sdc_sequence DESC) lv
+  43:    FROM refunds
+  44:   	) 
+  45:WHERE lv = _sdc_sequence
+  46:
+  47:	
+  48:limit 100
+    |    .    |    .    |    .    |    .    |    .    |    .    |    .    |    .    |    .    |    .    |
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/dist-packages/dbt/task/base.py", line 333, in safe_run
+    result = self.compile_and_execute(manifest, ctx)
+  File "/usr/local/lib/python3.6/dist-packages/dbt/task/base.py", line 276, in compile_and_execute
+    result = self.run(ctx.node, manifest)
+  File "/usr/local/lib/python3.6/dist-packages/dbt/task/base.py", line 378, in run
+    return self.execute(compiled_node, manifest)
+  File "/usr/local/lib/python3.6/dist-packages/dbt/rpc/node_runners.py", line 85, in execute
+    compiled_node.injected_sql, fetch=True
+  File "/usr/local/lib/python3.6/dist-packages/dbt/adapters/base/impl.py", line 227, in execute
+    fetch=fetch
+  File "/usr/local/lib/python3.6/dist-packages/dbt/adapters/bigquery/connections.py", line 275, in execute
+    query_job, iterator = self.raw_execute(sql, fetch=fetch)
+  File "/usr/local/lib/python3.6/dist-packages/dbt/adapters/bigquery/connections.py", line 268, in raw_execute
+    query_job, iterator = self._retry_and_handle(msg=sql, conn=conn, fn=fn)
+  File "/usr/local/lib/python3.6/dist-packages/dbt/adapters/bigquery/connections.py", line 447, in _retry_and_handle
+    on_error=reopen_conn_on_error)
+  File "/usr/lib/python3.6/contextlib.py", line 99, in __exit__
+    self.gen.throw(type, value, traceback)
+  File "/usr/local/lib/python3.6/dist-packages/dbt/adapters/bigquery/connections.py", line 134, in exception_handler
+    raise RuntimeException(exc_message)
+dbt.exceptions.RuntimeException: Runtime Error
+  404 Not found: Table dbt-projects:agency_data_pipeline.orders was not found in location US
+  
+  (job ID: 3b5c20eb-5b4e-47e8-8e2e-4f065c921ecc)
+2020-11-10 10:28:28.831608 (Thread-1): Got exception RPCException(10001, Runtime error, {'type': 'RuntimeException', 'message': 'Runtime Error in rpc request (from remote system)\n  404 Not found: Table dbt-projects:agency_data_pipeline.orders was not found in location US\n  \n  (job ID: 3b5c20eb-5b4e-47e8-8e2e-4f065c921ecc)', 'raw_sql': "{% set stores = get_column_values(table=ref('stores_proc'), column='store_name', max_records=50, filter_column='platform', filter_value='Google Analytics') %}\n\n{% if stores != [] %}\n\nwith refunds as (\n\n\t{% for store in stores %}\n\tSELECT\n\t--'{{store}}' store_name,\n\tstore_name,\n\torder_number,\n\tcheckout_id,\n\tfinancial_status,\n\tline_item_id,\n\tquantity,\n\tsubtotal,\n\tline_item.variant_id variant_id,\n\tline_item.id refund_id,\n \t_sdc_sequence\n\tFROM `{{ target.project }}.agency_data_pipeline.orders` \n\tcross join unnest(refunds), unnest(refund_line_items)\n  \twhere financial_status like '%refund%'\n\t{% if not loop.last %} UNION ALL {% endif %}\n\t{% endfor %}\n\n)\n\nSELECT * \nFROM \n\t(\n    SELECT\n    store_name,\n\torder_number,\n\tcheckout_id,\n\tfinancial_status,\n\tline_item_id,\n\tquantity,\n\tsubtotal refund_amount,\n\tvariant_id,\n\trefund_id,\n \t_sdc_sequence,\n    first_value(_sdc_sequence) OVER (PARTITION BY order_number, line_item_id ORDER BY _sdc_sequence DESC) lv\n    FROM refunds\n   \t) \nWHERE lv = _sdc_sequence\n\n{% endif %}\t\nlimit 100", 'compiled_sql': "\n\n\n\nwith refunds as (\n\n\t\n\tSELECT\n\t--'Data Feeds' store_name,\n\tstore_name,\n\torder_number,\n\tcheckout_id,\n\tfinancial_status,\n\tline_item_id,\n\tquantity,\n\tsubtotal,\n\tline_item.variant_id variant_id,\n\tline_item.id refund_id,\n \t_sdc_sequence\n\tFROM `dbt-projects.agency_data_pipeline.orders` \n\tcross join unnest(refunds), unnest(refund_line_items)\n  \twhere financial_status like '%refund%'\n\t\n\t\n\n)\n\nSELECT * \nFROM \n\t(\n    SELECT\n    store_name,\n\torder_number,\n\tcheckout_id,\n\tfinancial_status,\n\tline_item_id,\n\tquantity,\n\tsubtotal refund_amount,\n\tvariant_id,\n\trefund_id,\n \t_sdc_sequence,\n    first_value(_sdc_sequence) OVER (PARTITION BY order_number, line_item_id ORDER BY _sdc_sequence DESC) lv\n    FROM refunds\n   \t) \nWHERE lv = _sdc_sequence\n\n\t\nlimit 100", 'tags': None}, None)
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/dist-packages/dbt/task/rpc/sql_commands.py", line 145, in _in_thread
+    self.node_results.append(runner.safe_run(self.manifest))
+  File "/usr/local/lib/python3.6/dist-packages/dbt/task/base.py", line 349, in safe_run
+    result = self.error_result(ctx.node, error, started, [])
+  File "/usr/local/lib/python3.6/dist-packages/dbt/rpc/node_runners.py", line 52, in error_result
+    raise error
+dbt.rpc.error.RPCException: RPCException(10001, Runtime error, {'type': 'RuntimeException', 'message': 'Runtime Error in rpc request (from remote system)\n  404 Not found: Table dbt-projects:agency_data_pipeline.orders was not found in location US\n  \n  (job ID: 3b5c20eb-5b4e-47e8-8e2e-4f065c921ecc)', 'raw_sql': "{% set stores = get_column_values(table=ref('stores_proc'), column='store_name', max_records=50, filter_column='platform', filter_value='Google Analytics') %}\n\n{% if stores != [] %}\n\nwith refunds as (\n\n\t{% for store in stores %}\n\tSELECT\n\t--'{{store}}' store_name,\n\tstore_name,\n\torder_number,\n\tcheckout_id,\n\tfinancial_status,\n\tline_item_id,\n\tquantity,\n\tsubtotal,\n\tline_item.variant_id variant_id,\n\tline_item.id refund_id,\n \t_sdc_sequence\n\tFROM `{{ target.project }}.agency_data_pipeline.orders` \n\tcross join unnest(refunds), unnest(refund_line_items)\n  \twhere financial_status like '%refund%'\n\t{% if not loop.last %} UNION ALL {% endif %}\n\t{% endfor %}\n\n)\n\nSELECT * \nFROM \n\t(\n    SELECT\n    store_name,\n\torder_number,\n\tcheckout_id,\n\tfinancial_status,\n\tline_item_id,\n\tquantity,\n\tsubtotal refund_amount,\n\tvariant_id,\n\trefund_id,\n \t_sdc_sequence,\n    first_value(_sdc_sequence) OVER (PARTITION BY order_number, line_item_id ORDER BY _sdc_sequence DESC) lv\n    FROM refunds\n   \t) \nWHERE lv = _sdc_sequence\n\n{% endif %}\t\nlimit 100", 'compiled_sql': "\n\n\n\nwith refunds as (\n\n\t\n\tSELECT\n\t--'Data Feeds' store_name,\n\tstore_name,\n\torder_number,\n\tcheckout_id,\n\tfinancial_status,\n\tline_item_id,\n\tquantity,\n\tsubtotal,\n\tline_item.variant_id variant_id,\n\tline_item.id refund_id,\n \t_sdc_sequence\n\tFROM `dbt-projects.agency_data_pipeline.orders` \n\tcross join unnest(refunds), unnest(refund_line_items)\n  \twhere financial_status like '%refund%'\n\t\n\t\n\n)\n\nSELECT * \nFROM \n\t(\n    SELECT\n    store_name,\n\torder_number,\n\tcheckout_id,\n\tfinancial_status,\n\tline_item_id,\n\tquantity,\n\tsubtotal refund_amount,\n\tvariant_id,\n\trefund_id,\n \t_sdc_sequence,\n    first_value(_sdc_sequence) OVER (PARTITION BY order_number, line_item_id ORDER BY _sdc_sequence DESC) lv\n    FROM refunds\n   \t) \nWHERE lv = _sdc_sequence\n\n\t\nlimit 100", 'tags': None}, None)
+2020-11-10 10:28:29.285105 (Thread-79): handling poll request
+2020-11-10 10:28:29.285596 (Thread-79): Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': 'b9cb4131-4839-42d8-9062-69594a2c01e6', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fee60136128>]}
+2020-11-10 10:28:29.286603 (Thread-79): sending response (<Response 18090 bytes [200 OK]>) to 10.0.35.67
+2020-11-10 10:59:35.452188 (Thread-80): handling status request
+2020-11-10 10:59:35.454762 (Thread-80): Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': 'b9cb4131-4839-42d8-9062-69594a2c01e6', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fee601368d0>]}
+2020-11-10 10:59:35.461925 (Thread-80): sending response (<Response 16728 bytes [200 OK]>) to 10.0.29.97
+2020-11-10 10:59:35.761191 (Thread-81): handling run_sql request
+2020-11-10 10:59:35.761662 (Thread-81): Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': 'b9cb4131-4839-42d8-9062-69594a2c01e6', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fee601465f8>]}
+2020-11-10 10:59:36.747927 (Thread-81): sending response (<Response 137 bytes [200 OK]>) to 10.0.3.8
+2020-11-10 10:59:36.774811 (MainThread): Acquiring new bigquery connection "rpc.shopify_buyer_segmentation.request".
+2020-11-10 10:59:36.799930 (MainThread): Found 21 models, 0 tests, 0 snapshots, 0 analyses, 161 macros, 0 operations, 0 seed files, 0 sources
+2020-11-10 10:59:36.800421 (Thread-1): Acquiring new bigquery connection "rpc.shopify_buyer_segmentation.request".
+2020-11-10 10:59:36.800555 (Thread-1): Compiling rpc.shopify_buyer_segmentation.request
+2020-11-10 10:59:36.815257 (Thread-1): finished collecting timing info
+2020-11-10 10:59:36.815547 (Thread-1): Opening a new connection, currently in state init
+2020-11-10 10:59:36.816143 (Thread-1): On rpc.shopify_buyer_segmentation.request: select 
+store,
+store_name,
+account,
+platform,
+max(time_of_entry) time_of_entry
+
+from  ( 
+
+SELECT  
+store,
+bigquery_name, 
+name as store_name,
+account,
+platform,
+time_of_entry,
+first_value(time_of_entry) OVER (PARTITION BY store ORDER BY time_of_entry DESC) lv
+FROM `dbt-projects.agency_data_pipeline.data_feeds` 
+where name != ''
+
+) 
+
+WHERE lv = time_of_entry
+group by store, store_name, account, platform
+
+limit 100
+2020-11-10 10:59:37.098639 (Thread-82): handling poll request
+2020-11-10 10:59:37.099170 (Thread-82): Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': 'b9cb4131-4839-42d8-9062-69594a2c01e6', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fee601465f8>]}
+2020-11-10 10:59:37.101810 (Thread-82): sending response (<Response 3029 bytes [200 OK]>) to 10.0.42.233
+2020-11-10 10:59:38.386953 (Thread-83): handling poll request
+2020-11-10 10:59:38.387433 (Thread-83): Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': 'b9cb4131-4839-42d8-9062-69594a2c01e6', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fee601369b0>]}
+2020-11-10 10:59:38.388449 (Thread-83): sending response (<Response 390 bytes [200 OK]>) to 10.0.29.97
+2020-11-10 10:59:39.104136 (Thread-1): finished collecting timing info
+2020-11-10 10:59:39.690735 (Thread-84): handling poll request
+2020-11-10 10:59:39.691230 (Thread-84): Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': 'b9cb4131-4839-42d8-9062-69594a2c01e6', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fee60136668>]}
+2020-11-10 10:59:39.695850 (Thread-84): sending response (<Response 4957 bytes [200 OK]>) to 10.0.29.97
+2020-11-10 11:01:44.219821 (MainThread): writing 1 spans (enabled:True)
+2020-11-10 11:01:44.221564 (MainThread): 
+      name jinja2.compile
+        id 12463248619090109630
+  trace_id 516267264338341122
+ parent_id None
+   service None
+  resource <memory>
+      type template
+     start 1605006104.218807
+       end 1605006104.219584
+  duration 0.000777s
+     error 0
+      tags 
+           jinja2.template_name:<memory>
+           runtime-id:9af282b3e7a44bed9d3eb4c6d5b15d7b
+2020-11-10 11:01:44.334608 (Thread-85): Got an acceptable cached parse result
+2020-11-10 11:01:44.458983 (Thread-85): Acquiring new bigquery connection "model.shopify_buyer_segmentation.shopify_refunds_proc".
+2020-11-10 11:01:44.579015 (AgentWriter): reported 40 traces in 0.02065s
+2020-11-10 11:01:44.579278 (AgentWriter): initialized RateSampler, sample 100% of traces, 31 additional messages skipped
+2020-11-10 11:01:45.282973 (Thread-86): handling status request
+2020-11-10 11:01:45.283466 (Thread-86): Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': 'b9cb4131-4839-42d8-9062-69594a2c01e6', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fee5b27fdd8>]}
+2020-11-10 11:01:45.284507 (Thread-86): sending response (<Response 769 bytes [200 OK]>) to 10.0.35.67
+2020-11-10 11:01:57.195094 (Thread-87): handling status request
+2020-11-10 11:01:57.195594 (Thread-87): Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': 'b9cb4131-4839-42d8-9062-69594a2c01e6', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fee6026b518>]}
+2020-11-10 11:01:57.196598 (Thread-87): sending response (<Response 769 bytes [200 OK]>) to 10.0.6.63
+2020-11-10 11:01:57.601277 (Thread-88): handling compile_sql request
+2020-11-10 11:01:57.601833 (Thread-88): Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': 'b9cb4131-4839-42d8-9062-69594a2c01e6', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fee6026b390>]}
+2020-11-10 11:01:57.603118 (Thread-88): Connection 'model.shopify_buyer_segmentation.shopify_refunds_proc' was properly closed.
+2020-11-10 11:01:58.621144 (Thread-88): sending response (<Response 137 bytes [200 OK]>) to 10.0.35.67
+2020-11-10 11:01:58.648096 (MainThread): Acquiring new bigquery connection "rpc.shopify_buyer_segmentation.request".
+2020-11-10 11:01:58.682052 (MainThread): Found 21 models, 0 tests, 0 snapshots, 0 analyses, 161 macros, 0 operations, 0 seed files, 0 sources
+2020-11-10 11:01:58.682601 (Thread-1): Acquiring new bigquery connection "rpc.shopify_buyer_segmentation.request".
+2020-11-10 11:01:58.682788 (Thread-1): Compiling rpc.shopify_buyer_segmentation.request
+2020-11-10 11:01:58.709420 (Thread-1): Opening a new connection, currently in state init
+2020-11-10 11:01:58.710241 (Thread-1): On rpc.shopify_buyer_segmentation.request: 
+
+        select
+            store_name as value
+
+        from `dbt-projects`.`dbt_buyer_segmentation`.`stores_proc`
+
+        
+        ##where 1 = 1
+        where platform = 'Service'
+        
+        
+        
+
+        group by 1
+        order by count(*) desc
+
+        
+        limit 50
+        
+2020-11-10 11:01:58.978953 (Thread-89): handling poll request
+2020-11-10 11:01:58.979495 (Thread-89): Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': 'b9cb4131-4839-42d8-9062-69594a2c01e6', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fee5b58e278>]}
+2020-11-10 11:01:58.981690 (Thread-89): sending response (<Response 2514 bytes [200 OK]>) to 10.0.25.53
+2020-11-10 11:02:00.119090 (Thread-1): finished collecting timing info
+2020-11-10 11:02:00.119590 (Thread-1): finished collecting timing info
+2020-11-10 11:02:00.355829 (Thread-90): handling poll request
+2020-11-10 11:02:00.356413 (Thread-90): Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': 'b9cb4131-4839-42d8-9062-69594a2c01e6', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fee5b4d0668>]}
+2020-11-10 11:02:00.361492 (Thread-90): sending response (<Response 5028 bytes [200 OK]>) to 10.0.29.97
+2020-11-10 11:02:03.705582 (Thread-91): handling status request
+2020-11-10 11:02:03.706251 (Thread-91): Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': 'b9cb4131-4839-42d8-9062-69594a2c01e6', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fee5b6c04e0>]}
+2020-11-10 11:02:03.707619 (Thread-91): sending response (<Response 769 bytes [200 OK]>) to 10.0.42.233
+2020-11-10 11:02:04.096067 (Thread-92): handling run_sql request
+2020-11-10 11:02:04.096563 (Thread-92): Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': 'b9cb4131-4839-42d8-9062-69594a2c01e6', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fee5b6c04e0>]}
+2020-11-10 11:02:05.154956 (Thread-92): sending response (<Response 137 bytes [200 OK]>) to 10.0.42.233
+2020-11-10 11:02:05.185124 (MainThread): Acquiring new bigquery connection "rpc.shopify_buyer_segmentation.request".
+2020-11-10 11:02:05.223532 (MainThread): Found 21 models, 0 tests, 0 snapshots, 0 analyses, 161 macros, 0 operations, 0 seed files, 0 sources
+2020-11-10 11:02:05.224171 (Thread-1): Acquiring new bigquery connection "rpc.shopify_buyer_segmentation.request".
+2020-11-10 11:02:05.224373 (Thread-1): Compiling rpc.shopify_buyer_segmentation.request
+2020-11-10 11:02:05.243065 (Thread-1): Opening a new connection, currently in state init
+2020-11-10 11:02:05.243808 (Thread-1): On rpc.shopify_buyer_segmentation.request: 
+
+        select
+            store_name as value
+
+        from `dbt-projects`.`dbt_buyer_segmentation`.`stores_proc`
+
+        
+        ##where 1 = 1
+        where platform = 'Service'
+        
+        
+        
+
+        group by 1
+        order by count(*) desc
+
+        
+        limit 50
+        
+2020-11-10 11:02:05.456822 (Thread-93): handling poll request
+2020-11-10 11:02:05.457377 (Thread-93): Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': 'b9cb4131-4839-42d8-9062-69594a2c01e6', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fee5b5ad240>]}
+2020-11-10 11:02:05.460139 (Thread-93): sending response (<Response 2510 bytes [200 OK]>) to 10.0.26.205
+2020-11-10 11:02:06.127412 (Thread-1): finished collecting timing info
+2020-11-10 11:02:06.127792 (Thread-1): On rpc.shopify_buyer_segmentation.request: 
+
+	
+limit 100
+2020-11-10 11:02:06.299934 (Thread-1): Retry attempt 1 of 1 after error: BadRequest('Syntax error: Expected end of input but got keyword LIMIT at [4:1]',)
+2020-11-10 11:02:06.802618 (Thread-94): handling poll request
+2020-11-10 11:02:06.803296 (Thread-94): Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': 'b9cb4131-4839-42d8-9062-69594a2c01e6', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fee5b6c0518>]}
+2020-11-10 11:02:06.805249 (Thread-94): sending response (<Response 1454 bytes [200 OK]>) to 10.0.35.67
+2020-11-10 11:02:07.499437 (Thread-1): finished collecting timing info
+2020-11-10 11:02:07.500010 (Thread-1): Got an exception: Database Error
+  Syntax error: Expected end of input but got keyword LIMIT at [4:1]
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/dist-packages/dbt/adapters/bigquery/connections.py", line 103, in exception_handler
+    yield
+  File "/usr/local/lib/python3.6/dist-packages/dbt/adapters/bigquery/connections.py", line 447, in _retry_and_handle
+    on_error=reopen_conn_on_error)
+  File "/usr/local/lib/python3.6/dist-packages/google/api_core/retry.py", line 184, in retry_target
+    return target()
+  File "/usr/local/lib/python3.6/dist-packages/dbt/adapters/bigquery/connections.py", line 266, in fn
+    return self._query_and_results(client, sql, conn, job_params)
+  File "/usr/local/lib/python3.6/dist-packages/dbt/adapters/bigquery/connections.py", line 428, in _query_and_results
+    iterator = query_job.result(timeout=timeout)
+  File "/usr/local/lib/python3.6/dist-packages/google/cloud/bigquery/job.py", line 3196, in result
+    super(QueryJob, self).result(retry=retry, timeout=timeout)
+  File "/usr/local/lib/python3.6/dist-packages/google/cloud/bigquery/job.py", line 818, in result
+    return super(_AsyncJob, self).result(timeout=timeout)
+  File "/usr/local/lib/python3.6/dist-packages/google/api_core/future/polling.py", line 130, in result
+    raise self._exception
+google.api_core.exceptions.BadRequest: 400 Syntax error: Expected end of input but got keyword LIMIT at [4:1]
+
+(job ID: 6d651783-e55e-4d5b-ba7c-5b0ebb5abb89)
+
+-----Query Job SQL Follows-----
+
+    |
+   1:
+   2:
+   3:	
+   4:limit 100
+    |
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/dist-packages/dbt/task/base.py", line 333, in safe_run
+    result = self.compile_and_execute(manifest, ctx)
+  File "/usr/local/lib/python3.6/dist-packages/dbt/task/base.py", line 276, in compile_and_execute
+    result = self.run(ctx.node, manifest)
+  File "/usr/local/lib/python3.6/dist-packages/dbt/task/base.py", line 378, in run
+    return self.execute(compiled_node, manifest)
+  File "/usr/local/lib/python3.6/dist-packages/dbt/rpc/node_runners.py", line 85, in execute
+    compiled_node.injected_sql, fetch=True
+  File "/usr/local/lib/python3.6/dist-packages/dbt/adapters/base/impl.py", line 227, in execute
+    fetch=fetch
+  File "/usr/local/lib/python3.6/dist-packages/dbt/adapters/bigquery/connections.py", line 275, in execute
+    query_job, iterator = self.raw_execute(sql, fetch=fetch)
+  File "/usr/local/lib/python3.6/dist-packages/dbt/adapters/bigquery/connections.py", line 268, in raw_execute
+    query_job, iterator = self._retry_and_handle(msg=sql, conn=conn, fn=fn)
+  File "/usr/local/lib/python3.6/dist-packages/dbt/adapters/bigquery/connections.py", line 447, in _retry_and_handle
+    on_error=reopen_conn_on_error)
+  File "/usr/lib/python3.6/contextlib.py", line 99, in __exit__
+    self.gen.throw(type, value, traceback)
+  File "/usr/local/lib/python3.6/dist-packages/dbt/adapters/bigquery/connections.py", line 107, in exception_handler
+    self.handle_error(e, message)
+  File "/usr/local/lib/python3.6/dist-packages/dbt/adapters/bigquery/connections.py", line 95, in handle_error
+    raise DatabaseException(error_msg)
+dbt.exceptions.DatabaseException: Database Error
+  Syntax error: Expected end of input but got keyword LIMIT at [4:1]
+2020-11-10 11:02:07.502928 (Thread-1): Got exception RPCException(10003, Database Error, {'type': 'DatabaseException', 'message': 'Database Error in rpc request (from remote system)\n  Syntax error: Expected end of input but got keyword LIMIT at [4:1]', 'raw_sql': "{% set stores = get_column_values(table=ref('stores_proc'), column='store_name', max_records=50, filter_column='platform', filter_value='Service') %}\n\n{% if stores != [] %}\n\nwith refunds as (\n\n\t{% for store in stores %}\n\tSELECT\n\t--'{{store}}' store_name,\n\tstore_name,\n\torder_number,\n\tcheckout_id,\n\tfinancial_status,\n\tline_item_id,\n\tquantity,\n\tsubtotal,\n\tline_item.variant_id variant_id,\n\tline_item.id refund_id,\n \t_sdc_sequence\n\tFROM `{{ target.project }}.agency_data_pipeline.orders` \n\tcross join unnest(refunds), unnest(refund_line_items)\n  \twhere financial_status like '%refund%'\n\t{% if not loop.last %} UNION ALL {% endif %}\n\t{% endfor %}\n\n)\n\nSELECT * \nFROM \n\t(\n    SELECT\n    store_name,\n\torder_number,\n\tcheckout_id,\n\tfinancial_status,\n\tline_item_id,\n\tquantity,\n\tsubtotal refund_amount,\n\tvariant_id,\n\trefund_id,\n \t_sdc_sequence,\n    first_value(_sdc_sequence) OVER (PARTITION BY order_number, line_item_id ORDER BY _sdc_sequence DESC) lv\n    FROM refunds\n   \t) \nWHERE lv = _sdc_sequence\n\n{% endif %}\t\nlimit 100", 'compiled_sql': '\n\n\t\nlimit 100', 'tags': None}, None)
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/dist-packages/dbt/task/rpc/sql_commands.py", line 145, in _in_thread
+    self.node_results.append(runner.safe_run(self.manifest))
+  File "/usr/local/lib/python3.6/dist-packages/dbt/task/base.py", line 349, in safe_run
+    result = self.error_result(ctx.node, error, started, [])
+  File "/usr/local/lib/python3.6/dist-packages/dbt/rpc/node_runners.py", line 52, in error_result
+    raise error
+dbt.rpc.error.RPCException: RPCException(10003, Database Error, {'type': 'DatabaseException', 'message': 'Database Error in rpc request (from remote system)\n  Syntax error: Expected end of input but got keyword LIMIT at [4:1]', 'raw_sql': "{% set stores = get_column_values(table=ref('stores_proc'), column='store_name', max_records=50, filter_column='platform', filter_value='Service') %}\n\n{% if stores != [] %}\n\nwith refunds as (\n\n\t{% for store in stores %}\n\tSELECT\n\t--'{{store}}' store_name,\n\tstore_name,\n\torder_number,\n\tcheckout_id,\n\tfinancial_status,\n\tline_item_id,\n\tquantity,\n\tsubtotal,\n\tline_item.variant_id variant_id,\n\tline_item.id refund_id,\n \t_sdc_sequence\n\tFROM `{{ target.project }}.agency_data_pipeline.orders` \n\tcross join unnest(refunds), unnest(refund_line_items)\n  \twhere financial_status like '%refund%'\n\t{% if not loop.last %} UNION ALL {% endif %}\n\t{% endfor %}\n\n)\n\nSELECT * \nFROM \n\t(\n    SELECT\n    store_name,\n\torder_number,\n\tcheckout_id,\n\tfinancial_status,\n\tline_item_id,\n\tquantity,\n\tsubtotal refund_amount,\n\tvariant_id,\n\trefund_id,\n \t_sdc_sequence,\n    first_value(_sdc_sequence) OVER (PARTITION BY order_number, line_item_id ORDER BY _sdc_sequence DESC) lv\n    FROM refunds\n   \t) \nWHERE lv = _sdc_sequence\n\n{% endif %}\t\nlimit 100", 'compiled_sql': '\n\n\t\nlimit 100', 'tags': None}, None)
+2020-11-10 11:02:08.366810 (Thread-95): handling poll request
+2020-11-10 11:02:08.367319 (Thread-95): Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': 'b9cb4131-4839-42d8-9062-69594a2c01e6', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fee5b27f3c8>]}
+2020-11-10 11:02:08.369448 (Thread-95): Checking header 'user-agent' tracing in whitelist set(), 24 additional messages skipped
+2020-11-10 11:02:08.397292 (Thread-95): writing 1 spans (enabled:True), 39 additional messages skipped
+2020-11-10 11:02:08.397519 (Thread-95): 
+      name requests.request
+        id 12021624326741896137
+  trace_id 16961947455048809467
+ parent_id None
+   service requests
+  resource requests.request
+      type http
+     start 1605006128.368922
+       end 1605006128.397175
+  duration 0.028253s
+     error 0
+      tags 
+           http.method:POST
+           http.status_code:200
+           http.url:https://fishtownanalytics.sinter-collect.com/com.snowplowanalytics.snowplow/tp2
+           runtime-id:9af282b3e7a44bed9d3eb4c6d5b15d7b, 39 additional messages skipped
+2020-11-10 11:02:08.399544 (Thread-95): sending response (<Response 12380 bytes [200 OK]>) to 10.0.21.85
+2020-11-10 11:02:08.587330 (AgentWriter): reported 1 traces in 0.00436s
+2020-11-10 11:02:08.587585 (AgentWriter): initialized RateSampler, sample 100% of traces, 31 additional messages skipped
+2020-11-10 11:02:42.550973 (Thread-96): Got an acceptable cached parse result
+2020-11-10 11:02:43.162292 (Thread-97): handling status request
+2020-11-10 11:02:43.162781 (Thread-97): Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': 'b9cb4131-4839-42d8-9062-69594a2c01e6', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fee6026e9b0>]}
+2020-11-10 11:02:43.163711 (Thread-97): sending response (<Response 446 bytes [200 OK]>) to 10.0.26.169
+2020-11-10 11:02:55.797168 (Thread-98): handling status request
+2020-11-10 11:02:55.797641 (Thread-98): Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': 'b9cb4131-4839-42d8-9062-69594a2c01e6', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fee6026eac8>]}
+2020-11-10 11:02:55.798583 (Thread-98): sending response (<Response 446 bytes [200 OK]>) to 10.0.29.97
+2020-11-10 11:02:56.336650 (Thread-99): handling run_sql request
+2020-11-10 11:02:56.337178 (Thread-99): Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': 'b9cb4131-4839-42d8-9062-69594a2c01e6', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fee60347e48>]}
+2020-11-10 11:02:57.378235 (Thread-99): sending response (<Response 137 bytes [200 OK]>) to 10.0.36.232
+2020-11-10 11:02:57.416593 (MainThread): Acquiring new bigquery connection "rpc.shopify_buyer_segmentation.request".
+2020-11-10 11:02:57.438306 (MainThread): Found 21 models, 0 tests, 0 snapshots, 0 analyses, 161 macros, 0 operations, 0 seed files, 0 sources
+2020-11-10 11:02:57.438911 (Thread-1): Acquiring new bigquery connection "rpc.shopify_buyer_segmentation.request".
+2020-11-10 11:02:57.439153 (Thread-1): Compiling rpc.shopify_buyer_segmentation.request
+2020-11-10 11:02:57.471953 (Thread-1): finished collecting timing info
+2020-11-10 11:02:57.472547 (Thread-1): Opening a new connection, currently in state init
+2020-11-10 11:02:57.473612 (Thread-1): On rpc.shopify_buyer_segmentation.request: select 
+store,
+store_name,
+account,
+platform,
+max(time_of_entry) time_of_entry
+
+from  ( 
+
+SELECT  
+store,
+bigquery_name, 
+name as store_name,
+account,
+platform,
+time_of_entry,
+first_value(time_of_entry) OVER (PARTITION BY store ORDER BY time_of_entry DESC) lv
+FROM `dbt-projects.agency_data_pipeline.data_feeds` 
+where name != ''
+
+) 
+
+WHERE lv = time_of_entry
+group by store, store_name, account, platform
+
+limit 100
+2020-11-10 11:02:57.741489 (Thread-100): handling poll request
+2020-11-10 11:02:57.742218 (Thread-100): Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': 'b9cb4131-4839-42d8-9062-69594a2c01e6', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fee60347e48>]}
+2020-11-10 11:02:57.745311 (Thread-100): sending response (<Response 3029 bytes [200 OK]>) to 10.0.26.169
+2020-11-10 11:02:58.416442 (Thread-1): finished collecting timing info
+2020-11-10 11:02:59.096941 (Thread-101): handling poll request
+2020-11-10 11:02:59.097425 (Thread-101): Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': 'b9cb4131-4839-42d8-9062-69594a2c01e6', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fee72c92a20>]}
+2020-11-10 11:02:59.102654 (Thread-101): sending response (<Response 4957 bytes [200 OK]>) to 10.0.11.107
+2020-11-10 11:03:16.546784 (Thread-102): handling status request
+2020-11-10 11:03:16.547279 (Thread-102): Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': 'b9cb4131-4839-42d8-9062-69594a2c01e6', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fee602cab00>]}
+2020-11-10 11:03:16.548243 (Thread-102): sending response (<Response 446 bytes [200 OK]>) to 10.0.11.107
+2020-11-10 11:03:16.896316 (Thread-103): handling run_sql request
+2020-11-10 11:03:16.896826 (Thread-103): Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': 'b9cb4131-4839-42d8-9062-69594a2c01e6', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fee602c1128>]}
+2020-11-10 11:03:17.877214 (Thread-103): sending response (<Response 137 bytes [200 OK]>) to 10.0.29.97
+2020-11-10 11:03:17.904344 (MainThread): Acquiring new bigquery connection "rpc.shopify_buyer_segmentation.request".
+2020-11-10 11:03:17.940274 (MainThread): Found 21 models, 0 tests, 0 snapshots, 0 analyses, 161 macros, 0 operations, 0 seed files, 0 sources
+2020-11-10 11:03:17.940798 (Thread-1): Acquiring new bigquery connection "rpc.shopify_buyer_segmentation.request".
+2020-11-10 11:03:17.940934 (Thread-1): Compiling rpc.shopify_buyer_segmentation.request
+2020-11-10 11:03:17.963987 (Thread-1): Opening a new connection, currently in state init
+2020-11-10 11:03:17.964641 (Thread-1): On rpc.shopify_buyer_segmentation.request: 
+
+        select
+            store_name as value
+
+        from `dbt-projects`.`dbt_buyer_segmentation`.`stores_proc`
+
+        
+        ##where 1 = 1
+        where platform = 'Service'
+        
+        
+        
+
+        group by 1
+        order by count(*) desc
+
+        
+        limit 50
+        
+2020-11-10 11:03:18.271195 (Thread-104): handling poll request
+2020-11-10 11:03:18.271763 (Thread-104): Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': 'b9cb4131-4839-42d8-9062-69594a2c01e6', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fee602c1128>]}
+2020-11-10 11:03:18.273966 (Thread-104): sending response (<Response 2510 bytes [200 OK]>) to 10.0.35.67
+2020-11-10 11:03:18.804363 (Thread-1): finished collecting timing info
+2020-11-10 11:03:18.804723 (Thread-1): On rpc.shopify_buyer_segmentation.request: 
+
+	
+limit 100
+2020-11-10 11:03:18.976959 (Thread-1): Retry attempt 1 of 1 after error: BadRequest('Syntax error: Expected end of input but got keyword LIMIT at [4:1]',)
+2020-11-10 11:03:19.622501 (Thread-105): handling poll request
+2020-11-10 11:03:19.622994 (Thread-105): Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': 'b9cb4131-4839-42d8-9062-69594a2c01e6', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fee5b2c88d0>]}
+2020-11-10 11:03:19.624306 (Thread-105): sending response (<Response 1454 bytes [200 OK]>) to 10.0.26.205
+2020-11-10 11:03:20.157901 (Thread-1): finished collecting timing info
+2020-11-10 11:03:20.158328 (Thread-1): Got an exception: Database Error
+  Syntax error: Expected end of input but got keyword LIMIT at [4:1]
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/dist-packages/dbt/adapters/bigquery/connections.py", line 103, in exception_handler
+    yield
+  File "/usr/local/lib/python3.6/dist-packages/dbt/adapters/bigquery/connections.py", line 447, in _retry_and_handle
+    on_error=reopen_conn_on_error)
+  File "/usr/local/lib/python3.6/dist-packages/google/api_core/retry.py", line 184, in retry_target
+    return target()
+  File "/usr/local/lib/python3.6/dist-packages/dbt/adapters/bigquery/connections.py", line 266, in fn
+    return self._query_and_results(client, sql, conn, job_params)
+  File "/usr/local/lib/python3.6/dist-packages/dbt/adapters/bigquery/connections.py", line 428, in _query_and_results
+    iterator = query_job.result(timeout=timeout)
+  File "/usr/local/lib/python3.6/dist-packages/google/cloud/bigquery/job.py", line 3196, in result
+    super(QueryJob, self).result(retry=retry, timeout=timeout)
+  File "/usr/local/lib/python3.6/dist-packages/google/cloud/bigquery/job.py", line 818, in result
+    return super(_AsyncJob, self).result(timeout=timeout)
+  File "/usr/local/lib/python3.6/dist-packages/google/api_core/future/polling.py", line 130, in result
+    raise self._exception
+google.api_core.exceptions.BadRequest: 400 Syntax error: Expected end of input but got keyword LIMIT at [4:1]
+
+(job ID: 6b2c0902-a97c-47ea-81fe-716073b2a432)
+
+-----Query Job SQL Follows-----
+
+    |
+   1:
+   2:
+   3:	
+   4:limit 100
+    |
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/dist-packages/dbt/task/base.py", line 333, in safe_run
+    result = self.compile_and_execute(manifest, ctx)
+  File "/usr/local/lib/python3.6/dist-packages/dbt/task/base.py", line 276, in compile_and_execute
+    result = self.run(ctx.node, manifest)
+  File "/usr/local/lib/python3.6/dist-packages/dbt/task/base.py", line 378, in run
+    return self.execute(compiled_node, manifest)
+  File "/usr/local/lib/python3.6/dist-packages/dbt/rpc/node_runners.py", line 85, in execute
+    compiled_node.injected_sql, fetch=True
+  File "/usr/local/lib/python3.6/dist-packages/dbt/adapters/base/impl.py", line 227, in execute
+    fetch=fetch
+  File "/usr/local/lib/python3.6/dist-packages/dbt/adapters/bigquery/connections.py", line 275, in execute
+    query_job, iterator = self.raw_execute(sql, fetch=fetch)
+  File "/usr/local/lib/python3.6/dist-packages/dbt/adapters/bigquery/connections.py", line 268, in raw_execute
+    query_job, iterator = self._retry_and_handle(msg=sql, conn=conn, fn=fn)
+  File "/usr/local/lib/python3.6/dist-packages/dbt/adapters/bigquery/connections.py", line 447, in _retry_and_handle
+    on_error=reopen_conn_on_error)
+  File "/usr/lib/python3.6/contextlib.py", line 99, in __exit__
+    self.gen.throw(type, value, traceback)
+  File "/usr/local/lib/python3.6/dist-packages/dbt/adapters/bigquery/connections.py", line 107, in exception_handler
+    self.handle_error(e, message)
+  File "/usr/local/lib/python3.6/dist-packages/dbt/adapters/bigquery/connections.py", line 95, in handle_error
+    raise DatabaseException(error_msg)
+dbt.exceptions.DatabaseException: Database Error
+  Syntax error: Expected end of input but got keyword LIMIT at [4:1]
+2020-11-10 11:03:20.160305 (Thread-1): Got exception RPCException(10003, Database Error, {'type': 'DatabaseException', 'message': 'Database Error in rpc request (from remote system)\n  Syntax error: Expected end of input but got keyword LIMIT at [4:1]', 'raw_sql': "{% set stores = get_column_values(table=ref('stores_proc'), column='store_name', max_records=50, filter_column='platform', filter_value='Service') %}\n\n{% if stores != [] %}\n\nwith refunds as (\n\n\t{% for store in stores %}\n\tSELECT\n\t--'{{store}}' store_name,\n\tstore_name,\n\torder_number,\n\tcheckout_id,\n\tfinancial_status,\n\tline_item_id,\n\tquantity,\n\tsubtotal,\n\tline_item.variant_id variant_id,\n\tline_item.id refund_id,\n \t_sdc_sequence\n\tFROM `{{ target.project }}.agency_data_pipeline.orders` \n\tcross join unnest(refunds), unnest(refund_line_items)\n  \twhere financial_status like '%refund%'\n\t{% if not loop.last %} UNION ALL {% endif %}\n\t{% endfor %}\n\n)\n\nSELECT * \nFROM \n\t(\n    SELECT\n    store_name,\n\torder_number,\n\tcheckout_id,\n\tfinancial_status,\n\tline_item_id,\n\tquantity,\n\tsubtotal refund_amount,\n\tvariant_id,\n\trefund_id,\n \t_sdc_sequence,\n    first_value(_sdc_sequence) OVER (PARTITION BY order_number, line_item_id ORDER BY _sdc_sequence DESC) lv\n    FROM refunds\n   \t) \nWHERE lv = _sdc_sequence\n\n{% endif %}\t\nlimit 100", 'compiled_sql': '\n\n\t\nlimit 100', 'tags': None}, None)
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/dist-packages/dbt/task/rpc/sql_commands.py", line 145, in _in_thread
+    self.node_results.append(runner.safe_run(self.manifest))
+  File "/usr/local/lib/python3.6/dist-packages/dbt/task/base.py", line 349, in safe_run
+    result = self.error_result(ctx.node, error, started, [])
+  File "/usr/local/lib/python3.6/dist-packages/dbt/rpc/node_runners.py", line 52, in error_result
+    raise error
+dbt.rpc.error.RPCException: RPCException(10003, Database Error, {'type': 'DatabaseException', 'message': 'Database Error in rpc request (from remote system)\n  Syntax error: Expected end of input but got keyword LIMIT at [4:1]', 'raw_sql': "{% set stores = get_column_values(table=ref('stores_proc'), column='store_name', max_records=50, filter_column='platform', filter_value='Service') %}\n\n{% if stores != [] %}\n\nwith refunds as (\n\n\t{% for store in stores %}\n\tSELECT\n\t--'{{store}}' store_name,\n\tstore_name,\n\torder_number,\n\tcheckout_id,\n\tfinancial_status,\n\tline_item_id,\n\tquantity,\n\tsubtotal,\n\tline_item.variant_id variant_id,\n\tline_item.id refund_id,\n \t_sdc_sequence\n\tFROM `{{ target.project }}.agency_data_pipeline.orders` \n\tcross join unnest(refunds), unnest(refund_line_items)\n  \twhere financial_status like '%refund%'\n\t{% if not loop.last %} UNION ALL {% endif %}\n\t{% endfor %}\n\n)\n\nSELECT * \nFROM \n\t(\n    SELECT\n    store_name,\n\torder_number,\n\tcheckout_id,\n\tfinancial_status,\n\tline_item_id,\n\tquantity,\n\tsubtotal refund_amount,\n\tvariant_id,\n\trefund_id,\n \t_sdc_sequence,\n    first_value(_sdc_sequence) OVER (PARTITION BY order_number, line_item_id ORDER BY _sdc_sequence DESC) lv\n    FROM refunds\n   \t) \nWHERE lv = _sdc_sequence\n\n{% endif %}\t\nlimit 100", 'compiled_sql': '\n\n\t\nlimit 100', 'tags': None}, None)
+2020-11-10 11:03:20.996611 (Thread-106): handling poll request
+2020-11-10 11:03:20.997265 (Thread-106): Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': 'b9cb4131-4839-42d8-9062-69594a2c01e6', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fee5b2c8860>]}
+2020-11-10 11:03:20.998675 (Thread-106): sending response (<Response 12380 bytes [200 OK]>) to 10.0.42.233
+2020-11-10 11:03:38.482006 (Thread-107): handling status request
+2020-11-10 11:03:38.482479 (Thread-107): Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': 'b9cb4131-4839-42d8-9062-69594a2c01e6', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fee5b0c9a20>]}
+2020-11-10 11:03:38.483625 (Thread-107): sending response (<Response 446 bytes [200 OK]>) to 10.0.42.233
+2020-11-10 11:03:39.072858 (Thread-108): handling run_sql request
+2020-11-10 11:03:39.073336 (Thread-108): Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': 'b9cb4131-4839-42d8-9062-69594a2c01e6', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fee602c14a8>]}
+2020-11-10 11:03:40.179159 (Thread-108): sending response (<Response 137 bytes [200 OK]>) to 10.0.35.67
+2020-11-10 11:03:40.209157 (MainThread): Acquiring new bigquery connection "rpc.shopify_buyer_segmentation.request".
+2020-11-10 11:03:40.246822 (MainThread): Found 21 models, 0 tests, 0 snapshots, 0 analyses, 161 macros, 0 operations, 0 seed files, 0 sources
+2020-11-10 11:03:40.247399 (Thread-1): Acquiring new bigquery connection "rpc.shopify_buyer_segmentation.request".
+2020-11-10 11:03:40.247590 (Thread-1): Compiling rpc.shopify_buyer_segmentation.request
+2020-11-10 11:03:40.278410 (Thread-1): Opening a new connection, currently in state init
+2020-11-10 11:03:40.279295 (Thread-1): On rpc.shopify_buyer_segmentation.request: 
+
+        select
+            store_name as value
+
+        from `dbt-projects`.`dbt_buyer_segmentation`.`stores_proc`
+
+        
+        ##where 1 = 1
+        where platform = 'Service'
+        
+        
+        
+
+        group by 1
+        order by count(*) desc
+
+        
+        limit 50
+        
+2020-11-10 11:03:40.786134 (Thread-109): handling poll request
+2020-11-10 11:03:40.786679 (Thread-109): Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': 'b9cb4131-4839-42d8-9062-69594a2c01e6', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fee602c14a8>]}
+2020-11-10 11:03:40.788958 (Thread-109): sending response (<Response 2510 bytes [200 OK]>) to 10.0.44.58
+2020-11-10 11:03:41.194803 (Thread-1): finished collecting timing info
+2020-11-10 11:03:41.195168 (Thread-1): On rpc.shopify_buyer_segmentation.request: 
+
+	
+2020-11-10 11:03:41.365295 (Thread-1): Retry attempt 1 of 1 after error: BadRequest('Syntax error: Unexpected end of statement at [1:1]',)
+2020-11-10 11:03:42.284356 (Thread-110): handling poll request
+2020-11-10 11:03:42.284857 (Thread-110): Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': 'b9cb4131-4839-42d8-9062-69594a2c01e6', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fee5b2f2978>]}
+2020-11-10 11:03:42.286257 (Thread-110): sending response (<Response 1427 bytes [200 OK]>) to 10.0.26.169
+2020-11-10 11:03:42.500975 (Thread-1): finished collecting timing info
+2020-11-10 11:03:42.501530 (Thread-1): Got an exception: Database Error
+  Syntax error: Unexpected end of statement at [1:1]
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/dist-packages/dbt/adapters/bigquery/connections.py", line 103, in exception_handler
+    yield
+  File "/usr/local/lib/python3.6/dist-packages/dbt/adapters/bigquery/connections.py", line 447, in _retry_and_handle
+    on_error=reopen_conn_on_error)
+  File "/usr/local/lib/python3.6/dist-packages/google/api_core/retry.py", line 184, in retry_target
+    return target()
+  File "/usr/local/lib/python3.6/dist-packages/dbt/adapters/bigquery/connections.py", line 266, in fn
+    return self._query_and_results(client, sql, conn, job_params)
+  File "/usr/local/lib/python3.6/dist-packages/dbt/adapters/bigquery/connections.py", line 428, in _query_and_results
+    iterator = query_job.result(timeout=timeout)
+  File "/usr/local/lib/python3.6/dist-packages/google/cloud/bigquery/job.py", line 3196, in result
+    super(QueryJob, self).result(retry=retry, timeout=timeout)
+  File "/usr/local/lib/python3.6/dist-packages/google/cloud/bigquery/job.py", line 818, in result
+    return super(_AsyncJob, self).result(timeout=timeout)
+  File "/usr/local/lib/python3.6/dist-packages/google/api_core/future/polling.py", line 130, in result
+    raise self._exception
+google.api_core.exceptions.BadRequest: 400 Syntax error: Unexpected end of statement at [1:1]
+
+(job ID: 1b5235f9-7d4f-4954-87eb-20d21a12d8d6)
+
+-----Query Job SQL Follows-----
+
+    |
+   1:
+   2:
+   3:	
+    |
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/dist-packages/dbt/task/base.py", line 333, in safe_run
+    result = self.compile_and_execute(manifest, ctx)
+  File "/usr/local/lib/python3.6/dist-packages/dbt/task/base.py", line 276, in compile_and_execute
+    result = self.run(ctx.node, manifest)
+  File "/usr/local/lib/python3.6/dist-packages/dbt/task/base.py", line 378, in run
+    return self.execute(compiled_node, manifest)
+  File "/usr/local/lib/python3.6/dist-packages/dbt/rpc/node_runners.py", line 85, in execute
+    compiled_node.injected_sql, fetch=True
+  File "/usr/local/lib/python3.6/dist-packages/dbt/adapters/base/impl.py", line 227, in execute
+    fetch=fetch
+  File "/usr/local/lib/python3.6/dist-packages/dbt/adapters/bigquery/connections.py", line 275, in execute
+    query_job, iterator = self.raw_execute(sql, fetch=fetch)
+  File "/usr/local/lib/python3.6/dist-packages/dbt/adapters/bigquery/connections.py", line 268, in raw_execute
+    query_job, iterator = self._retry_and_handle(msg=sql, conn=conn, fn=fn)
+  File "/usr/local/lib/python3.6/dist-packages/dbt/adapters/bigquery/connections.py", line 447, in _retry_and_handle
+    on_error=reopen_conn_on_error)
+  File "/usr/lib/python3.6/contextlib.py", line 99, in __exit__
+    self.gen.throw(type, value, traceback)
+  File "/usr/local/lib/python3.6/dist-packages/dbt/adapters/bigquery/connections.py", line 107, in exception_handler
+    self.handle_error(e, message)
+  File "/usr/local/lib/python3.6/dist-packages/dbt/adapters/bigquery/connections.py", line 95, in handle_error
+    raise DatabaseException(error_msg)
+dbt.exceptions.DatabaseException: Database Error
+  Syntax error: Unexpected end of statement at [1:1]
+2020-11-10 11:03:42.504309 (Thread-1): Got exception RPCException(10003, Database Error, {'type': 'DatabaseException', 'message': 'Database Error in rpc request (from remote system)\n  Syntax error: Unexpected end of statement at [1:1]', 'raw_sql': "{% set stores = get_column_values(table=ref('stores_proc'), column='store_name', max_records=50, filter_column='platform', filter_value='Service') %}\n\n{% if stores != [] %}\n\nwith refunds as (\n\n\t{% for store in stores %}\n\tSELECT\n\t--'{{store}}' store_name,\n\tstore_name,\n\torder_number,\n\tcheckout_id,\n\tfinancial_status,\n\tline_item_id,\n\tquantity,\n\tsubtotal,\n\tline_item.variant_id variant_id,\n\tline_item.id refund_id,\n \t_sdc_sequence\n\tFROM `{{ target.project }}.agency_data_pipeline.orders` \n\tcross join unnest(refunds), unnest(refund_line_items)\n  \twhere financial_status like '%refund%'\n\t{% if not loop.last %} UNION ALL {% endif %}\n\t{% endfor %}\n\n)\n\nSELECT * \nFROM \n\t(\n    SELECT\n    store_name,\n\torder_number,\n\tcheckout_id,\n\tfinancial_status,\n\tline_item_id,\n\tquantity,\n\tsubtotal refund_amount,\n\tvariant_id,\n\trefund_id,\n \t_sdc_sequence,\n    first_value(_sdc_sequence) OVER (PARTITION BY order_number, line_item_id ORDER BY _sdc_sequence DESC) lv\n    FROM refunds\n   \t) \nWHERE lv = _sdc_sequence\n\n{% endif %}\t", 'compiled_sql': '\n\n\t', 'tags': None}, None)
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/dist-packages/dbt/task/rpc/sql_commands.py", line 145, in _in_thread
+    self.node_results.append(runner.safe_run(self.manifest))
+  File "/usr/local/lib/python3.6/dist-packages/dbt/task/base.py", line 349, in safe_run
+    result = self.error_result(ctx.node, error, started, [])
+  File "/usr/local/lib/python3.6/dist-packages/dbt/rpc/node_runners.py", line 52, in error_result
+    raise error
+dbt.rpc.error.RPCException: RPCException(10003, Database Error, {'type': 'DatabaseException', 'message': 'Database Error in rpc request (from remote system)\n  Syntax error: Unexpected end of statement at [1:1]', 'raw_sql': "{% set stores = get_column_values(table=ref('stores_proc'), column='store_name', max_records=50, filter_column='platform', filter_value='Service') %}\n\n{% if stores != [] %}\n\nwith refunds as (\n\n\t{% for store in stores %}\n\tSELECT\n\t--'{{store}}' store_name,\n\tstore_name,\n\torder_number,\n\tcheckout_id,\n\tfinancial_status,\n\tline_item_id,\n\tquantity,\n\tsubtotal,\n\tline_item.variant_id variant_id,\n\tline_item.id refund_id,\n \t_sdc_sequence\n\tFROM `{{ target.project }}.agency_data_pipeline.orders` \n\tcross join unnest(refunds), unnest(refund_line_items)\n  \twhere financial_status like '%refund%'\n\t{% if not loop.last %} UNION ALL {% endif %}\n\t{% endfor %}\n\n)\n\nSELECT * \nFROM \n\t(\n    SELECT\n    store_name,\n\torder_number,\n\tcheckout_id,\n\tfinancial_status,\n\tline_item_id,\n\tquantity,\n\tsubtotal refund_amount,\n\tvariant_id,\n\trefund_id,\n \t_sdc_sequence,\n    first_value(_sdc_sequence) OVER (PARTITION BY order_number, line_item_id ORDER BY _sdc_sequence DESC) lv\n    FROM refunds\n   \t) \nWHERE lv = _sdc_sequence\n\n{% endif %}\t", 'compiled_sql': '\n\n\t', 'tags': None}, None)
+2020-11-10 11:03:43.762816 (Thread-111): handling poll request
+2020-11-10 11:03:43.763311 (Thread-111): Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': 'b9cb4131-4839-42d8-9062-69594a2c01e6', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fee5b105d68>]}
+2020-11-10 11:03:43.764301 (Thread-111): sending response (<Response 12171 bytes [200 OK]>) to 10.0.44.58
+2020-11-10 11:05:29.884504 (Thread-112): handling status request
+2020-11-10 11:05:29.886741 (Thread-112): Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': 'b9cb4131-4839-42d8-9062-69594a2c01e6', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fee600f52b0>]}
+2020-11-10 11:05:29.888183 (Thread-112): sending response (<Response 446 bytes [200 OK]>) to 10.0.35.67

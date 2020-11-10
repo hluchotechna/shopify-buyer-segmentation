@@ -33172,3 +33172,120 @@ For upgrading instructions, consult the documentation:
 2020-11-10 09:13:02.717668 (Thread-7): handling status request
 2020-11-10 09:13:02.721768 (Thread-7): Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': 'e5d6373e-bdd8-490d-835f-8f45f185452c', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7feb251d3d68>]}
 2020-11-10 09:13:02.727840 (Thread-7): sending response (<Response 16671 bytes [200 OK]>) to 10.0.26.205
+2020-11-10 09:13:09.365402 (MainThread): writing 1 spans (enabled:True), 77 additional messages skipped
+2020-11-10 09:13:09.365595 (MainThread): 
+      name jinja2.compile
+        id 18360795908025693097
+  trace_id 14778299025611851285
+ parent_id None
+   service None
+  resource <memory>
+      type template
+     start 1604999589.3647318
+       end 1604999589.3652458
+  duration 0.000514s
+     error 0
+      tags 
+           jinja2.template_name:<memory>
+           runtime-id:b02e17b6d3404bcea8c7363c41b00add, 77 additional messages skipped
+2020-11-10 09:13:09.398525 (MainThread): Connection 'model.shopify_buyer_segmentation.shopify_customers_proc' was properly closed.
+2020-11-10 09:13:09.432122 (Thread-8): Parsing macros/split_part.sql
+2020-11-10 09:13:09.437893 (Thread-8): Parsing macros/get_url_parameter.sql
+2020-11-10 09:13:09.442490 (Thread-8): Parsing macros/get_column_values.sql
+2020-11-10 09:13:09.449382 (Thread-8): Parsing macros/table_exists.sql
+2020-11-10 09:13:09.451899 (Thread-8): Parsing macros/adapters.sql
+2020-11-10 09:13:09.471450 (Thread-8): Parsing macros/etc.sql
+2020-11-10 09:13:09.472797 (Thread-8): Parsing macros/catalog.sql
+2020-11-10 09:13:09.478764 (Thread-8): Parsing macros/materializations/table.sql
+2020-11-10 09:13:09.488769 (Thread-8): Parsing macros/materializations/view.sql
+2020-11-10 09:13:09.491628 (Thread-8): Parsing macros/materializations/copy.sql
+2020-11-10 09:13:09.496012 (Thread-8): Parsing macros/materializations/seed.sql
+2020-11-10 09:13:09.498890 (Thread-8): Parsing macros/materializations/incremental.sql
+2020-11-10 09:13:09.511873 (Thread-8): Parsing macros/materializations/snapshot.sql
+2020-11-10 09:13:09.514651 (Thread-8): Parsing macros/core.sql
+2020-11-10 09:13:09.518572 (Thread-8): Parsing macros/adapters/common.sql
+2020-11-10 09:13:09.562710 (Thread-8): Parsing macros/materializations/helpers.sql
+2020-11-10 09:13:09.571918 (Thread-8): Parsing macros/materializations/table/table.sql
+2020-11-10 09:13:09.579306 (Thread-8): Parsing macros/materializations/seed/seed.sql
+2020-11-10 09:13:09.605646 (Thread-8): Parsing macros/materializations/view/view.sql
+2020-11-10 09:13:09.615364 (Thread-8): Parsing macros/materializations/view/create_or_replace_view.sql
+2020-11-10 09:13:09.622926 (Thread-8): Parsing macros/materializations/incremental/helpers.sql
+2020-11-10 09:13:09.625703 (Thread-8): Parsing macros/materializations/incremental/incremental.sql
+2020-11-10 09:13:09.635405 (Thread-8): Parsing macros/materializations/common/merge.sql
+2020-11-10 09:13:09.651836 (Thread-8): Parsing macros/materializations/snapshot/strategies.sql
+2020-11-10 09:13:09.668749 (Thread-8): Parsing macros/materializations/snapshot/snapshot_merge.sql
+2020-11-10 09:13:09.670621 (Thread-8): Parsing macros/materializations/snapshot/snapshot.sql
+2020-11-10 09:13:09.699553 (Thread-8): Parsing macros/schema_tests/relationships.sql
+2020-11-10 09:13:09.710742 (Thread-8): Parsing macros/schema_tests/not_null.sql
+2020-11-10 09:13:09.747884 (Thread-8): Parsing macros/schema_tests/unique.sql
+2020-11-10 09:13:09.749684 (Thread-8): Parsing macros/schema_tests/accepted_values.sql
+2020-11-10 09:13:09.752496 (Thread-8): Parsing macros/etc/get_custom_database.sql
+2020-11-10 09:13:09.774182 (Thread-9): handling status request
+2020-11-10 09:13:09.792910 (Thread-8): Parsing macros/etc/query.sql
+2020-11-10 09:13:09.814538 (Thread-9): Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': 'e5d6373e-bdd8-490d-835f-8f45f185452c', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7feb25364b00>]}
+2020-11-10 09:13:09.816387 (Thread-9): sending response (<Response 184 bytes [200 OK]>) to 10.0.36.232
+2020-11-10 09:13:09.816976 (Thread-8): Parsing macros/etc/datetime.sql
+2020-11-10 09:13:09.826569 (Thread-8): Parsing macros/etc/get_custom_alias.sql
+2020-11-10 09:13:09.827600 (Thread-8): Parsing macros/etc/is_incremental.sql
+2020-11-10 09:13:09.829367 (Thread-8): Parsing macros/etc/get_custom_schema.sql
+2020-11-10 09:13:09.885671 (Thread-8): Acquiring new bigquery connection "model.shopify_buyer_segmentation.customers_by_transaction".
+2020-11-10 09:13:09.903674 (Thread-8): Acquiring new bigquery connection "model.shopify_buyer_segmentation.agg_customers".
+2020-11-10 09:13:09.915960 (AgentWriter): reported 42 traces in 0.00319s, 1 additional messages skipped
+2020-11-10 09:13:09.920899 (Thread-8): Acquiring new bigquery connection "model.shopify_buyer_segmentation.transaction_by_order_number".
+2020-11-10 09:13:09.921121 (AgentWriter): initialized RateSampler, sample 100% of traces, 63 additional messages skipped
+2020-11-10 09:13:09.938509 (Thread-8): Acquiring new bigquery connection "model.shopify_buyer_segmentation.agg_transactions".
+2020-11-10 09:13:09.957546 (Thread-8): Acquiring new bigquery connection "model.shopify_buyer_segmentation.segment_stats_buyers_view".
+2020-11-10 09:13:09.983977 (Thread-8): Acquiring new bigquery connection "model.shopify_buyer_segmentation.customers_proc".
+2020-11-10 09:13:10.103554 (Thread-8): Acquiring new bigquery connection "model.shopify_buyer_segmentation.customers_proc_yoy".
+2020-11-10 09:13:10.122460 (Thread-8): Acquiring new bigquery connection "model.shopify_buyer_segmentation.segment_stats_buyers_agg".
+2020-11-10 09:13:10.143054 (Thread-8): Acquiring new bigquery connection "model.shopify_buyer_segmentation.customers_proc_qoq".
+2020-11-10 09:13:10.161710 (Thread-8): Acquiring new bigquery connection "model.shopify_buyer_segmentation.buyer_segment_lists".
+2020-11-10 09:13:10.180641 (Thread-8): Acquiring new bigquery connection "model.shopify_buyer_segmentation.buyer_segment_stats".
+2020-11-10 09:13:10.198455 (Thread-8): Acquiring new bigquery connection "model.shopify_buyer_segmentation.segment_proc_buyers".
+2020-11-10 09:13:10.215693 (Thread-8): Acquiring new bigquery connection "model.shopify_buyer_segmentation.stores_proc".
+2020-11-10 09:13:10.232453 (Thread-8): Acquiring new bigquery connection "model.shopify_buyer_segmentation.monthend_dates".
+2020-11-10 09:13:10.248357 (Thread-8): Acquiring new bigquery connection "model.shopify_buyer_segmentation.mappings_ga_proc".
+2020-11-10 09:13:10.264707 (Thread-8): Acquiring new bigquery connection "model.shopify_buyer_segmentation.ga_transactions".
+2020-11-10 09:13:10.288670 (Thread-8): Acquiring new bigquery connection "model.shopify_buyer_segmentation.shopify_products_proc".
+2020-11-10 09:13:10.311495 (Thread-8): Acquiring new bigquery connection "model.shopify_buyer_segmentation.shopify_discounts_proc".
+2020-11-10 09:13:10.331820 (Thread-8): Acquiring new bigquery connection "model.shopify_buyer_segmentation.shopify_orders_proc".
+2020-11-10 09:13:10.355163 (Thread-8): Acquiring new bigquery connection "model.shopify_buyer_segmentation.shopify_refunds_proc".
+2020-11-10 09:13:10.374976 (Thread-8): Acquiring new bigquery connection "model.shopify_buyer_segmentation.shopify_customers_proc".
+2020-11-10 09:13:11.216146 (Thread-10): handling status request
+2020-11-10 09:13:11.216644 (Thread-10): Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': 'e5d6373e-bdd8-490d-835f-8f45f185452c', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7feb2535be48>]}
+2020-11-10 09:13:11.222917 (Thread-10): sending response (<Response 16671 bytes [200 OK]>) to 10.0.10.5
+2020-11-10 09:15:42.197850 (Thread-11): handling status request
+2020-11-10 09:15:42.198529 (Thread-11): Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': 'e5d6373e-bdd8-490d-835f-8f45f185452c', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7feb2535be48>]}
+2020-11-10 09:15:42.210075 (Thread-11): sending response (<Response 16671 bytes [200 OK]>) to 10.0.44.58
+2020-11-10 09:17:30.092541 (MainThread): writing 1 spans (enabled:True), 77 additional messages skipped
+2020-11-10 09:17:30.094231 (MainThread): 
+      name jinja2.compile
+        id 1947468539536799514
+  trace_id 11992088854260170642
+ parent_id None
+   service None
+  resource <memory>
+      type template
+     start 1604999850.091871
+       end 1604999850.092385
+  duration 0.000514s
+     error 0
+      tags 
+           jinja2.template_name:<memory>
+           runtime-id:b02e17b6d3404bcea8c7363c41b00add, 77 additional messages skipped
+2020-11-10 09:17:30.127132 (MainThread): Connection 'model.shopify_buyer_segmentation.shopify_customers_proc' was properly closed.
+2020-11-10 09:17:30.197929 (Thread-12): Got an acceptable cached parse result
+2020-11-10 09:17:30.837218 (Thread-13): handling status request
+2020-11-10 09:17:30.837700 (Thread-13): Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': 'e5d6373e-bdd8-490d-835f-8f45f185452c', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7feb2524b6d8>]}
+2020-11-10 09:17:30.838627 (Thread-13): sending response (<Response 446 bytes [200 OK]>) to 10.0.11.107
+2020-11-10 09:17:30.974220 (AgentWriter): reported 38 traces in 0.00409s, 1 additional messages skipped
+2020-11-10 09:17:30.974457 (AgentWriter): initialized RateSampler, sample 100% of traces, 63 additional messages skipped
+2020-11-10 09:17:48.667350 (Thread-14): handling status request
+2020-11-10 09:17:48.667864 (Thread-14): Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': 'e5d6373e-bdd8-490d-835f-8f45f185452c', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7feb250ccda0>]}
+2020-11-10 09:17:48.668760 (Thread-14): sending response (<Response 446 bytes [200 OK]>) to 10.0.25.53
+2020-11-10 09:17:48.872686 (Thread-15): handling ps request
+2020-11-10 09:17:48.873192 (Thread-15): Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': 'e5d6373e-bdd8-490d-835f-8f45f185452c', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7feb250cc978>]}
+2020-11-10 09:17:48.875154 (Thread-15): sending response (<Response 104 bytes [200 OK]>) to 10.0.4.172
+2020-11-10 09:23:54.617336 (Thread-16): handling status request
+2020-11-10 09:23:54.619825 (Thread-16): Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': 'e5d6373e-bdd8-490d-835f-8f45f185452c', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7feb250cc518>]}
+2020-11-10 09:23:54.620720 (Thread-16): sending response (<Response 446 bytes [200 OK]>) to 10.0.26.205

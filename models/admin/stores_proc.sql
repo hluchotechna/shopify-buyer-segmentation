@@ -15,8 +15,8 @@ account,
 platform,
 time_of_entry,
 first_value(time_of_entry) OVER (PARTITION BY store ORDER BY time_of_entry DESC) lv
-FROM `{{ target.project }}.dbt_buyer_segmentation.data_feeds` 
-where store_name != ''
+FROM `{{ target.project }}.agency_data_pipeline.data_feeds` 
+where name != ''
 
 ) 
 

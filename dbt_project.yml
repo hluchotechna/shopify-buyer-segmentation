@@ -5,7 +5,7 @@
 # name: 'shopify_buyer_segmentation'
 # version: '1.0'
 
-name: 'dbt_buyer_segmentation'
+name: 'shopify_buyer_segmentation'
 version: '1.0.0'
 config-version: 2
 
